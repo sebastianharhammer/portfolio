@@ -8,6 +8,9 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
+#logo {
+  width: 100px;
+}
 .navbar-menu {
   display: flex;
   justify-content: space-between;
@@ -19,11 +22,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0.2rem;
 
     a {
       text-decoration: none;
       font-size: 1.2rem;
       font-weight: bold;
+      padding: 0.5rem;
     }
     a:hover {
       text-decoration: none;
@@ -32,11 +37,20 @@
     img {
       position: absolute;
       left: 0;
-      bottom: -5px;
+      left: -5px;
+    right: -5px;
+    bottom: -5px;
       width: 100%;
-      clip-path: inset(0 100% 0 0);
       transition: clip-path 0.3s ease-in-out;
     }
+  }
+  
+  .navbar-menu-item img {
+    clip-path: inset(0 100% 0 0);
+  }
+  
+  .navbar-menu-item:first-child img {
+    clip-path: inset(100% 0 0 0);
   }
   
   .navbar-menu-item a:hover + img {
@@ -47,9 +61,32 @@
   display: flex;
   gap: 1rem;
 }
+.navbar-language-item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  img {
+    width: 35px;
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    width: calc(100% + 10px);
+    transition: clip-path 0.3s ease-in-out;
+    clip-path: inset(0 100% 0 0);
+  }
+  
+  &:hover img {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
 
 @keyframes drawLine {
   to {
     stroke-dashoffset: 0;
   }
 }
+
