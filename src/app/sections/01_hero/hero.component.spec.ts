@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AboveTheFoldComponent } from './above-the-fold.component';
+import { HeroComponent } from './hero.component';
 
-describe('AboveTheFoldComponent', () => {
-  let component: AboveTheFoldComponent;
-  let fixture: ComponentFixture<AboveTheFoldComponent>;
+describe('HeroComponent', () => {
+  let component: HeroComponent;
+  let fixture: ComponentFixture<HeroComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AboveTheFoldComponent]
+      imports: [HeroComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AboveTheFoldComponent);
+    fixture = TestBed.createComponent(HeroComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
