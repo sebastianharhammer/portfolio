@@ -26,6 +26,7 @@
     top: 35%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 #headlineContainer {
@@ -84,7 +85,7 @@
 }
 
 #skillContainer {
-    width: 70%;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -95,12 +96,13 @@
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 5%;
-    padding: 10px;
+    max-width: 500px;
 }
 
 .iconWrapper {
     display: flex;
+    gap: 10px;
+    padding: 10px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -110,4 +112,16 @@
     font-size: 1rem;
     font-weight: 500;
     color: #fff;
+}
+
+#PeelOffContainer {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#peelOffImage {
+    width: 100%;
+    height: 100%;
 }
