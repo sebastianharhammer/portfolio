@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+app-root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* 
+@font-face {
+    font-display: swap;
+    font-family: 'Bricolage Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    src: url('assets/fonts/Bricolage_Grotesque/font.ttf') format('truetype');
+} */

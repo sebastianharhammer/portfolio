@@ -1,1 +1,36 @@
-<p>skill-set works!</p>
+<div id="skillSetContent">
+    <div id="topContainer">
+        <div id="headlineContainer">
+            <div id="myStackTitle">
+                <h5>MY STACK</h5>
+            </div>
+            <div id="skillSetTitle">
+                <h1>Skill set</h1>
+            </div>
+        </div>
+        <div id="descriptionContainer">
+            <img id="descriptionImage" src="assets/img/skills/frame.png" alt="description_image">
+            <span id="descriptionText">
+                <p>
+                    I'm a software developer with a passion for creating efficient and user-friendly applications.
+                </p>
+            </span>
+        </div>
+
+    </div>
+    <div id="bottomContainer">
+        <div id="skillContainer">
+            <div id="iconContainer">
+                <ng-container *ngFor="let icon of icons">
+                    <div class="iconWrapper">
+                        <img [src]="icon.src" [alt]="icon.alt">
+                        <span class="iconTitle">{{ icon.title }}</span>
+                    </div>
+                </ng-container>
+            </div>
+            <div id="PeelOffContainer">
+                <img id="peelOffImage" src="assets/img/skills/sticker.svg" alt="peelOff_image">
+            </div>
+        </div>
+    </div>
+</div>
