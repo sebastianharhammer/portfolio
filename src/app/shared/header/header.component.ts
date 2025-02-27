@@ -1,11 +1,18 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [RouterModule, CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  // No hover-related code needed!
+  onMouseEnter() {
+    console.log('mouse enter');
+  }
+  onMouseLeave() {
+    console.log('mouse leave');
+  }
 }
