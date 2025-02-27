@@ -15,3 +15,16 @@ app-root {
     align-items: center;
     justify-content: center;
 }
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/assets/fonts/Bricolage Grotesque/bricolage-grotesque-v7-latin-500.woff2') format('woff2');
+  }
+
+@font-face {
+    font-family: 'Bricolage Grotesque normal';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/Bricolage Grotesque/bricolage-grotesque-v7-latin-400.woff2') format('woff2');
+  }
