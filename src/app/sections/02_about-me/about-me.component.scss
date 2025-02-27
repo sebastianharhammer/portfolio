@@ -1,0 +1,134 @@
+#aboutmeContent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+#rippedPaperContainer {
+    width: 50%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+#aboutMeDescription {
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ripped-paper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#yellow {
+    top: 33%;
+    z-index: 15;
+}
+#blue {
+    top: 66%;
+    z-index: 10;
+}
+#orange {
+    top: 100%;
+    bottom: 0;
+    z-index: 5;
+}
+
+.bar {
+    width: 100%;
+    min-width: 500px;
+    height: 50%;
+    max-height: 150px;
+}
+
+#yellowBar {
+    transform: rotate(-5deg);
+    z-index: 3;
+}
+
+#locationSvg {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: rotate(-5deg);
+}
+
+#locationText {
+    position: absolute;
+    top: 2%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    transform: rotate(-10deg);
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+#blueBar {
+    transform: rotate(0deg);
+    z-index: 2;
+}
+#relocateSvg {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    transform: rotate(0deg);
+}
+#relocationText {
+    position: absolute;
+    top: 20%;
+    left: 40%;  
+    transform: translate(-50%, -50%);
+    transform: rotate(0deg);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+
+#orangeBar {
+    transform: rotate(5deg);
+    z-index: 1;
+}
+
+#remoteSvg {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: rotate(5deg);
+}
+
+#remoteText {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    transform: rotate(10deg);
+}
+
+#whoIs {
+    font-size: 1.2rem;
+    font-family: 'bricolage', sans-serif;
+    font-weight: 400;
+}
+
+#aboutme {
+    font-size: 3rem;
+}
+
+#BlueLine {
+    width: 100%;
+    height: 100%;
+}
+
+#description {
+    font-size: 1.2rem;
+}
