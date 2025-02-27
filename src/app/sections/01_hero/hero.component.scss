@@ -80,3 +80,34 @@
     padding: 5px 20px 5px 20px;
 
 }
+#socialMedia {
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.social-media-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    &:hover {
+        cursor: pointer;
+        border: 2px solid white;
+        border-radius: 45px;
+    }
+    svg {
+        transition: fill 0.1s ease-in-out;
+        &:hover {
+          fill: blue;
+        }
+      }
+      svg path {
+        transition: stroke 0.1s ease-in-out;
+        &:hover {
+          stroke: blue;
+        }
+      }
+}
+
