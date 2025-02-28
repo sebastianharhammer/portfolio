@@ -17,7 +17,7 @@
         </div>
         <div id="rightContainer">
             <div id="nameFormContainer">
-                <h2>What's your name?</h2>
+                <h2 class="formTitle">What's your name?</h2>
                 <div id="circleContainer">
                     <img id="circle" src="assets/img/contact/circle.png" alt="circle">
                     <img id="logo" src="assets/img/contact/logo.svg" alt="logo">
@@ -32,5 +32,26 @@
                     </svg>
                 </div>
             </div>
+            <div id="emailFormContainer">
+                <form id="nameForm">
+                    <input class="form-input" type="text" placeholder="Whats your name?">
+                </form>
+
+                <h2 class="formTitle">Whats your email?</h2>
+                <form id="emailForm">
+                    <input class="form-input" type="email" placeholder="Whats your email?">
+                </form>
+            </div>
+            <div id="messageFormContainer">
+                <h2 class="formTitle">How can I help you?</h2>
+                <form id="messageForm">
+                    <input class="form-input" type="text" name="message" id="message" placeholder="Write something to me">
+                </form>
+            </div>
+            <div id="checkboxContainer">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox">I agree to the terms and conditions</label>
+            </div>
+            <button id="sendButton">Send</button>
         </div>
     </div>
