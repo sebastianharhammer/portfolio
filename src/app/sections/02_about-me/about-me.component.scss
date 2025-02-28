@@ -1,8 +1,11 @@
 #aboutmeContent {
     width: 100%;
+    max-width: 1400px;
     height: 100vh;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 10vh;
 }
 #rippedPaperContainer {
     width: 50%;

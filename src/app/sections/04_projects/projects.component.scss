@@ -1,0 +1,210 @@
+#projectsContent {
+    width: 100vw;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    font-family: 'Bricolage Grotesque';
+}
+
+#leftContainer {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#rightContainer {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#headlineContainer {
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#myCraftContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#myCraftTitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#projectsTitleContainer {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#projectsTitle {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+#projectsLine {
+    width: 40%;
+
+    path {
+        stroke-dasharray: 265;
+        stroke-dashoffset: 265;
+        animation: drawProjectLine 0.3s ease-in-out forwards infinite;
+        animation-delay: 5s;
+    }
+}
+
+@keyframes drawProjectLine {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#projectsDescriptionContainer {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#elPolloLocoContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#elPolloLocoProject {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    object-fit: fill;
+}
+
+#elPolloLocoImage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    object-fit: fill;
+}
+
+#elPolloLocoDescription {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}   
+
+#joinProjectContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#joinProjectImage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#pokedexProjectContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#pokedexProject {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#pokedexImage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    object-fit: fill;
+}
+
+#pokedexDescription {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.project {
+    max-width: 700px;
+    max-height: 400px;
+    position: relative;
+    background-color: navajowhite;
+}
+
+.project-container {
+    flex-direction: column;
+}
+
+.project-description {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.line-image {
+    transition: all 0.3s ease;
+    /* Add any initial styles */
+  }
+  
+  .line-image:hover {
+    /* Add hover state styles */
+    filter: brightness(1.2); /* Makes it brighter */
+    /* or */
+    opacity: 0.8; /* Makes it more transparent */
+    /* or */
+    transform: scale(1.1); /* Makes it slightly bigger */
+  }
+  
+  .line-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .line-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: 0.5s;
+  }
+  
+  .line-container:hover::after {
+    left: 100%;
+  }
