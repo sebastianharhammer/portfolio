@@ -85,14 +85,11 @@
   justify-content: flex-start;
 }
 #nameFormContainer {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  min-width: 300px;
 }
 #circleContainer {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -166,6 +163,7 @@
   justify-content: flex-start;
 }
 .form-input {
+  width: 100%;
   border-bottom: 2px solid #ffc107;
   outline: none;
   transition: border-color 0.3sease;
