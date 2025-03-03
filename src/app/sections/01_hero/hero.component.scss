@@ -75,7 +75,7 @@ main {
   position: absolute;
   margin-bottom: 20px;
   padding: 5px 20px 5px 20px;
-  width: 157px;
+  width: 300px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   background: linear-gradient(to right, transparent 50%, blue 50%);
@@ -96,24 +96,6 @@ main {
   text-align: center;
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
-  animation: wave 1.5s infinite;
-}
-@keyframes wave {
-  0% {
-    transform: rotate(-180deg) translateX(0);
-  }
-  70% {
-    transform: rotate(0deg) translateX(0);
-  }
-  80% {
-    transform: rotate(-10deg) translateX(-20px);
-  }
-  90% {
-    transform: rotate(5deg) translateX(5px);
-  }
-  100% {
-    transform: rotate(0deg) translateX(0);
-  }
 }
 .front-container {
   height: 150px;
@@ -210,6 +192,24 @@ main {
   }
   #wavingHand {
     opacity: 1;
-    animation: wave 1.5s infinite;
+    animation: wave 0.5s ease-in-out forwards;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(-180deg) translateX(0);
+  }
+  70% {
+    transform: rotate(0deg) translateX(0);
+  }
+  80% {
+    transform: rotate(-10deg) translateX(-5px);
+  }
+  90% {
+    transform: rotate(5deg) translateX(5px);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0);
   }
 }
