@@ -1,114 +1,215 @@
 .hero {
-    background-image: url('./../../../../public/assets/img/hero/background.png');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-    width: 100vw;
-    padding-top: 200px;
-    color: #fff;
+  background-image: url("./../../../../public/assets/img/hero/background.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  min-height: 1100px;
+  width: 100vw;
+  padding-top: 200px;
+  color: #fff;
+}
+main {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
 }
 .hello-world {
-    width: 60%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  align-self: flex-start;
+  display: flex;
+  width: 157px;
+  position: relative;
+  animation: hello 0.8s ease-in-out forwards;
+  transition: width 2s ease-in-out;
+  &:hover {
+    width: 350px;
+  }
+}
+@keyframes hello {
+  0% {
+    transform: rotate(-180deg) translateX(0);
+  }
+  70% {
+    transform: rotate(0deg) translateX(0);
+  }
+  80% {
+    transform: rotate(-10deg) translateX(-5px);
+  }
+  90% {
+    transform: rotate(5deg) translateX(5px);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0);
+  }
 }
 #helloWorld {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-    border: 1px solid white;
-    border-radius: 25px;
-    padding: 5px 20px 5px 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* width: 45%; */
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 5px 20px 5px 20px;
+  display: block;
+  transition: opacity 0.3s ease-in-out;
+}
+#MyNameIs {
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 1px solid white;
+  border-radius: 25px;
+  position: absolute;
+  margin-bottom: 20px;
+  padding: 5px 20px 5px 20px;
+  width: 157px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background: linear-gradient(to right, transparent 50%, blue 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.5s ease;
+  &:hover {
+    background-position: 0 0;
+    transition: width 0.2s ease-in-out;
+    width: 350px;
+  }
+}
+#wavingHand {
+  position: absolute;
+  width: 35px;
+  top: -70%;
+  right: 83%;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  animation: wave 1.5s infinite;
+}
+@keyframes wave {
+  0% {
+    transform: rotate(-180deg) translateX(0);
+  }
+  70% {
+    transform: rotate(0deg) translateX(0);
+  }
+  80% {
+    transform: rotate(-10deg) translateX(-20px);
+  }
+  90% {
+    transform: rotate(5deg) translateX(5px);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0);
+  }
 }
 .front-container {
-    height: 150px;
-    width: 60%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  height: 150px;
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+  align-items: center;
 }
 #frontend {
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-size: 10rem;
-    font-weight: 400;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 7.5rem;
+  font-weight: 400;
 }
 #frontendImage {
-    width: 200px;
-    height: 225px;
-    padding: 75px 0 200px 75px;
-    rotate: 10deg;
+  width: 200px;
+  height: 225px;
+  padding-left: 50px;
+  padding-bottom: 75px;
+  rotate: 10deg;
 }
 .dev-container {
-    height: 150px;
-    width: 60%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  height: 150px;
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
+  align-items: center;
 }
 #developer {
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-size: 10rem;
-    font-weight: 400;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 7.5rem;
+  font-weight: 400;
 }
 .get-in-touch {
-    width: 60%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-top: 50px;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 50px;
 }
 #getInTouch {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-bottom: 10px solid white;
+  border-right: 7px solid white;
+  border-radius: 25px;
+  padding: 5px 20px 5px 20px;
+  transition: border 0.3s ease-in-out;
+  &:hover {
     border: 1px solid white;
-    border-bottom: 10px solid white;
-    border-right: 7px solid white;
-    border-radius: 25px;
-    padding: 5px 20px 5px 20px;
-
+    background-color: #f87a55;
+    cursor: pointer;
+  }
 }
 #socialMedia {
-    display: flex;
-    justify-content: flex-start;
-    width: 60%;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: flex-start;
 }
 .social-media-item {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  &:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 45px;
+  }
+  svg {
+    transition: fill 0.1s ease-in-out;
     &:hover {
-        cursor: pointer;
-        border: 2px solid white;
-        border-radius: 45px;
+      fill: blue;
     }
-    svg {
-        transition: fill 0.1s ease-in-out;
-        &:hover {
-          fill: blue;
-        }
-      }
-      svg path {
-        transition: stroke 0.1s ease-in-out;
-        &:hover {
-          stroke: blue;
-        }
-      }
+  }
+  svg path {
+    transition: stroke 0.1s ease-in-out;
+    &:hover {
+      stroke: blue;
+    }
+  }
 }
 
+.hello-world:hover {
+  #helloWorld {
+    opacity: 0;
+  }
+  #MyNameIs {
+    opacity: 1;
+  }
+  #wavingHand {
+    opacity: 1;
+    animation: wave 1.5s infinite;
+  }
+}

@@ -7,9 +7,10 @@ import { SkillSetComponent } from "./sections/03_skill-set/skill-set.component";
 import { ProjectsComponent } from "./sections/04_projects/projects.component";
 import { ThoughtsComponent } from "./sections/05_thoughts/thoughts.component";
 import { ContactComponent } from "./sections/06_contact/contact.component";
+import { FooterComponent } from "./shared/footer/footer.component";
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, HeroComponent, AboutMeComponent, SkillSetComponent, ProjectsComponent, ThoughtsComponent, ContactComponent],
+  imports: [RouterOutlet, HeaderComponent, HeroComponent, AboutMeComponent, SkillSetComponent, ProjectsComponent, ThoughtsComponent, ContactComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

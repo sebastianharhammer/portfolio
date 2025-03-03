@@ -1,3 +1,11 @@
+a {
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffc107;
+}
+
 #contactContainer {
   width: 100vw;
   height: 50vh;
@@ -95,7 +103,7 @@
   justify-content: flex-end;
   position: absolute;
   z-index: 5;
-  top: 25%;
+  top: 20%;
   right: 10%;
 }
 #circle {
@@ -105,27 +113,35 @@
   z-index: 10;
 }
 #logo {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   position: absolute;
   z-index: 15;
-  rotate: 20deg;
-  top: 41%;
-  left: 57%;
+  top: 13%;
+  left: 29%;
 }
 #logoText {
-  font-size: 1.5rem;
+  font-size: 1.16rem;
   font-weight: 600;
   position: absolute;
   z-index: 15;
-  top: 50%;
-  right: 10%;
-  transform: translate(-50%, -50%);
+  top: -3%;
+  right: -11%;
   z-index: 20;
   color: #fff;
-  height: 100px;
-  width: 100px;
+  height: 260px;
+  width: 260px;
+  animation: rotate 10s linear infinite;
 }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .formTitle {
   font-size: 1.5rem;
   font-weight: 600;
@@ -134,9 +150,11 @@
 .formContainer {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  text-align: left;
+  padding: 20px;
 }
 #nameForm {
   width: 100%;
@@ -174,4 +192,56 @@
   font-weight: 600;
   color: #fff;
   background-color: transparent;
+  border-right: none;
 }
+#formContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 200px;
+}
+#checkboxContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+#checkbox {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  margin-right: 10px;
+  border: 1px solid blue;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#checkboxWrapper {
+  position: relative;
+}
+
+#checkbox:checked::after {
+  transform-origin: top right;
+  content: "\2714";
+  position: absolute;
+  bottom: 0%;
+  right: 40%;
+  z-index: 10;
+  clip-path: polygon(-45% 16%, 80% -42%, 154% 149%, 25% 100%);
+  color: #ffc107;;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#checkboxLabel {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+
+
+
+
