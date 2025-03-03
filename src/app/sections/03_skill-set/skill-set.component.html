@@ -6,6 +6,7 @@
             </div>
             <div id="skillSetTitle">
                 <h1>Skill set</h1>
+                <img src="assets/img/skills/skillFrame.svg" id="skillFrame">
             </div>
         </div>
         <div id="descriptionContainer">
@@ -24,7 +25,7 @@
             <div id="iconContainer">
                 <ng-container *ngFor="let icon of icons">
                     <div class="iconWrapper">
-                        <img [src]="icon.src" [alt]="icon.alt">
+                        <img class="iconImage" [src]="icon.src" [alt]="icon.alt">
                         <span class="iconTitle">{{ icon.title }}</span>
                     </div>
                 </ng-container>

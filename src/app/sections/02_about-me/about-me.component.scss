@@ -1,141 +1,165 @@
 #aboutmeContent {
-    width: 100%;
-    max-width: 1400px;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding-top: 10vh;
+  width: 100%;
+  max-width: 1400px;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 10vh;
 }
 #rippedPaperContainer {
-    width: 50%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
+  width: 50%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
 
 #aboutMeDescription {
-    width: 50%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 50%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .ripped-paper {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 #yellow {
-    top: 33%;
-    z-index: 15;
+  top: 33%;
+  z-index: 15;
 }
 #blue {
-    top: 66%;
-    z-index: 10;
+  top: 66%;
+  z-index: 10;
 }
 #orange {
-    top: 100%;
-    bottom: 0;
-    z-index: 5;
+  top: 100%;
+  bottom: 0;
+  z-index: 5;
 }
 
 .bar {
-    width: 100%;
-    min-width: 500px;
-    height: 50%;
-    max-height: 150px;
+  width: 100%;
+  min-width: 500px;
+  height: 50%;
+  max-height: 150px;
 }
 
 #yellowBar {
-    transform: rotate(-5deg);
-    z-index: 3;
+  transform: rotate(-5deg);
+  z-index: 3;
 }
 
 #locationSvg {
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    transform: rotate(-5deg);
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  transform: rotate(-5deg);
 }
 
 #locationText {
-    position: absolute;
-    top: 2%;
-    left: 50%;  
-    transform: translate(-50%, -50%);
-    transform: rotate(-10deg);
-    width: 100%;
-    height: 100%;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: rotate(-10deg);
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
 }
 #blueBar {
-    transform: rotate(0deg);
-    z-index: 2;
+  transform: rotate(0deg);
+  z-index: 2;
 }
 #relocateSvg {
-    position: absolute;
-    top: 15%;
-    left: 30%;
-    transform: rotate(0deg);
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  transform: rotate(0deg);
 }
 #relocationText {
-    position: absolute;
-    top: 20%;
-    left: 40%;  
-    transform: translate(-50%, -50%);
-    transform: rotate(0deg);
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  transform: rotate(0deg);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
 }
 
 #orangeBar {
-    transform: rotate(5deg);
-    z-index: 1;
+  transform: rotate(5deg);
+  z-index: 1;
 }
 
 #remoteSvg {
-    position: absolute;
-    top: 10%;
-    left: 30%;
-    transform: rotate(5deg);
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  transform: rotate(5deg);
 }
 
 #remoteText {
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    transform: rotate(10deg);
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  transform: rotate(10deg);
 }
 
 #whoIs {
-    font-size: 1.2rem;
-    font-family: 'Bricolage Grotesque';
-    font-weight: 400;
+  font-size: 1.2rem;
+  font-family: "Bricolage Grotesque";
+  font-weight: 400;
 }
 
 #aboutme {
-    font-size: 3rem;
-    font-family: 'Bricolage Grotesque';
-    font-weight: 500;
+  font-size: 3rem;
+  font-family: "Bricolage Grotesque";
+  font-weight: 500;
 }
 
 #BlueLine {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #description {
-    font-size: 1.2rem;
-    font-family: 'Bricolage Grotesque';
-    font-weight: 400;
+  font-size: 1.2rem;
+  font-family: "Bricolage Grotesque";
+  font-weight: 400;
+}
+#letsTalkContainer {
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 50px;
+}
+#letsTalk {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-bottom: 10px solid black;
+  border-right: 7px solid black;
+  border-radius: 25px;
+  padding: 5px 20px 5px 20px;
+  transition: border 0.3s ease-in-out;
+  &:hover {
+    border: 1px solid white;
+    background-color: #f87a55;
+    color: white;
+    cursor: pointer;
+  }
 }
