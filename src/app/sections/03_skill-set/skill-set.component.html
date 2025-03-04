@@ -30,9 +30,11 @@
                     </div>
                 </ng-container>
             </div>
-            <div id="PeelOffContainer">
-                <img id="peelOffImage" src="assets/img/skills/sticker.svg" alt="peelOff_image">
-            </div>
+            <ng-container id="PeelOffContainer">
+                <img (click)="peelOff()" id="peelOffImage" [src]="currentImage.src" [alt]="currentImage.alt"
+                    alt="peelOff_image">
+            </ng-container>
+
         </div>
     </div>
 </div>
