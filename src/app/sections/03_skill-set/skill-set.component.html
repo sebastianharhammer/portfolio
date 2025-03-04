@@ -30,9 +30,15 @@
                     </div>
                 </ng-container>
             </div>
-            <ng-container id="PeelOffContainer">
-                <img (click)="peelOff()" id="peelOffImage" [src]="currentImage.src" [alt]="currentImage.alt"
-                    alt="peelOff_image">
+            <ng-container>
+                <div id="PeelOffContainer">
+                    <img (click)="peelOff()" id="peelOffImage" [src]="currentImage.src" [alt]="currentImage.alt"
+                        alt="peelOff_image">
+                    <div id="peelOffTextContainer">
+                        <img id="topPart" [src]="currentImage.topPart" [alt]="currentImage.topPart">
+                        <img id="bottomPart" [src]="currentImage.bottomPart" [alt]="currentImage.bottomPart">
+                    </div>
+                </div>
             </ng-container>
 
         </div>

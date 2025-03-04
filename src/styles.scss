@@ -24,6 +24,13 @@ app-root {
     font-weight: 500;
     src: url('../public/assets/fonts/Bricolage_Grotesque/font.woff2') format('woff2');
 }
+@font-face {
+    font-display: swap;
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../public/assets/fonts/Kalam/font2.woff2') format('woff2');
+}
 
 #footer {
     width: 100vw;
