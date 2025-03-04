@@ -15,11 +15,14 @@
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
-
-  svg path {
-    transition: fill 0.1s ease-in-out;
-    &:hover {
+  &:hover {
+    svg path {
+      transition: fill 0.1s ease-in-out;
+      color: #f7c518;
       fill: #f7c518;
+      stroke: #f7c518;
+      background-color: #f7c518;
+      cursor: pointer;
     }
   }
 }
@@ -46,28 +49,23 @@
     }
     a:hover {
       text-decoration: none;
-      color: #000;
     }
     img {
       position: absolute;
       left: 0;
-      left: -5px;
-      right: -5px;
-      bottom: -5px;
+      right: 0;
+      bottom: 0;
       width: 100%;
       transition: clip-path 0.3s ease-in-out;
+      clip-path: inset(0 100% 0 0);
     }
-  }
-
-  .navbar-menu-item img {
-    clip-path: inset(0 100% 0 0);
   }
 
   .navbar-menu-item:first-child img {
     clip-path: inset(100% 0 0 0);
   }
 
-  .navbar-menu-item a:hover + img {
+  .navbar-menu-item:hover img {
     clip-path: inset(0 0 0 0);
   }
 }
@@ -105,9 +103,7 @@
     &:hover {
       cursor: pointer;
     }
-
   }
-  
 
   &:hover img {
     clip-path: inset(0 0 0 0);
@@ -128,12 +124,11 @@
 #dot {
   position: absolute;
   top: 50%;
-  right:0;
+  right: 0;
   z-index: 2;
   transform: translate(-50%, -50%);
   animation: drawLine 1s ease-in-out forwards;
 }
-
 
 @keyframes drawLine {
   to {

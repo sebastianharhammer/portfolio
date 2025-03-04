@@ -96,6 +96,7 @@ main {
   text-align: center;
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
+  animation: wave 1.5s infinite;
 }
 .front-container {
   height: 150px;
@@ -192,7 +193,6 @@ main {
   }
   #wavingHand {
     opacity: 1;
-    animation: wave 0.5s ease-in-out forwards;
   }
 }
 
