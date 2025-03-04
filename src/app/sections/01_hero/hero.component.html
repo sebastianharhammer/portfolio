@@ -8,14 +8,19 @@
                     <span id="MyNameIs" class="hello-world-text">I AM SEBASTIAN HARHAMMER</span>
                 </div>
                 <div class="front-container">
-                    <h1 id="frontend">Frontend</h1>
+                    <span id="frontendFirstLetter">F</span>
+                    <ng-container *ngFor="let letter of frontend">
+                        <h1 class="frontend-text">{{letter}}</h1>
+                    </ng-container>
                     <div id="pictureFrameContainer">
                         <img src="assets/img/hero/pictureFrame.svg" id="frontendImage">
                     </div>
 
                 </div>
                 <div class="dev-container">
-                    <h1 id="developer">DEVELOPER</h1>
+                    <ng-container *ngFor="let letter of developer">
+                        <h1 class="developer-text">{{letter}}</h1>
+                    </ng-container>
                 </div>
                 <div class="get-in-touch">
                     <span id="getInTouch">Get in Touch</span>

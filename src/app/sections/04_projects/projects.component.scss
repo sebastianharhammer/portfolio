@@ -1,208 +1,213 @@
 #projectsContent {
-    width: 100vw;
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100vh;
-    font-family: 'Bricolage Grotesque';
+  width: 100vw;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150vh;
+  font-family: "Bricolage Grotesque";
 }
 
 #leftContainer {
-    width: 45%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 #rightContainer {
-    width: 45%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 #headlineContainer {
-    width: 100%;
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #myCraftContainer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 #myCraftTitle {
-    font-size: 1.5rem;
-    font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 #projectsTitleContainer {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 #projectsTitle {
-    font-size: 4rem;
-    font-weight: 500;
+  font-size: 4rem;
+  font-weight: 500;
 }
 
 #projectsLine {
-    width: 100%;
-    transform-origin: left;
-    animation: appear 5s ease-out infinite;
+  width: 100%;
+  transform-origin: left;
+  animation: appear 5s ease-out infinite;
 }
 
 @keyframes appear {
-    0% {
-        transform: scaleX(0);
-        opacity: 0;
-    }
-    100% {
-        transform: scaleX(1);
-        opacity: 1;
-    }
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
 }
 
 #projectsDescriptionContainer {
-    padding-top: 50px;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 #elPolloLocoContainer {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+}
+#elPolloLocoOverlay {
+  bottom: 10%;
+  right: 5%;
 }
 
-#elPolloLocoProject {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    object-fit: fill;
-}
 
 #elPolloLocoImage {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    object-fit: fill;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  object-fit: fill;
 }
 
-#elPolloLocoDescription {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}   
 
-#joinProjectContainer {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
 
 #joinProjectImage {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  object-fit: fill;
 }
-
+#joinProjectDescription {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#joinProjectOverlay {
+  bottom: 10%;
+  right: 5%;
+}
 #pokedexProjectContainer {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 #pokedexProject {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
-
+#pokedexOverlay {
+  bottom: 10%;
+  right: 5%;
+}
 #pokedexImage {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    object-fit: fill;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  object-fit: fill;
 }
 
 #pokedexDescription {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .project {
-    max-width: 700px;
-    max-height: 400px;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
+  max-width: 700px;
+  max-height: 400px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
 }
 
 .project-container {
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .project-description {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .project-container {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 
-  }
-  
-  .project-container:hover .project-image {
-    opacity: 0.8; /* Makes it more transparent */
-    transform: scale(1.1); /* Makes it slightly bigger */
+.project-container:hover .project-image {
+  opacity: 1;
+  filter: brightness(0.8);
+  transform: scale(1.3);
+}
 
+.project-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-container:hover::after {
+  left: 100%;
+}
+
+.project-overlay {
+  position: absolute;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: white;
+  border: 1px solid white;
+  border-bottom: 10px solid white;
+  border-right: 7px solid white;
+  border-radius: 25px;
+  padding: 5px 20px 5px 20px;
+  transition: border 0.3s ease-in-out;
+  z-index: 2;
+  &:hover {
+    border: 1px solid white;
+    background-color: #f87a55;
+    color: white;
+    cursor: pointer;
   }
-  
-  .project-container {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .project-container::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: 0.5s;
-  }
-  
-  .project-container:hover::after {
-    left: 100%;
-  }
+}
+.project-image {
+  position: relative;
+  z-index: 1;
+}
