@@ -1,0 +1,37 @@
+{
+    "header": {
+        "aboutme": "Über mich",
+        "skills": "Fähigkeiten",
+        "projects": "Projekte",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "helloWorld": "Hallo Welt!",
+        "whoIs": "Ich bin Sebastian Harhammer",
+        "getInTouch": "Kontaktiere mich"
+    },
+    "aboutme": {
+        "location": "Ansässig in Regensburg",
+        "relocate": "Offen für eine Umzug",
+        "remote": "Offen für Remote-Arbeit",
+        "description": "Hallo, ich bin Basti. Ich bin ein leidenschaftlicher Entwickler, der sich ständig weiterbildet und neue Technologien erlernt, um immer auf dem neuesten Stand zu bleiben. Ich bin immer auf der Suche nach neuen Herausforderungen und neuen Projekten, die ich mit meinem Team umsetzen kann.",
+        "letsTalk": "Lass uns reden"
+    },
+    "skillset": {
+        "mystack": "Mein Stack",
+        "title": "Fähigkeiten",
+        "description": "Ich bin ein Softwareentwickler mit einem starken Interesse an der Entwicklung von effizienten und benutzerfreundlichen Anwendungen. Ich bin ein leidenschaftlicher Entwickler, der sich ständig weiterbildet und neue Technologien erlernt, um immer auf dem neuesten Stand zu bleiben.",
+        "peel": "Aufziehen",
+        "peelOff": "Außerdem interessiere ich mich für:",
+    },
+    "projects": {
+        "title": "Projekte",
+        "description": "Ich bin ein Softwareentwickler mit einem starken Interesse an der Entwicklung von effizienten und benutzerfreundlichen Anwendungen. Ich bin ein leidenschaftlicher Entwickler, der sich ständig weiterbildet und neue Technologien erlernt, um immer auf dem neuesten Stand zu bleiben.",
+        "elpollo": "El Pollo Loco ist ein Spiel, dass über den Browser spielbar ist. Es wurde hauptsächlich mit Javascript Klassen und der Canvas API erstellt.",
+    },
+    "contact": {
+        "title": "Kontakt",
+        "description": "Ich bin ein Softwareentwickler mit einem starken Interesse an der Entwicklung von effizienten und benutzerfreundlichen Anwendungen. Ich bin ein leidenschaftlicher Entwickler, der sich ständig weiterbildet und neue Technologien erlernt, um immer auf dem neuesten Stand zu bleiben.",
+        "getInTouch": "Kontaktiere mich"
+    }
+}
