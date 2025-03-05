@@ -140,7 +140,12 @@
 #en-toggle.active ~ .navbar-language-divider #dot {
   left: 10% !important;
 }
-
+#en-toggle.active ~ #en {
+  display: none;
+}
+#de-toggle.active ~ #de {
+  display: none;
+}
 #de-toggle.active ~ .navbar-language-divider #dot {
   left: 90% !important;
 }

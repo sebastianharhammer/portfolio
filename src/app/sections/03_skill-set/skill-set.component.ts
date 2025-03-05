@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { LanguageService } from '../../services/language.service/language.service';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-skill-set',
-  standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './skill-set.component.html',
   styleUrl: './skill-set.component.scss',
 })
 export class SkillSetComponent {
+  languageService = inject(LanguageService);
+  constructor() {
+    this.languageService.languageToggle.subscribe((language) => {
+      console.log(language);
+    });
+  }
  
 
   img = {
@@ -44,7 +52,7 @@ export class SkillSetComponent {
         src: 'assets/img/skills/sticker_full.png',
         alt: 'sticker',
         topPart: 'assets/img/skills/sticker_arrow.svg',
-        bottomPart: 'assets/img/skills/sticker_text_closed_en.svg',
+        bottomPart: this.languageService.currentLanguageEN ? 'assets/img/skills/sticker_text_closed_en.svg' : 'assets/img/skills/sticker_text_closed_de.svg',
       },
       {
         src: 'assets/img/skills/sticker_first_peel.png',
@@ -55,11 +63,10 @@ export class SkillSetComponent {
       {
         src: 'assets/img/skills/sticker_peel_off.png',
         alt: 'sticker_peel_off',
-        topPart: 'assets/img/skills/sticker_text_open_en.svg',
+        topPart: this.languageService.currentLanguageEN ? 'assets/img/skills/sticker_text_open_en.svg' : 'assets/img/skills/sticker_text_open_de.svg',
         bottomPart: 'assets/img/skills/sticker_icons_open.svg',
       },
     ];
-
 
   peelOffIndex = 0;
   currentImage = this.peelOffImages[this.peelOffIndex];
