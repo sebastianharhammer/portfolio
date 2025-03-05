@@ -15,20 +15,19 @@ import translationDE from '../../../../public/assets/i18n/de.json';
   providers: [TranslateService],
 })
 export class HeaderComponent {
-  /* constructor(private translate: TranslateService) {
-    this.translate.addLangs(['de', 'en']);
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
-  } */
   
+  activeLanguage: 'en' | 'de' = 'en';
+
   constructor(private translate: TranslateService) {
     translate.setTranslation('en', translationEN);
     translate.setTranslation('de', translationDE);
     translate.setDefaultLang('en');
+    translate.use(this.activeLanguage);
   }
+
   useLanguage(language: string) {
     this.translate.use(language);
-    
+    this.activeLanguage = language as 'en' | 'de';
   }
   onMouseEnter() {
     console.log('mouse enter');

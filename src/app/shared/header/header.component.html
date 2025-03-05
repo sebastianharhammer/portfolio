@@ -24,10 +24,15 @@
             <img src="assets/img/header/contact_line.svg" alt="contact_line">
         </div>
     </div>
-    <div class="navbar-language">
+    <div class="navbar-language" [class.en-active]="activeLanguage === 'en'" [class.de-active]="activeLanguage === 'de'">
         <div class="navbar-language-item">
             <span id="en">EN</span>
-            <img class="language-toggle" id="en-toggle" (click)="useLanguage('en')" src="assets/img/header/english_toggle.svg" alt="english_toggle">
+            <img class="language-toggle" 
+                 id="en-toggle" 
+                 [class.active]="activeLanguage === 'en'"
+                 (click)="useLanguage('en')" 
+                 src="assets/img/header/english_toggle.svg" 
+                 alt="english_toggle">
         </div>
         <div class="navbar-language-divider">
             <img id="dot" src="assets/img/header/dot.svg" alt="dot">
@@ -35,7 +40,12 @@
         </div>
         <div class="navbar-language-item">
             <span id="de">DE</span>
-            <img class="language-toggle" id="de-toggle" (click)="useLanguage('de')" src="assets/img/header/german_toggle.svg" alt="german_toggle">
+            <img class="language-toggle" 
+                 id="de-toggle" 
+                 [class.active]="activeLanguage === 'de'"
+                 (click)="useLanguage('de')" 
+                 src="assets/img/header/german_toggle.svg" 
+                 alt="german_toggle">
         </div>
     </div>
 </nav>
