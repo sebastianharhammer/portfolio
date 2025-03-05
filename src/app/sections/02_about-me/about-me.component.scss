@@ -3,22 +3,21 @@
   max-width: 1400px;
   height: 60vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 auto;
-  padding-top: 10vh;
 }
 #rippedPaperContainer {
-  width: 50%;
+  width: 100%;
   height: 40%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  position: relative;
+  align-items: center;
+  flex-direction: column;
 }
 
 #aboutMeDescription {
-  width: 50%;
-  height: 60%;
+  width: 100%;
+  /* height: 60%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,28 +26,24 @@
 .ripped-paper {
   width: 100%;
   height: 100%;
+  position: relative;
+
+}
+.bar {
   position: absolute;
+  width: 400px;
+  height: 200px;
 }
 #yellow {
-  top: 33%;
   z-index: 15;
 }
 #blue {
-  top: 66%;
   z-index: 10;
 }
 #orange {
-  top: 100%;
-  bottom: 0;
   z-index: 5;
 }
 
-.bar {
-  width: 100%;
-  min-width: 500px;
-  height: 50%;
-  max-height: 150px;
-}
 
 #yellowBar {
   transform: rotate(-5deg);
@@ -131,14 +126,16 @@
 
 #BlueLine {
   width: 100%;
+  max-width: 250px;
   height: 100%;
+  padding-bottom: 50px;
 }
 
 #description {
   font-size: 1.2rem;
   font-family: "Bricolage Grotesque";
   font-weight: 200;
-  line-height: 1.3;
+  line-height: 1.1;
   text-overflow: ellipsis;
 }
 #letsTalkContainer {

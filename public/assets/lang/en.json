@@ -1,0 +1,71 @@
+{
+    "header": {
+        "aboutme": "About me",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "helloWorld": "Hello World!",
+        "whoIs": "I am Sebastian Harhammer",
+        "getInTouch": "Contact me"
+    },
+    "aboutme": {
+        "location": "Based in Regensburg",
+        "relocate": "Open to relocate",
+        "remote": "Open to remote work",
+        "description": "Hello, I am Basti. I am a passionate developer who is constantly learning new technologies to stay up to date. I am always looking for new challenges and new projects that I can implement with my team.",
+        "letsTalk": "Let's talk"
+    },
+    "skillset": {
+        "mystack": "My Stack",
+        "title": "Skills",
+        "description": "I am a passionate developer who is constantly learning new technologies to stay up to date. I am always looking for new challenges and new projects that I can implement with my team.",
+        "peel": "Pull",
+        "peelOff": "Also interested in:"
+    },
+    "projects": {
+        "title": "Projects",
+        "description": "I am a passionate developer who is constantly learning new technologies to stay up to date. I am always looking for new challenges and new projects that I can implement with my team.",
+        "ellpolloloco": {
+            "title": "El Pollo Loco",
+            "description": "El Pollo Loco is a game that can be played through the browser. It was mainly created with Javascript classes and the Canvas API."
+        },
+        "join": {
+            "title": "Join",
+            "description": "Join is a business webapp that allows you to create, plan and manage tasks according to the Scrum principle."
+        },
+        "pokedex": {
+            "title": "Pokedex",
+            "description": "Pokedex is a webapp that provides information about all Pokémon using the PokeAPI and visualizes it."
+        }
+    },
+    "thoughts": {
+        "title": "Thoughts",
+        "card01": {
+            "thought": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+        },
+        "card02": {
+            "thought": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+        },
+        "card03": {
+            "thought": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+        }
+    },
+    "contact": {
+        "contactme": "Contact me",
+        "ready": "Ready for a collaboration?",
+        "description": "I am a passionate developer who is constantly learning new technologies to stay up to date. I am always looking for new challenges and new projects that I can implement with my team.",
+        "contactform": {
+            "namelabel": "What is your name?",
+            "nameplaceholder": "Your name",
+            "emaillabel": "What is your email?",
+            "emailplaceholder": "Your email",
+            "message": "Message",
+            "messageplaceholder": "Your message",
+            "privacyfirstpart": "I have read and agree to the ",
+            "privacysecondpart": " privacy policy.",
+            "send": "Send"
+        }
+    }
+}
