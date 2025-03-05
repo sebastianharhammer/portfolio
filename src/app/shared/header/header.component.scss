@@ -12,6 +12,7 @@
   max-width: 1400px;
   margin: 0 auto;
 }
+
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
@@ -28,6 +29,8 @@
 }
 
 .navbar-menu {
+  font-family: "Bricolage Grotesque";
+  font-weight: bold;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -69,10 +72,12 @@
     clip-path: inset(0 0 0 0);
   }
 }
+
 .navbar-language {
   display: flex;
   gap: 1rem;
 }
+
 .navbar-language-item {
   display: flex;
   gap: 0.5rem;
@@ -89,10 +94,10 @@
     transition: clip-path 0.3s ease-in-out;
     clip-path: inset(0 100% 0 0);
   }
-  button {
-    background: none;
-    border: none;
-    cursor: pointer;
+
+  #de,
+  #en {
+    font-family: "Bricolage Grotesque";
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
@@ -109,11 +114,42 @@
     clip-path: inset(0 0 0 0);
   }
 }
+
+.language-toggle {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#en-toggle.active ~ .navbar-language-divider #dot {
+  right: 0%;
+  left: 10%;
+  transition: right 0.3s ease-in-out;
+}
+
+#de-toggle.active ~ .navbar-language-divider #dot {
+  right: 10%;
+  left: 0%;
+  transition: right 0.3s ease-in-out;
+}
+
 .navbar-language-divider {
   position: relative;
   margin-left: 1rem;
   margin-right: 1rem;
+  width: 50px;
+  height: 50px;
+  #dot {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 10%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    animation: drawLine 1s ease-in-out forwards;
+  }
 }
+
 #selector_line {
   position: absolute;
   top: 50%;
@@ -121,14 +157,8 @@
   transform: translate(-50%, -50%);
   animation: drawLine 1s ease-in-out forwards;
 }
-#dot {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  z-index: 2;
-  transform: translate(-50%, -50%);
-  animation: drawLine 1s ease-in-out forwards;
-}
+
+
 
 @keyframes drawLine {
   to {
