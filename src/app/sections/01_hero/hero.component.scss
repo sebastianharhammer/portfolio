@@ -31,11 +31,12 @@ main {
 .hello-world {
   align-self: flex-start;
   display: flex;
-  width: 157px;
-  padding: 10px;
+  width: 300px;
+  padding: 5px;
   position: relative;
   animation: hello 0.8s ease-in-out forwards;
   transition: width 0.5s ease-in-out;
+  z-index: 1;
   
 }
 @keyframes hello {
@@ -74,10 +75,10 @@ main {
   position: absolute;
   margin-bottom: 20px;
   padding: 5px 20px 5px 20px;
-  width: 300px;
+  width: 200px;
   opacity: 0;
   text-overflow: clip;
-  transition: opacity 0.3s ease-in-out, background-position 0.5s ease;
+  transition: opacity 0.3s ease-in-out, background-position 0.5s ease, width 0.5s ease-in-out;
   background: linear-gradient(to right, transparent 50%, blue 50%);
   background-size: 200% 100%;
   background-position: 100% 0;
@@ -88,12 +89,10 @@ main {
 #wavingHand {
   position: absolute;
   width: 35px;
-  top: -70%;
-  right: 33%;
-  text-align: center;
+  top: -50%;
+  left: 75%;
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
-  animation: wave 1.5s infinite;
 }
 .front-container {
   height: 150px;
@@ -195,31 +194,36 @@ main {
     opacity: 0;
   }
   #MyNameIs {
+    transition: opacity 0.8s ease-in-out;
+    width: 300px;
     opacity: 1;
   }
   #wavingHand {
     opacity: 1;
-    animation: wave 1.5s ease-in-out forwards;
+    animation: wave 1s forwards;
+
   }
 }
 
 @keyframes wave {
   0% {
-    transform: rotate(-45deg) translateX(0);
-  }
-  50% {
-    transform: rotate(-100deg) translateX(5px);
+    transform: translateX(0px) rotateZ(-180deg);
   }
   70% {
-    transform: rotate(0deg) translateX(0);
+    transform: translateX(75px) rotateZ(0deg);
   }
   80% {
-    transform: rotate(-10deg) translateX(15px);
+    transform: translateX(70px) rotateZ(-10deg);
   }
   90% {
-    transform: rotate(5deg) translateX(15px);
+    transform: translateX(80px) rotateZ(5deg);
   }
   100% {
-    transform: rotate(0deg) translateX(100px);
+    transform: translateX(75px) rotateZ(0deg);
   }
+
+  
+  
+  
+
 }
