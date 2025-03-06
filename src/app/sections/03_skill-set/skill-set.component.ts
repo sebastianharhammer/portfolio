@@ -29,14 +29,16 @@ export class SkillSetComponent {
   constructor(private translate: TranslateService) {
     this.initalizePeelOffLanguage();
     this.translate.onLangChange.subscribe(() => {
-      this.initalizePeelOffLanguage();
+      setTimeout(() => {
+        this.initalizePeelOffLanguage();
+      });
     });
   }
 
 
 
   initalizePeelOffLanguage() {
-    console.log(this.languageService.activeLanguage);
+
     if (this.languageService.activeLanguage === 'en') {
       this.bottomPartText0 = 'assets/img/skills/sticker_text_closed_en.svg';
       this.topPartText2 = 'assets/img/skills/sticker_text_open_en.svg';
@@ -44,6 +46,7 @@ export class SkillSetComponent {
       this.bottomPartText0 = 'assets/img/skills/sticker_text_closed_de.svg';
       this.topPartText2 = 'assets/img/skills/sticker_text_open_de.svg';
     }
+
     this.peelOffImages = [
       {
         src: 'assets/img/skills/sticker_full.png',
