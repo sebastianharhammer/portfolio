@@ -170,6 +170,7 @@
 }
 .project-container {
   transition: all 0.3s ease;
+  border-radius: 25px;
 }
 
 .project-container:hover .project-image {
@@ -213,5 +214,10 @@
 .project-image {
   position: relative;
   z-index: 10;
-  
+  height: 100%;
+  max-height: 400px;
+  max-width: 700px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
 }
