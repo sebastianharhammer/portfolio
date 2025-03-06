@@ -9,8 +9,10 @@ import translationDE from '../../../../public/assets/i18n/de.json';
   providedIn: 'root'
 })
 export class LanguageService {
+
   currentLanguageEN = true;
   currentLanguageDE = false;
+
 
   languageToggle = new Subject;
 

@@ -1,8 +1,14 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { LanguageService } from '../../services/language.service/language.service';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+interface PeelOffImage {
+  src: string;
+  alt: string;
+  topPart: string;
+  bottomPart: string;
+}
 
 @Component({
   selector: 'app-skill-set',
@@ -10,31 +16,56 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './skill-set.component.html',
   styleUrl: './skill-set.component.scss',
 })
+
 export class SkillSetComponent {
+
   languageService = inject(LanguageService);
+  peelOffIndex = 0;
+  peelOffImages: PeelOffImage[] = [];
+  currentImage!: PeelOffImage;
   bottomPartText0 = '';
   topPartText2 = '';
-
-  constructor() {
-    this.languageService.languageToggle.subscribe((language) => {
-      console.log(language);
+  
+  constructor(private translate: TranslateService) {
+    this.initalizePeelOffLanguage();
+    this.translate.onLangChange.subscribe(() => {
+      this.initalizePeelOffLanguage();
     });
   }
 
-  ngOnInit() {
-    this.initalizePeelOffLanguage();
-    console.log(this.bottomPartText0);
-  }
+
 
   initalizePeelOffLanguage() {
     console.log(this.languageService.activeLanguage);
     if (this.languageService.activeLanguage === 'en') {
-      this.bottomPartText0 = 'assets/img/skills/sticker_text_open_en.svg';
-      this.topPartText2 = 'assets/img/skills/sticker_text_closed_en.svg';
+      this.bottomPartText0 = 'assets/img/skills/sticker_text_closed_en.svg';
+      this.topPartText2 = 'assets/img/skills/sticker_text_open_en.svg';
     } else {
-      this.bottomPartText0 = 'assets/img/skills/sticker_text_open_de.svg';
-      this.topPartText2 = 'assets/img/skills/sticker_text_closed_de.svg';
+      this.bottomPartText0 = 'assets/img/skills/sticker_text_closed_de.svg';
+      this.topPartText2 = 'assets/img/skills/sticker_text_open_de.svg';
     }
+    this.peelOffImages = [
+      {
+        src: 'assets/img/skills/sticker_full.png',
+        alt: 'sticker',
+        topPart: 'assets/img/skills/sticker_arrow.svg',
+        bottomPart: this.bottomPartText0,
+      },
+      {
+        src: 'assets/img/skills/sticker_first_peel.png',
+        alt: 'sticker_first_peel',
+        topPart: '',
+        bottomPart: '',
+      },
+      {
+        src: 'assets/img/skills/sticker_peel_off.png',
+        alt: 'sticker_peel_off',
+        topPart: this.topPartText2,
+        bottomPart: 'assets/img/skills/sticker_icons_open.svg',
+      },
+    ];
+    this.currentImage = this.peelOffImages[this.peelOffIndex];
+  
   }
 
   img = {
@@ -63,30 +94,6 @@ export class SkillSetComponent {
       title: 'Material Design',
     },
   ];
-
-  peelOffImages = [
-    {
-      src: 'assets/img/skills/sticker_full.png',
-      alt: 'sticker',
-      topPart: 'assets/img/skills/sticker_arrow.svg',
-      bottomPart: this.bottomPartText0,
-    },
-    {
-      src: 'assets/img/skills/sticker_first_peel.png',
-      alt: 'sticker_first_peel',
-      topPart: '',
-      bottomPart: '',
-    },
-    {
-      src: 'assets/img/skills/sticker_peel_off.png',
-      alt: 'sticker_peel_off',
-      topPart: this.topPartText2,
-      bottomPart: 'assets/img/skills/sticker_icons_open.svg',
-    },
-  ];
-
-  peelOffIndex = 0;
-  currentImage = this.peelOffImages[this.peelOffIndex];
 
   peelOff() {
     if (this.peelOffIndex < this.peelOffImages.length - 1) {
