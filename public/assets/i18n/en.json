@@ -27,7 +27,9 @@
         "peelOff": "Also interested in:"
     },
     "projects": {
+        "myCraft": "My Craft",
         "title": "Projects",
+        "overlay": "Project details",
         "description": "I am a passionate developer who is constantly learning new technologies to stay up to date. I am always looking for new challenges and new projects that I can implement with my team.",
         "ellpolloloco": {
             "title": "El Pollo Loco",
@@ -43,6 +45,7 @@
         }
     },
     "thoughts": {
+        "inTheirWords": "In Their Words",
         "title": "Thoughts",
         "card01": {
             "thought": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
@@ -58,15 +61,16 @@
         "contactme": "Contact me",
         "ready": "Ready for a collaboration?",
         "description": "I am a passionate developer who is constantly learning new technologies to stay up to date. I am always looking for new challenges and new projects that I can implement with my team.",
-        "contactform": {
-            "namelabel": "What is your name?",
-            "nameplaceholder": "Your name",
-            "emaillabel": "What is your email?",
-            "emailplaceholder": "Your email",
-            "message": "Message",
-            "messageplaceholder": "Your message",
-            "privacyfirstpart": "I have read and agree to the ",
-            "privacysecondpart": " privacy policy.",
+        "contactForm": {
+            "nameLabel": "What is your name?",
+            "namePlaceholder": "Your name",
+            "emailLabel": "What is your email?",
+            "emailPlaceholder": "Your email",
+            "messageLabel": "Message",
+            "messagePlaceholder": "Your message",
+            "privacyFirstPart": "I have read and agree to the ",
+            "link": "Privacy Policy",
+            "privacySecondPart": " and agree to the processing of my data as outlined",
             "send": "Send"
         }
     }

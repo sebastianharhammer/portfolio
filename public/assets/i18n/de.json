@@ -28,7 +28,9 @@
         "peelOff": "Außerdem interessiere ich mich für:"
     },
     "projects": {
+        "myCraft": "Mein Arbeit",
         "title": "Projekte",
+        "overlay": "Projektdetails",
         "description": "Ich bin ein Softwareentwickler mit einem starken Interesse an der Entwicklung von effizienten und benutzerfreundlichen Anwendungen. Ich bin ein leidenschaftlicher Entwickler, der sich ständig weiterbildet und neue Technologien erlernt, um immer auf dem neuesten Stand zu bleiben.",
         "ellpolloloco": {
             "title": "El Pollo Loco",
@@ -44,6 +46,7 @@
         }
     },
     "thoughts": {
+        "inTheirWords": "In Ihren Worten",
         "title": "Meinungen",
         "card01": {
             "thought": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
@@ -59,15 +62,16 @@
         "contactme": "Kontaktiere mich",
         "ready": "Bereit für eine Zusammenarbeit?",
         "description": "Ich bin ein Softwareentwickler mit einem starken Interesse an der Entwicklung von effizienten und benutzerfreundlichen Anwendungen. Ich bin ein leidenschaftlicher Entwickler, der sich ständig weiterbildet und neue Technologien erlernt, um immer auf dem neuesten Stand zu bleiben.",
-        "contactform": {
-            "namelabel": "Wie ist ihr Name",
-            "nameplaceholder": "Ihr Name",
-            "emaillabel": "Wie ist ihre Email",
-            "emailplaceholder": "Ihre Email",
-            "message": "Nachricht",
-            "messageplaceholder": "Ihre Nachricht",
-            "privacyfirstpart": "Ich habe die ",
-            "privacysecondpart": " gelesen und stimme der Datenschutzerklärung zu.",
+        "contactForm": {
+            "nameLabel": "Wie ist ihr Name",
+            "namePlaceholder": "Ihr Name",
+            "emailLabel": "Wie ist ihre Email",
+            "emailPlaceholder": "Ihre Email",
+            "messageLabel": "Nachricht",
+            "messagePlaceholder": "Ihre Nachricht",
+            "privacyFirstPart": "Ich habe die ",
+            "link": "Datenschutzerklärung",
+            "privacySecondPart": " gelesen und stimme der Datenschutzerklärung zu.",
             "send": "Senden"
         }
     }

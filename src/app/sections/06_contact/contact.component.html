@@ -2,14 +2,13 @@
     <div id="contactContent">
         <div id="leftContainer">
             <div id="contactMeContainer">
-                <h4>CONTACT ME</h4>
+                <h4>{{ 'contact.contactme' | translate }}</h4>
             </div>
             <div id="readyContainer">
-                <h1>Ready to work together?</h1>
+                <h1>{{ 'contact.ready' | translate }}</h1>
             </div>
             <div id="descriptionContainer">
-                <p>I'm always looking for new and exciting projects to work on. If you have any questions or would like
-                    to discuss a potential collaboration, please don't hesitate to contact me.</p>
+                <p>{{ 'contact.description' | translate }}</p>
             </div>
             <div id="arrowContainer">
                 <img id="arrow" src="assets/img/contact/arrow.svg" alt="arrow">
@@ -31,31 +30,31 @@
             </div>
             <div id="formContainer">
                 <div id="nameFormContainer" class="formContainer">
-                    <h2 class="formTitle">What's your name?</h2>
+                    <h2 class="formTitle">{{ 'contact.contactForm.nameLabel' | translate }}</h2>
                     <form id="nameForm">
-                        <input class="form-input" type="text" placeholder="Whats your name?">
+                        <input class="form-input" type="text" placeholder="{{ 'contact.contactForm.namePlaceholder' | translate }}">
                     </form>
                 </div>
                 <div id="emailFormContainer" class="formContainer">
-                    <h2 class="formTitle">Whats your email?</h2>
+                    <h2 class="formTitle">{{ 'contact.contactForm.emailLabel' | translate }}</h2>
                     <form id="emailForm">
-                        <input class="form-input" type="email" placeholder="Whats your email?">
+                        <input class="form-input" type="email" placeholder="{{ 'contact.contactForm.emailPlaceholder' | translate }}">
                     </form>
                 </div>
                 <div id="messageFormContainer" class="formContainer">
-                    <h2 class="formTitle">How can I help you?</h2>
+                    <h2 class="formTitle">{{ 'contact.contactForm.messageLabel' | translate }}</h2>
                     <form id="messageForm">
                         <input class="form-input" type="text" name="message" id="message"
-                            placeholder="Write something to me">
+                            placeholder="{{ 'contact.contactForm.messagePlaceholder' | translate }}">
                     </form>
                 </div>
                 <div id="checkboxContainer">
                     <div id="checkboxWrapper">
                         <input id="checkbox" type="checkbox" name="checkbox" id="checkbox">
                     </div>
-                    <label id="checkboxLabel" for="checkbox">I've read the<a href="#">privacy policy</a>and agree to the processing of my data as outlined</label>
+                    <label id="checkboxLabel" for="checkbox">{{ 'contact.contactForm.privacyFirstPart' | translate }}<a href="#">{{ 'contact.contactForm.link' | translate }}   </a><span>{{ 'contact.contactForm.privacySecondPart' | translate }}</span></label>
                 </div>
-                <button id="sendButton">Send</button>
+                <button id="sendButton">{{ 'contact.contactForm.send' | translate }}</button>
             </div>
         </div>
     </div>

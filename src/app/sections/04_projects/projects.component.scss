@@ -177,6 +177,9 @@
   filter: brightness(0.8);
   transform: scale(1.3);
 }
+.project-container:hover .project-overlay {
+  z-index: 15;
+}
 
 .project-container {
   position: relative;
@@ -209,5 +212,6 @@
 }
 .project-image {
   position: relative;
-  z-index: 1;
+  z-index: 10;
+  
 }
