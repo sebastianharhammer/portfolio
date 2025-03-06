@@ -1,9 +1,15 @@
-import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, inject, OnInit } from '@angular/core';
+import { CommonModule, JsonPipe } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { LanguageService } from '../../services/language.service/language.service';
 import { TranslateModule } from '@ngx-translate/core';
 
+interface PeelOffImage {
+  src: string;
+  alt: string;
+  topPart: string;
+  bottomPart: string;
+}
 
 @Component({
   selector: 'app-skill-set',
@@ -13,12 +19,54 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class SkillSetComponent {
   languageService = inject(LanguageService);
+  bottomPartText0 = '';
+  topPartText2 = '';
+
   constructor() {
     this.languageService.languageToggle.subscribe((language) => {
       console.log(language);
     });
   }
- 
+
+  ngOnInit() {
+    this.initalizePeelOffLanguage();
+    console.log(this.bottomPartText0);
+  }
+
+  initalizePeelOffLanguage() {
+    console.log(this.languageService.activeLanguage);
+    if (this.languageService.activeLanguage === 'en') {
+      this.bottomPartText0 = 'assets/img/skills/sticker_text_open_en.svg';
+      this.topPartText2 = 'assets/img/skills/sticker_text_closed_en.svg';
+    } else {
+      this.bottomPartText0 = 'assets/img/skills/sticker_text_open_de.svg';
+      this.topPartText2 = 'assets/img/skills/sticker_text_closed_de.svg';
+    }
+
+    // Initialize peelOffImages AFTER language setup
+    this.peelOffImages = [
+      {
+        src: 'assets/img/skills/sticker_full.png',
+        alt: 'sticker',
+        topPart: 'assets/img/skills/sticker_arrow.svg',
+        bottomPart: this.bottomPartText0,
+      },
+      {
+        src: 'assets/img/skills/sticker_first_peel.png',
+        alt: 'sticker_first_peel',
+        topPart: '',
+        bottomPart: '',
+      },
+      {
+        src: 'assets/img/skills/sticker_peel_off.png',
+        alt: 'sticker_peel_off',
+        topPart: this.topPartText2,
+        bottomPart: 'assets/img/skills/sticker_icons_open.svg',
+      },
+    ];
+
+    this.currentImage = this.peelOffImages[this.peelOffIndex]; // Ensure correct initial image
+  }
 
   img = {
     src: 'assets/img/skills/sticker.svg',
@@ -46,30 +94,10 @@ export class SkillSetComponent {
       title: 'Material Design',
     },
   ];
-  
-    peelOffImages = [
-      {
-        src: 'assets/img/skills/sticker_full.png',
-        alt: 'sticker',
-        topPart: 'assets/img/skills/sticker_arrow.svg',
-        bottomPart: this.languageService.currentLanguageEN ? 'assets/img/skills/sticker_text_closed_en.svg' : 'assets/img/skills/sticker_text_closed_de.svg',
-      },
-      {
-        src: 'assets/img/skills/sticker_first_peel.png',
-        alt: 'sticker_first_peel',
-        topPart: '',
-        bottomPart: '',
-      },
-      {
-        src: 'assets/img/skills/sticker_peel_off.png',
-        alt: 'sticker_peel_off',
-        topPart: this.languageService.currentLanguageEN ? 'assets/img/skills/sticker_text_open_en.svg' : 'assets/img/skills/sticker_text_open_de.svg',
-        bottomPart: 'assets/img/skills/sticker_icons_open.svg',
-      },
-    ];
 
+  peelOffImages: PeelOffImage[] = []; // Initialize as empty array with type
   peelOffIndex = 0;
-  currentImage = this.peelOffImages[this.peelOffIndex];
+  currentImage!: PeelOffImage;
 
   peelOff() {
     if (this.peelOffIndex < this.peelOffImages.length - 1) {
@@ -77,10 +105,6 @@ export class SkillSetComponent {
         this.peelOffIndex++;
         this.currentImage = this.peelOffImages[this.peelOffIndex];
       }, 500);
-      setTimeout(() => {
-        this.peelOffIndex++;
-        this.currentImage = this.peelOffImages[this.peelOffIndex];
-      }, 250);
     }
   }
 }

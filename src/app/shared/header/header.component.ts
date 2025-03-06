@@ -4,10 +4,9 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import translationEN from '../../../../public/assets/i18n/en.json';
 import translationDE from '../../../../public/assets/i18n/de.json';
-
 @Component({
   selector: 'app-header',
-  imports: [RouterModule, CommonModule, TranslateModule],
+  imports: [RouterModule, CommonModule, TranslateModule,],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   standalone: true,
