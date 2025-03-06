@@ -92,7 +92,6 @@
   right: 5%;
 }
 
-
 #elPolloLocoImage {
   width: 100%;
   height: 100%;
@@ -101,10 +100,9 @@
   object-fit: fill;
 }
 
-
-
 #joinProjectImage {
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   object-fit: fill;
@@ -124,17 +122,18 @@
   align-items: center;
 }
 
-#pokedexProject {
+/* #pokedexProject {
   width: 100%;
   display: flex;
   align-items: center;
-}
+} */
 #pokedexOverlay {
   bottom: 10%;
   right: 5%;
 }
 #pokedexImage {
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   object-fit: fill;
@@ -170,16 +169,19 @@
 }
 .project-container {
   transition: all 0.3s ease;
-  border-radius: 25px;
 }
 
 .project-container:hover .project-image {
   opacity: 1;
   filter: brightness(0.8);
   transform: scale(1.3);
+  transition: all 0.3s ease;
 }
 .project-container:hover .project-overlay {
   z-index: 15;
+}
+.project-container:hover .project {
+  border-radius: 25px;
 }
 
 .project-container {

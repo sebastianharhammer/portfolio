@@ -7,7 +7,8 @@
             <div id="projectsTitleContainer">
                 <h1 id="projectsTitle">{{ 'projects.title' | translate }}</h1>
                 <div class="line-container">
-                    <img id="projectsLine" src="assets/img/projects/line.svg" alt="decorative line" class="line-image"class="project-image" >
+                    <img id="projectsLine" src="assets/img/projects/line.svg" alt="decorative line" class="line-image"
+                        class="project-image">
                 </div>
             </div>
             <div id="projectsDescriptionContainer">
@@ -18,8 +19,9 @@
         </div>
         <div id="elPolloLocoContainer" class="project-container">
             <div id="elPolloLocoProject" class="project">
-                <img class="project-image" id="elPolloLocoImage" src="assets/img/projects/polloloco.jpg" alt="El Pollo Loco">
-                <span class="project-overlay" id="elPolloLocoOverlay">{{ 'projects.overlay' | translate }}</span>
+                <img class="project-image" id="elPolloLocoImage" src="assets/img/projects/polloloco.jpg"
+                    alt="El Pollo Loco">
+                <span class="project-overlay" (click)="openProjectDetail('polloloco')" id="elPolloLocoOverlay">{{ 'projects.overlay' | translate }}</span>
             </div>
             <div id="elPolloLocoDescription" class="project-description">
                 <h3>{{ 'projects.ellpolloloco.title' | translate }}</h3>
@@ -31,9 +33,9 @@
     </div>
     <div id="rightContainer">
         <div id="joinProjectContainer" class="project-container">
-            <div id="joinProjectImageContainer">
-                <img class="project-image" id="joinProjectImage" src="assets/img/projects/join.png" alt="Join Project">
-                <span class="project-overlay" id="joinProjectOverlay">{{ 'projects.overlay' | translate }}</span>
+            <div id="joinProjectImageContainer" class="project">
+                <img class="project-image" id="joinProjectImage" src="assets/img/projects/join.jpg" alt="Join Project">
+                <span class="project-overlay" (click)="openProjectDetail('join')" id="joinProjectOverlay">{{ 'projects.overlay' | translate }}</span>
             </div>
             <div id="joinProjectDescription" class="project-description">
                 <h3>{{ 'projects.join.title' | translate }}</h3>
@@ -43,9 +45,9 @@
             </div>
         </div>
         <div id="pokedexProjectContainer" class="project-container">
-            <div id="pokedexProject">
-                <img class="project-image" id="pokedexImage" src="assets/img/projects/pokedex.png" alt="Pokedex">
-                <span class="project-overlay" id="pokedexOverlay">{{ 'projects.overlay' | translate }}</span>
+            <div id="pokedexProject" class="project">
+                <img class="project-image" id="pokedexImage" src="assets/img/projects/pokedex.jpg" alt="Pokedex">
+                <span class="project-overlay" (click)="openProjectDetail('pokedex')" id="pokedexOverlay">{{ 'projects.overlay' | translate }}</span>
             </div>
             <div id="pokedexDescription" class="project-description">
                 <h3>{{ 'projects.pokedex.title' | translate }}</h3>
@@ -56,5 +58,10 @@
             </div>
         </div>
     </div>
-
 </div>
+<ng-container *ngIf="isProjectDetailVisible">
+    <app-project-detail 
+        [project]="selectedProject"
+        (close)="closeProjectDetail()">
+    </app-project-detail>
+</ng-container>
