@@ -32,12 +32,11 @@ main {
   align-self: flex-start;
   display: flex;
   width: 157px;
+  padding: 10px;
   position: relative;
   animation: hello 0.8s ease-in-out forwards;
-  transition: width 2s ease-in-out;
-  &:hover {
-    width: 350px;
-  }
+  transition: width 0.5s ease-in-out;
+  
 }
 @keyframes hello {
   0% {
@@ -78,15 +77,12 @@ main {
   width: 300px;
   opacity: 0;
   text-overflow: clip;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, background-position 0.5s ease;
   background: linear-gradient(to right, transparent 50%, blue 50%);
   background-size: 200% 100%;
   background-position: 100% 0;
-  transition: background-position 0.5s ease;
   &:hover {
     background-position: 0 0;
-    transition: width 0.2s ease-in-out;
-    width: 350px;
   }
 }
 #wavingHand {
@@ -108,22 +104,30 @@ main {
   align-items: center;
 }
 
-
 .frontend-text,
-#frontendFirstLetter {
+#frontendFirstLetter,
+#developerFirstLetter,
+.developer-text {
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: 7.5rem;
   font-weight: 400;
   transition: color 0.3s ease-in-out;
-  &.frontend-text:hover {
+  
+  &:hover {
     color: #f7c518;
-    text-transform: uppercase;
-  }
-  &#frontendFirstLetter:hover {
-    color: #f7c518;
-    text-transform: lowercase;
   }
 }
+
+.frontend-text:hover {
+  text-transform: uppercase;
+}
+
+#frontendFirstLetter:hover,
+.developer-text:hover,
+#developerFirstLetter:hover {
+  text-transform: lowercase;
+}
+
 #frontendImage {
   width: 200px;
   height: 225px;
@@ -137,17 +141,6 @@ main {
   align-self: flex-end;
   justify-content: flex-end;
   align-items: center;
-}
-#developerFirstLetter,
-.developer-text {
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-size: 7.5rem;
-  font-weight: 400;
-  transition: color 0.5s ease-in-out;
-  &:hover {
-    color: #f7c518;
-    text-transform: lowercase;
-  }
 }
 
 .get-in-touch {
