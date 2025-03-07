@@ -95,52 +95,7 @@ a:hover {
 #nameFormContainer {
   min-width: 300px;
 }
-#circleContainer {
-  width: 250px;
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  position: absolute;
-  z-index: 5;
-  top: 20%;
-  right: 10%;
-}
-#circle {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  z-index: 10;
-}
-#logo {
-  width: 140px;
-  height: 140px;
-  position: absolute;
-  z-index: 15;
-  top: 13%;
-  left: 29%;
-}
-#logoText {
-  font-size: 1.16rem;
-  font-weight: 600;
-  position: absolute;
-  z-index: 15;
-  top: -3%;
-  right: -11%;
-  z-index: 20;
-  color: #fff;
-  height: 260px;
-  width: 260px;
-  animation: rotate 10s linear infinite;
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+
 
 .formTitle {
   font-size: 1.5rem;

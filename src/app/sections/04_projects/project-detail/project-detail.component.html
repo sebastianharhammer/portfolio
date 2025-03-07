@@ -1,32 +1,57 @@
 <div id="projectDetailContainer">
     <app-header></app-header>
-    <button class="close-button" (click)="closeDetail()">×</button>
-    <div id="projectDetail">
-        <div class="project-content" *ngIf="projectDetails[project]">
-            <h1>{{ projectDetails[project].title }}</h1>
-            
-            <div class="project-images">
-                <img *ngFor="let image of projectDetails[project].images" 
-                     [src]="image" 
-                     [alt]="projectDetails[project].title">
+    <div id="contentContainer">
+        <div class="close-button" (click)="closeDetail()">
+            <img src="assets/img/projects/back.svg" alt="Close Button">
+            <span>{{ 'projectDetail.close' | translate }}</span>
+        </div>
+        <div id="projectDetail">
+            <div class="project-description-container">
+                <div class="project-description-headline-container">
+                    <h1>{{ projectDetails[project].title }}</h1>
+                    <img class="blue-line" src="assets/img/projects/blue_line.svg" alt="Arrow Right">
+                </div>
+                <div class="project-description-text-container">
+                    <h2>{{ projectDetails[project].description }}</h2>
+                    <p>{{ projectDetails[project].description }}</p>
+                </div>
+                <div class="project-description-text-container">
+                    <h2>{{ projectDetails[project].description }}</h2>
+                    <p>{{ projectDetails[project].description }}</p>
+                </div>
+                <div class="project-technologies-container">
+                    <h2>{{ projectDetails[project].description }}</h2>
+                    <p>{{ projectDetails[project].description }}</p>
+                </div>
+                <div class="icon-container">
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                </div>
             </div>
-
-            <div class="project-info">
-                <p>{{ projectDetails[project].description }}</p>
-                
-                <div class="technologies">
-                    <span *ngFor="let tech of projectDetails[project].technologies">
-                        {{ tech }}
-                    </span>
+        <div id="projectContent" *ngIf="projectDetails[project]">
+                <div class="project-images">
+                    <img *ngFor="let image of projectDetails[project].images" [src]="image"
+                        [alt]="projectDetails[project].title">
+                        
+                        <app-logo [ngClass]="{'logo-white': true}"></app-logo>
                 </div>
 
-                <div class="project-links">
-                    <a *ngIf="projectDetails[project].github" 
-                       [href]="projectDetails[project].github" 
-                       target="_blank">GitHub</a>
-                    <a *ngIf="projectDetails[project].live" 
-                       [href]="projectDetails[project].live" 
-                       target="_blank">Live Demo</a>
+                <div class="project-info">
+                    <p>{{ projectDetails[project].description }}</p>
+
+                    <div class="technologies">
+                        <span *ngFor="let tech of projectDetails[project].technologies">
+                            {{ tech }}
+                        </span>
+                    </div>
+
+                    <div class="project-links">
+                        <a *ngIf="projectDetails[project].github" [href]="projectDetails[project].github"
+                            target="_blank">GitHub</a>
+                        <a *ngIf="projectDetails[project].live" [href]="projectDetails[project].live"
+                            target="_blank">Live Demo</a>
+                    </div>
                 </div>
             </div>
         </div>
