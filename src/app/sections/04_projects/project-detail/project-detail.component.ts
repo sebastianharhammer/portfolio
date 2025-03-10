@@ -30,8 +30,8 @@ export class ProjectDetailComponent {
     ellpolloloco: {
       technologies: ['JavaScript', 'HTML', 'CSS'],
       images: ['assets/img/projects/polloloco.jpg'],
-      github: 'https://github.com/yourusername/el-pollo-loco',
-      live: 'https://your-demo-url.com',
+      github: 'https://github.com/sebastianharhammer/El_POLLO_LOCO',
+      live: 'https://sebastianharhammer.github.io/El_POLLO_LOCO/',
       nextProject: 'join',
     },
     join: {
