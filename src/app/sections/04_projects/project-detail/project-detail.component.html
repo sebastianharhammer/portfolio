@@ -24,10 +24,13 @@
                     <p>{{ 'projects.' + project + '.duration' | translate }}</p>
                 </div>
                 <div class="icon-container">
-                    <div class="technologies">
-                        <span *ngFor="let tech of projectDetails[project].technologies">
+                    <div class="technologies" *ngFor="let tech of projectDetails[project].technologies">
+                        <div class="technology-icon">
+                        <img src="assets/img/projects/icons/{{ tech }}.svg" alt="{{ tech }}">
+                        <span>
                             {{ tech }}
                         </span>
+                    </div>
                     </div>
                 </div>
             </div>

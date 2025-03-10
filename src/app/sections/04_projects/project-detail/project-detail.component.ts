@@ -35,14 +35,14 @@ export class ProjectDetailComponent {
       nextProject: 'join',
     },
     join: {
-      technologies: ['Angular', 'Firebase', 'TypeScript'],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
       images: ['assets/img/projects/join.jpg'],
       github: 'https://github.com/sebastianharhammer/joinProjekt',
       live: 'https://sebastianharhammer.github.io/joinProjekt/',
       nextProject: 'pokedex',
     },
     pokedex: {
-      technologies: ['Angular', 'PokeAPI', 'TypeScript'],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'RestAPI'],
       images: ['assets/img/projects/pokedex.jpg'],
       github: 'https://github.com/sebastianharhammer/pokedex',
       live: 'https://sebastianharhammer.github.io/pokedex/',
