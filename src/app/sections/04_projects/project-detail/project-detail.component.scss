@@ -168,6 +168,28 @@
   }
 }
 
+.next-project-container {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    &:hover {
+        cursor: pointer;
+        span {
+            color: #ffd700;
+        }
+    }
+    span {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: white;
+
+    }
+}
+
+
+
 //LOGO
 ::ng-deep #circleContainer {
     top: 15% !important;

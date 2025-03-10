@@ -31,11 +31,11 @@
                     </div>
                 </div>
             </div>
-        <div id="projectContent" *ngIf="projectDetails[project]">
+            <div id="projectContent" *ngIf="projectDetails[project]">
                 <div class="project-images">
-                    <img #projectImage id="projectImage" *ngFor="let image of projectDetails[project].images" [src]="image"
-                        alt="{{ 'projects.' + project + '.title' | translate }}">
-                        <app-logo></app-logo>
+                    <img #projectImage id="projectImage" *ngFor="let image of projectDetails[project].images"
+                        [src]="image" alt="{{ 'projects.' + project + '.title' | translate }}">
+                    <app-logo></app-logo>
                 </div>
 
                 <div class="project-info">
@@ -44,8 +44,13 @@
                         <a *ngIf="projectDetails[project].github" [href]="projectDetails[project].github"
                             target="_blank"><span class="git-links">Github</span></a>
                         <a *ngIf="projectDetails[project].live" [href]="projectDetails[project].live"
-                            target="_blank"><span class="git-links">{{ 'projectDetail.liveDemo' | translate }}</span></a>
+                            target="_blank"><span class="git-links">{{ 'projectDetail.liveDemo' | translate
+                                }}</span></a>
                     </div>
+                </div>
+                <div class="next-project-container" (click)="openNextProject(projectDetails[project].nextProject)">
+                    <span id="next-project-title">{{ 'projectDetail.nextprojecttitle' | translate }}</span>
+                    <img src="assets/img/projects/next.svg" alt="Arrow Right">
                 </div>
             </div>
         </div>

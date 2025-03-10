@@ -1,7 +1,7 @@
 import { ProjectsComponent } from '../projects.component';
-import { Component, Input, Output, EventEmitter,   } from '@angular/core';
+import { Component, Input, Output, EventEmitter, inject } from '@angular/core';
 import { HeaderComponent } from '../../../shared/header/header.component';
-import { CommonModule, } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { LogoComponent } from '../../../shared/logo/logo.component';
 
@@ -10,6 +10,7 @@ interface ProjectDetails {
   images: string[];
   github?: string;
   live?: string;
+  nextProject?: string | undefined;
 }
 
 @Component({
@@ -23,28 +24,38 @@ export class ProjectDetailComponent {
   @Input() project!: string;
   @Output() close = new EventEmitter<void>();
 
+  private projectsComponent = inject(ProjectsComponent);
+
   projectDetails: Record<string, ProjectDetails> = {
     ellpolloloco: {
       technologies: ['JavaScript', 'HTML', 'CSS'],
       images: ['assets/img/projects/polloloco.jpg'],
       github: 'https://github.com/yourusername/el-pollo-loco',
       live: 'https://your-demo-url.com',
+      nextProject: 'join',
     },
     join: {
       technologies: ['Angular', 'Firebase', 'TypeScript'],
       images: ['assets/img/projects/join.jpg'],
-      github: 'https://github.com/yourusername/join',
-      live: 'https://your-demo-url.com',
+      github: 'https://github.com/sebastianharhammer/joinProjekt',
+      live: 'https://sebastianharhammer.github.io/joinProjekt/',
+      nextProject: 'pokedex',
     },
     pokedex: {
       technologies: ['Angular', 'PokeAPI', 'TypeScript'],
       images: ['assets/img/projects/pokedex.jpg'],
       github: 'https://github.com/yourusername/pokedex',
       live: 'https://your-demo-url.com',
+      nextProject: 'ellpolloloco',
     },
   };
 
   closeDetail() {
     this.close.emit();
+  }
+  openNextProject(nextProject: string | undefined) {
+    if (nextProject) {
+      this.projectsComponent.openProjectDetail(nextProject);
+    }
   }
 }
