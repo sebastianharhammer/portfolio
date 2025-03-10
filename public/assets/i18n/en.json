@@ -32,6 +32,7 @@
     "title": "Projects",
     "overlay": "Project details",
     "description": "I am a passionate developer who is constantly learning new technologies to stay up to date. I am always looking for new challenges and new projects that I can implement with my team.",
+    
     "ellpolloloco": {
       "title": "El Pollo Loco",
       "description": "El Pollo Loco is a game that can be played through the browser. It was mainly created with Javascript classes and the Canvas API."
@@ -50,7 +51,8 @@
     "description": "Description",
     "implementationdetails": "Implementation Details",
     "duration": "Duration",
-    "nextproject": "Next Project"
+    "nextproject": "Next Project",
+    "liveDemo": "Live Demo"
   },
   "thoughts": {
     "inTheirWords": "In Their Words",

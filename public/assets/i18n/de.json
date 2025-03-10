@@ -32,6 +32,7 @@
     "title": "Projekte",
     "overlay": "Projektdetails",
     "description": "Ich bin ein Softwareentwickler mit einem starken Interesse an der Entwicklung von effizienten und benutzerfreundlichen Anwendungen. Ich bin ein leidenschaftlicher Entwickler, der sich ständig weiterbildet und neue Technologien erlernt, um immer auf dem neuesten Stand zu bleiben.",
+    
     "ellpolloloco": {
       "title": "El Pollo Loco",
       "description": "El Pollo Loco ist ein Spiel, dass über den Browser spielbar ist. Es wurde hauptsächlich mit Javascript Klassen und der Canvas API erstellt."
@@ -50,7 +51,8 @@
     "description": "Beschreibung",
     "implementationdetails": "Implementierungsdetails",
     "duration": "Dauer",
-    "nextproject": "Nächstes Projekt"
+    "nextproject": "Nächstes Projekt",
+    "liveDemo": "Live Test"
   },
   "thoughts": {
     "inTheirWords": "In Ihren Worten",
