@@ -1,10 +1,13 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ElementRef, ViewChild} from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import translationEN from '../../../../public/assets/i18n/en.json';
 import translationDE from '../../../../public/assets/i18n/de.json';
 import { LanguageService } from '../../services/language.service/language.service';
+
+type SectionRefs = 'aboutMe' | 'skills' | 'projects' | 'contact';
+
 @Component({
   selector: 'app-header',
   imports: [RouterModule, CommonModule, TranslateModule,],
@@ -14,6 +17,18 @@ import { LanguageService } from '../../services/language.service/language.servic
   providers: [TranslateService],
 })
 export class HeaderComponent {
+  @ViewChild('aboutMe') aboutMe!: ElementRef;
+  @ViewChild('skills') skills!: ElementRef;
+  @ViewChild('projects') projects!: ElementRef;
+  @ViewChild('contact') contact!: ElementRef;
+
+  scrollToSection(section: SectionRefs) {
+    console.log("section", section);
+    const element = this[section];
+    if (element) {
+      element.nativeElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
   
   activeLanguage: 'en' | 'de' = 'en';
   languageService = inject(LanguageService);

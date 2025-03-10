@@ -35,15 +35,19 @@
 
     "ellpolloloco": {
       "title": "El Pollo Loco",
-      "description": "El Pollo Loco is a game that can be played through the browser. It was mainly created with Javascript classes and the Canvas API."
+      "description": "El Pollo Loco is a game that can be played through the browser. It was mainly created with Javascript classes and the Canvas API.",
+      "duration": "3 Weeks"
+
     },
     "join": {
       "title": "Join",
-      "description": "Join is a business webapp that allows you to create, plan and manage tasks according to the Scrum principle."
+      "description": "Join is a business webapp that allows you to create, plan and manage tasks according to the Scrum principle.",
+      "duration": "5 Weeks"
     },
     "pokedex": {
       "title": "Pokedex",
-      "description": "Pokedex is a webapp that provides information about all Pokémon using the PokeAPI and visualizes it."
+      "description": "Pokedex is a webapp that provides information about all Pokémon using the PokeAPI and visualizes it.",
+      "duration": "3 Weeks"
     }
   },
   "projectDetail": {
@@ -53,7 +57,8 @@
     "duration": "Duration",
     "nextproject": "Next Project",
     "liveDemo": "Live Demo",
-    "nextprojecttitle": "Next Project"
+    "nextprojecttitle": "Next Project",
+    "durationtitle": "Duration"
   },
   "thoughts": {
     "inTheirWords": "In Their Words",

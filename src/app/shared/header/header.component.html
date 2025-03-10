@@ -7,19 +7,19 @@
             </svg>
     </div>
     <div class="navbar-menu">
-        <div class="navbar-menu-item">
+        <div class="navbar-menu-item" (click)="scrollToSection('aboutMe')">
             <a id="aboutme" href="#">{{ 'header.aboutme' | translate }}</a>
             <img src="assets/img/header/about_me_line.svg" alt="about_me_line">
         </div>
-        <div class="navbar-menu-item">
+        <div class="navbar-menu-item" (click)="scrollToSection('skills')">
             <a id="skills" href="#">{{ 'header.skills' | translate }}</a>
             <img src="assets/img/header/skill_line.svg" alt="skills_line">
         </div>
-        <div class="navbar-menu-item">
+        <div class="navbar-menu-item" (click)="scrollToSection('projects')">
             <a id="projects" href="#">{{ 'header.projects' | translate }}</a>
             <img src="assets/img/header/projects_line.svg" alt="projects_line">
         </div>
-        <div class="navbar-menu-item">
+        <div class="navbar-menu-item" (click)="scrollToSection('contact')">
             <a id="contact" href="#">{{ 'header.contact' | translate }}</a>
             <img src="assets/img/header/contact_line.svg" alt="contact_line">
         </div>

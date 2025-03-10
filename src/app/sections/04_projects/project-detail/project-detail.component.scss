@@ -66,12 +66,13 @@
 
 .project-description-headline-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 50px;
     h1 {
         font-family: 'Bricolage Grotesque', sans-serif;
-        font-size: 3rem;
+        font-size: 3.5rem;
         font-weight: 800;
     }
 }
@@ -228,7 +229,7 @@
 ::ng-deep #circleContainer {
     top: 15% !important;
     right: -17% !important;
-    scale: 0.8;
+    scale: 0.6;
 }
 ::ng-deep #circle {
     content: url('../../../../../public/assets/img/projects/circle.png');
@@ -236,6 +237,6 @@
 
 ::ng-deep #logoText {
     filter: brightness(0) saturate(100%) invert(20%) sepia(90%) saturate(5364%) hue-rotate(241deg) brightness(76%) contrast(125%);
-
+    font-size: 2.5rem;
 }
 
