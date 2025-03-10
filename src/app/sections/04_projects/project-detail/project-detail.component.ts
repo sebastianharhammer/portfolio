@@ -44,8 +44,8 @@ export class ProjectDetailComponent {
     pokedex: {
       technologies: ['Angular', 'PokeAPI', 'TypeScript'],
       images: ['assets/img/projects/pokedex.jpg'],
-      github: 'https://github.com/yourusername/pokedex',
-      live: 'https://your-demo-url.com',
+      github: 'https://github.com/sebastianharhammer/pokedex',
+      live: 'https://sebastianharhammer.github.io/pokedex/',
       nextProject: 'ellpolloloco',
     },
   };

@@ -19,9 +19,11 @@ export class ProjectsComponent {
  openProjectDetail(project: string) {
   this.isProjectDetailVisible = true;
   this.selectedProject = project;
+  document.body.style.overflow = 'hidden';
  }
 
  closeProjectDetail() {
   this.isProjectDetailVisible = false;
+  document.body.style.overflow = 'auto';
  }
 }
