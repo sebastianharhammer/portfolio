@@ -6,7 +6,7 @@ import translationEN from '../../../../public/assets/i18n/en.json';
 import translationDE from '../../../../public/assets/i18n/de.json';
 import { LanguageService } from '../../services/language.service/language.service';
 
-type SectionRefs = 'aboutMe' | 'skills' | 'projects' | 'contact';
+type SectionRefs = 'aboutmeContent' | 'skills' | 'projects' | 'contact';
 
 @Component({
   selector: 'app-header',
@@ -17,16 +17,18 @@ type SectionRefs = 'aboutMe' | 'skills' | 'projects' | 'contact';
   providers: [TranslateService],
 })
 export class HeaderComponent {
-  @ViewChild('aboutMe') aboutMe!: ElementRef;
+  @ViewChild('aboutmeContent') aboutmeContent!: ElementRef;
   @ViewChild('skills') skills!: ElementRef;
   @ViewChild('projects') projects!: ElementRef;
   @ViewChild('contact') contact!: ElementRef;
 
   scrollToSection(section: SectionRefs) {
-    console.log("section", section);
     const element = this[section];
-    if (element) {
+    console.log("element", section);
+    if (element && element.nativeElement) {
       element.nativeElement.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      console.log("element not found");
     }
   }
   

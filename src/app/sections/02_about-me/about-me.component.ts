@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { LanguageService } from '../../services/language.service/language.service';
 import { TranslateModule } from '@ngx-translate/core';
 @Component({
+  standalone: true,
   selector: 'app-about-me',
   imports: [TranslateModule],
   templateUrl: './about-me.component.html',
