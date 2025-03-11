@@ -4,7 +4,7 @@
   align-items: center;
   padding: 1rem;
   position: absolute;
-  top: 0; 
+  top: 0;
   left: 0;
   right: 0;
   z-index: 100;
@@ -79,7 +79,7 @@
 
 .navbar-language {
   display: flex;
-  
+
   // Move the dot positioning logic to use a class on the parent
   &.en-active #dot {
     left: 10%;
@@ -160,7 +160,7 @@
   margin-right: 0.6rem;
   width: 40px;
   height: 40px;
-  
+
   #dot {
     position: absolute;
     top: 50%;

@@ -1,39 +1,148 @@
 #footerContainer {
   background-color: transparent;
-    width: 100vw;
-    max-width: 1920px;
-    margin: -180px auto 0 auto;
-    height: 180px;
-    position: relative;
+  width: 100vw;
+  max-width: 1920px;
+  margin: -250px auto 0 auto;
+  height: 250px;
+  position: relative;
 }
 #footerContent {
-    width: 100%;
-    height: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 #logoContainer {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 #logo {
-  height: 60px;
+  width: 75px;
+  &:hover {
+    svg path {
+      transition: fill 0.1s ease-in-out;
+      color: #f7c518;
+      fill: #f7c518;
+      stroke: #f7c518;
+    }
+  }
 }
 
 #copyrightContainer {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+  width: 100%;
+  height: 60px;
+  padding-top: 15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  p {
+    font-family: "Bricolage Grotesque";
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    padding-left: 15px;
+  }
+}
+
+#linksContainer {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  gap: 10px;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: "Bricolage Grotesque";
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+#lineLinkContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 5px;
+  img {
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+    width: 100px;
+    transition: clip-path 0.3s ease-in-out;
+    clip-path: inset(0 100% 0 0);
+  }
+  &:hover {
+    img {
+      opacity: 1;
+    }
+  }
+
+  .lineLinkContainer:first-child img {
+    clip-path: inset(100% 0 0 0);
+  }
+
+  .lineLinkContainer:hover img {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.linkContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  &:hover {
+    background-color: #3355ff;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    img {
+      opacity: 1;
+      transition: all 0.3s ease-in-out;
+      animation: roll 1s linear forwards;
+    }
+  }
+  img {
+    opacity: 0;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+  }
+}
+@keyframes roll {
+  0% {
+    transform: translate(-100%, -50%) rotate(-120deg);
+  }
+  50% {
+    transform: translate(100%, -50%) rotate(0deg);
+  }
+  70% {
+    transform: translate(100%, -50%) rotate(20deg);
+  }
+  90% {
+    transform: translate(100%, -50%) rotate(20deg);
+  }
+  100% {
+    transform: translate(100%, -50%) rotate(0deg);
+  }
 }
