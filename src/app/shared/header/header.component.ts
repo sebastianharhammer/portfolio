@@ -6,27 +6,26 @@ import translationEN from '../../../../public/assets/i18n/en.json';
 import translationDE from '../../../../public/assets/i18n/de.json';
 import { LanguageService } from '../../services/language.service/language.service';
 
-type SectionRefs = 'aboutmeContent' | 'skills' | 'projects' | 'contact';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterModule, CommonModule, TranslateModule,],
+  imports: [RouterModule, CommonModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   standalone: true,
   providers: [TranslateService],
 })
 export class HeaderComponent {
-  @ViewChild('aboutmeContent') aboutmeContent!: ElementRef;
-  @ViewChild('skills') skills!: ElementRef;
+/*   @ViewChild('about-me') aboutMe!: ElementRef;
+  @ViewChild('skill-set') skillSet!: ElementRef;
   @ViewChild('projects') projects!: ElementRef;
-  @ViewChild('contact') contact!: ElementRef;
+  @ViewChild('contact') contact!: ElementRef; */
 
-  scrollToSection(section: SectionRefs) {
-    const element = this[section];
-    console.log("element", section);
-    if (element && element.nativeElement) {
-      element.nativeElement.scrollIntoView({ behavior: 'smooth' });
+  scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    console.log(element);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
       console.log("element not found");
     }
