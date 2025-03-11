@@ -42,7 +42,12 @@
                     </div>
                     <label id="checkboxLabel" for="checkbox">{{ 'contact.contactForm.privacyFirstPart' | translate }}<a href="#">{{ 'contact.contactForm.link' | translate }}   </a><span>{{ 'contact.contactForm.privacySecondPart' | translate }}</span></label>
                 </div>
-                <button id="sendButton">{{ 'contact.contactForm.send' | translate }}</button>
+                <div id="errorContainer">
+                    <p id="errorMessage">{{ 'contact.contactForm.errorMessage' | translate }}</p>
+                </div>
+                <div id="sendButtonContainer">
+                    <button id="sendButton">{{ 'contact.contactForm.send' | translate }}</button>
+                </div>
             </div>
         </div>
     </div>
