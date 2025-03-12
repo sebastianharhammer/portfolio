@@ -1,20 +1,20 @@
 #skillSetContent {
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     background-image: url('./../../../../public/assets/img/skills/skills_background.png');
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     background-position: bottom;
     min-height: 1000px;
     position: relative;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
 
 #topContainer {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@
 
 #bottomContainer {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto;
     position: absolute;
     top: 35%;
