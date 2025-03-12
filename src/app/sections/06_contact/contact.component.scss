@@ -146,6 +146,26 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  textarea {
+    width: 100%;
+    height: 100px;
+    border-top: none;
+    vertical-align: bottom;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    transition: border-color 0.3sease;
+    font-size: 1.2rem;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 2px solid #ffc107;
+    resize: none;
+  }
+}
+textarea::placeholder {
+  vertical-align: bottom;
 }
 #checkboxContainer {
   width: 100%;
@@ -256,4 +276,24 @@ a:hover {
 
 ::ng-deep #circleContainer {
   top: 8% !important;
+
+}
+
+::ng-deep #circle {
+  width: 150px !important;
+  height: 150px !important;
+}
+
+::ng-deep #logo {
+  width: 97px !important;
+  height: 154px !important;
+  top: 13% !important;
+  left: 49% !important;
+}
+
+::ng-deep #logoText {
+  top: 9% !important;
+  right: -9.5% !important;
+  height: 200px !important;
+  width: 200px !important;
 }

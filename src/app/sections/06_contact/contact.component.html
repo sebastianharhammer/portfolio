@@ -16,31 +16,37 @@
         </div>
         <div id="rightContainer">
             <app-logo></app-logo>
-            <div id="formContainer">
+            <form id="formContainer" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <div id="nameFormContainer" class="formContainer">
                     <h2 class="formTitle">{{ 'contact.contactForm.nameLabel' | translate }}</h2>
-                    <form id="nameForm">
-                        <input class="form-input" type="text" placeholder="{{ 'contact.contactForm.namePlaceholder' | translate }}">
-                    </form>
+                    <div id="nameForm">
+                        <input ngModel name="name" [(ngModel)]="contactData.name" class="form-input" type="text"
+                            placeholder="{{ 'contact.contactForm.namePlaceholder' | translate }}" required>
+                    </div>
                 </div>
                 <div id="emailFormContainer" class="formContainer">
                     <h2 class="formTitle">{{ 'contact.contactForm.emailLabel' | translate }}</h2>
-                    <form id="emailForm">
-                        <input class="form-input" type="email" placeholder="{{ 'contact.contactForm.emailPlaceholder' | translate }}">
-                    </form>
+                    <div id="emailForm">
+                        <input ngModel name="email" [(ngModel)]="contactData.email" class="form-input" type="email"
+                            placeholder="{{ 'contact.contactForm.emailPlaceholder' | translate }}"
+                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
+                    </div>
                 </div>
                 <div id="messageFormContainer" class="formContainer">
                     <h2 class="formTitle">{{ 'contact.contactForm.messageLabel' | translate }}</h2>
-                    <form id="messageForm">
-                        <input class="form-input" type="text" name="message" id="message"
-                            placeholder="{{ 'contact.contactForm.messagePlaceholder' | translate }}">
-                    </form>
+                    <div id="messageForm">
+                        <textarea ngModel name="message" [(ngModel)]="contactData.message" class="form-input"
+                            placeholder="{{ 'contact.contactForm.messagePlaceholder' | translate }}"
+                            required></textarea>
+                    </div>
                 </div>
                 <div id="checkboxContainer">
                     <div id="checkboxWrapper">
                         <input id="checkbox" type="checkbox" name="checkbox" id="checkbox">
                     </div>
-                    <label id="checkboxLabel" for="checkbox">{{ 'contact.contactForm.privacyFirstPart' | translate }}<a href="#">{{ 'contact.contactForm.link' | translate }}   </a><span>{{ 'contact.contactForm.privacySecondPart' | translate }}</span></label>
+                    <label id="checkboxLabel" for="checkbox">{{ 'contact.contactForm.privacyFirstPart' | translate }}<a
+                            href="#">{{ 'contact.contactForm.link' | translate }} </a><span>{{
+                            'contact.contactForm.privacySecondPart' | translate }}</span></label>
                 </div>
                 <div id="errorContainer">
                     <p id="errorMessage">{{ 'contact.contactForm.errorMessage' | translate }}</p>
@@ -48,6 +54,6 @@
                 <div id="sendButtonContainer">
                     <button id="sendButton">{{ 'contact.contactForm.send' | translate }}</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
