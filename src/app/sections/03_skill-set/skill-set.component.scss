@@ -84,7 +84,6 @@
 }
 
 #descriptionContainer {
-    width: 78%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
@@ -103,9 +102,10 @@
     font-size: 1rem;
     color: black;
     position: absolute;
-    top: 25%;
-    left: 10%;
-    right: 20%;
+    top: 20%;
+    left: 5%;
+    right: 2%;
+    bottom: 10%;
     font-family: 'Bricolage Grotesque';
 }
 
