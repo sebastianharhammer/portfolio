@@ -11,4 +11,14 @@ import { TranslateModule } from '@ngx-translate/core';
 export class AboutMeComponent {
   languageService = inject(LanguageService);
 
+  scrollToSection(sectionId: string) {
+    
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      console.log("element not found");
+    }
+  }
+
 }

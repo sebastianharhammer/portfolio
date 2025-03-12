@@ -16,14 +16,11 @@ import { LanguageService } from '../../services/language.service/language.servic
   providers: [TranslateService],
 })
 export class HeaderComponent {
-/*   @ViewChild('about-me') aboutMe!: ElementRef;
-  @ViewChild('skill-set') skillSet!: ElementRef;
-  @ViewChild('projects') projects!: ElementRef;
-  @ViewChild('contact') contact!: ElementRef; */
+
 
   scrollToSection(sectionId: string) {
+    
     const element = document.getElementById(sectionId);
-    console.log(element);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {

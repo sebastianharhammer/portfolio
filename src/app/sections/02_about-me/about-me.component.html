@@ -83,7 +83,7 @@
             <img src="assets/img/about-me/blueLine.svg" id="BlueLine">
             <span id="description">{{ 'aboutme.description' | translate }}
             </span>
-            <div id="letsTalkContainer">
+            <div id="letsTalkContainer" (click)="scrollToSection('contact-section')">
                 <span id="letsTalk">{{ 'aboutme.letsTalk' | translate }}</span>
             </div>
         </div>
