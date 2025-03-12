@@ -20,24 +20,34 @@
                 <div id="nameFormContainer" class="formContainer">
                     <h2 class="formTitle">{{ 'contact.contactForm.nameLabel' | translate }}</h2>
                     <div id="nameForm">
-                        <input ngModel name="name" [(ngModel)]="contactData.name" class="form-input" type="text"
+                        <input ngModel #name="ngModel" name="name" [(ngModel)]="contactData.name" class="form-input" type="text"
                             placeholder="{{ 'contact.contactForm.namePlaceholder' | translate }}" required>
+                            @if (!name.valid && name.touched && !name.disabled) {
+                                <span class="errorMessage">{{ 'contact.contactForm.nameError' | translate }}</span>
+                                }
                     </div>
                 </div>
                 <div id="emailFormContainer" class="formContainer">
                     <h2 class="formTitle">{{ 'contact.contactForm.emailLabel' | translate }}</h2>
                     <div id="emailForm">
-                        <input ngModel name="email" [(ngModel)]="contactData.email" class="form-input" type="email"
+                        <input ngModel #email="ngModel" name="email" [(ngModel)]="contactData.email" class="form-input" type="email"
                             placeholder="{{ 'contact.contactForm.emailPlaceholder' | translate }}"
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
+                            @if (!email.valid && email.touched && !email.disabled) {
+                                <span class="errorMessage">{{ 'contact.contactForm.emailError' | translate }}</span>
+                                }
                     </div>
                 </div>
                 <div id="messageFormContainer" class="formContainer">
                     <h2 class="formTitle">{{ 'contact.contactForm.messageLabel' | translate }}</h2>
                     <div id="messageForm">
-                        <textarea ngModel name="message" [(ngModel)]="contactData.message" class="form-input"
+                        <textarea #message="ngModel" ngModel name="message" [(ngModel)]="contactData.message"
+                            class="form-input" minlength="4"
                             placeholder="{{ 'contact.contactForm.messagePlaceholder' | translate }}"
                             required></textarea>
+                        @if (!message.valid && message.touched && !message.disabled) {
+                        <span class="errorMessage">{{ 'contact.contactForm.messageError' | translate }}</span>
+                        }
                     </div>
                 </div>
                 <div id="checkboxContainer">
