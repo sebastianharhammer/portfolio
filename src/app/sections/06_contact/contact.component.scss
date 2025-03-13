@@ -17,6 +17,9 @@ a:hover {
   background-repeat: no-repeat;
   margin: 0 auto;
   font-family: "Bricolage Grotesque", sans-serif;
+  @media (max-width: 768px) {
+    min-height: 1800px;
+  }
 }
 #contactContent {
   width: 100%;
@@ -60,7 +63,7 @@ a:hover {
   @media (max-width: 768px) {
     width: 100%;
     height: 100%;
-    padding-bottom: 0;
+    
     padding-left: 2%;
     padding-right: 2%;  
   }
@@ -87,6 +90,9 @@ a:hover {
     font-size: 4rem;
     font-weight: 600;
     color: #fff;
+    @media (max-width: 768px) {
+      font-size: 3rem;
+    }
   }
 }
 #descriptionContainer {
@@ -99,6 +105,9 @@ a:hover {
     font-size: 1.2rem;
     font-weight: 400;
     color: #fff;
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
   }
 }
 #arrowContainer {
@@ -106,6 +115,9 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @media (max-width: 768px) {
+    transform: rotate(90deg);
+  }
   img {
     width: 50%;
     padding-top: 10px;
@@ -139,6 +151,9 @@ a:hover {
   font-size: 1.5rem;
   font-weight: 600;
   color: #fff;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 }
 .formContainer {
   width: 100%;
@@ -185,6 +200,9 @@ a:hover {
     background-color: transparent;
     border-bottom: 2px solid #ffc107;
     resize: none;
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
   }
 }
   .errorMessage {
@@ -192,6 +210,9 @@ a:hover {
     font-weight: 600;
     color: #df1b1b;
     padding-left: 25px;
+    @media (max-width: 768px) {
+      font-size: 0.8rem;
+    }
   }
 
 textarea::placeholder {
@@ -216,6 +237,9 @@ textarea::placeholder {
   color: #fff;
   background-color: transparent;
   border-right: none;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 }
 #formContainer {
   width: 100%;
@@ -224,6 +248,9 @@ textarea::placeholder {
   justify-content: flex-start;
   flex-direction: column;
   padding-top: 200px;
+  @media (max-width: 768px) {
+    padding-top: 0;
+  }
 }
 #checkboxContainer {
   width: 100%;
@@ -257,11 +284,16 @@ textarea::placeholder {
   color: #ffc107;
   font-size: 1.2rem;
   font-weight: 600;
+ 
 }
 #checkboxLabel {
   font-size: 1.2rem;
   font-weight: 600;
   color: #fff;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+
 }
 #errorContainer {
   width: 100%;
@@ -274,6 +306,9 @@ textarea::placeholder {
     color: #df1b1b;
     padding-left: 25px;
     padding-top: 10px;
+    @media (max-width: 768px) {
+      font-size: 0.8rem;
+    }
   }
 }
 #sendButtonContainer {
