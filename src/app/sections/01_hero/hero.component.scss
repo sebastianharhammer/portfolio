@@ -38,10 +38,6 @@ main {
   animation: hello 0.8s ease-in-out forwards;
   transition: width 0.5s ease-in-out;
   z-index: 1;
-  @media (max-width: 768px) {
-    padding-left: 10%;
-    width: 200px;
-  }
 }
 @keyframes hello {
   0% {
@@ -86,7 +82,8 @@ main {
   width: 200px;
   opacity: 0;
   text-overflow: clip;
-  transition: opacity 0.3s ease-in-out, background-position 0.5s ease, width 0.5s ease-in-out;
+  transition: opacity 0.3s ease-in-out, background-position 0.5s ease,
+    width 0.5s ease-in-out;
   background: linear-gradient(to right, transparent 50%, blue 50%);
   background-size: 200% 100%;
   background-position: 100% 0;
@@ -124,12 +121,15 @@ main {
   @media (max-width: 768px) {
     font-size: 5rem;
   }
+  @media (max-width: 580px) {
+    font-size: 4rem;
+  }
   @media (max-width: 480px) {
     font-size: 3rem;
   }
   font-weight: 400;
   transition: color 0.3s ease-in-out;
-  
+
   &:hover {
     color: #f7c518;
   }
@@ -216,13 +216,16 @@ main {
   }
   #MyNameIs {
     transition: opacity 0.8s ease-in-out;
-    width: 300px;
+    width: 270px;
+
+    @media (max-width: 480px) {
+      width: 200px;
+    }
     opacity: 1;
   }
   #wavingHand {
     opacity: 1;
     animation: wave 1s forwards;
-
   }
 }
 
@@ -236,11 +239,10 @@ main {
   80% {
     transform: translateX(80px) rotateZ(15deg);
   }
-  
+
   100% {
     transform: translateX(75px) rotateZ(0deg);
   }
-
 }
 @media (min-width: 768px) {
   #pictureFrameContainerMobile {
@@ -251,16 +253,39 @@ main {
   #pictureFrameContainer {
     display: none;
   }
-  .get-in-touch { 
+  .get-in-touch {
     padding-top: 0px;
   }
   .front-container .dev-container {
     width: 100%;
+    height: 100px;
   }
   .front-container {
     padding-left: 10%;
+    height: 100px;
   }
   .dev-container {
     padding-right: 10%;
+    height: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .front-container {
+    height: 50px;
+  }
+  .dev-container {
+    height: 50px;
+  }
+}
+@media (max-width: 380px) {
+  .front-container {
+    padding-left: 2%;
+  }
+  .dev-container {
+    padding-right: 2%;
+  }
+  .hello-world {
+    padding-left: 2%;
+    width: 150px;
   }
 }
