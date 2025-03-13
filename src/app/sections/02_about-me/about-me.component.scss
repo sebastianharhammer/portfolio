@@ -42,11 +42,11 @@
 .ripped-paper {
   width: 400px;
   height: 200px;
+  position: relative;
   @media (max-width: 420px) {
     width: 300px;
     height: 150px;
   }
-  position: relative;
   img {
     position: absolute;
     width: 100%;

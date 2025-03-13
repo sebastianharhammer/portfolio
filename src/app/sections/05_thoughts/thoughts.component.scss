@@ -15,6 +15,10 @@
     align-items: center;
     justify-content: flex-end;
     width: 100%;
+    @media (max-width: 768px) {
+        padding-right: 2%;
+
+    }
 }
 #inTheirWordsImage {
     animation: appear 5s ease-in-out infinite;
@@ -44,6 +48,9 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    @media (max-width: 768px) {
+        padding-right: 2%;
+    }
 }
 #colleaguesThoughtsTitle {
     font-size: 4rem;
@@ -61,6 +68,9 @@
     @media (max-width: 768px) {
         flex-direction: column;
         width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+
     }
 }
 .card-container {
@@ -87,6 +97,9 @@
     top: 10%;
     right: 10%;
     transform: rotate(-5deg);
+    @media (max-width: 768px) {
+        right: 0;
+    }
 }
 
 
@@ -102,11 +115,14 @@
     top: 10%;
     left: 10%;
     transform: rotate(5deg);
+    @media (max-width: 768px) {
+        left: 0;
+    }
 }
 
 .commentary {
     position: absolute;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
