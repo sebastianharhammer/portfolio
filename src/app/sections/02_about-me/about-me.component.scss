@@ -5,6 +5,10 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    height: 100vh;
+    flex-direction: column-reverse;
+  }
 }
 #rippedPaperContainer {
   width: 100%;
@@ -14,6 +18,11 @@
   align-items: flex-end;
   flex-direction: column;
   padding-right: 100px;
+  @media (max-width: 768px) {
+    padding-right: 2%;
+    padding-left: 2%;
+    justify-content: flex-start;
+  }
 }
 
 #aboutMeDescription {
@@ -23,11 +32,20 @@
   justify-content: center;
   flex-direction: column;
   padding-right: 100px;
+  @media (max-width: 768px) {
+    padding-right: 2%;
+    padding-left: 2%;
+    justify-content: flex-end;
+  }
 }
 
 .ripped-paper {
   width: 400px;
   height: 200px;
+  @media (max-width: 420px) {
+    width: 300px;
+    height: 150px;
+  }
   position: relative;
   img {
     position: absolute;
@@ -58,20 +76,33 @@
   z-index: 5;
 }
 
+
 #yellowBar {
   transform: rotate(-5deg);
   z-index: 3;
   bottom: -60%;
+  @media (max-width: 420px) {
+    width: 300px;
+    height: 150px;
+  }
 }
 #blueBar {
   transform: rotate(0deg);
   z-index: 2;
+  @media (max-width: 420px) {
+    width: 300px;
+    height: 150px;
+  }
 }
 
 #orangeBar {
   transform: rotate(5deg);
   z-index: 1;
-  top: -60%;
+    top: -60%;
+    @media (max-width: 420px) {
+      width: 300px;
+      height: 150px;
+    }
 }
 
 #locationText {
@@ -80,29 +111,45 @@
   left: 150px;
   transform: rotate(-10deg);
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: "Bricolage Grotesque";
+  font-weight: 400;
   font-size: 1.2rem;
   z-index: 20;
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
+  @media (max-width: 420px) {
+    bottom: -13px;
+    left: 115px;
+  }
 }
 #relocationText {
   position: absolute;
-  top: 83px;
-  left: 155px;
+  top: 63px;
+  left: 125px;
   transform: rotate(0deg);
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: "Bricolage Grotesque";
+  font-weight: 400;
   font-size: 1.2rem;
   z-index: 20;
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
 }
 #remoteText {
   position: absolute;
-  top: -26px;
-  left: 150px;
+  top: -16px;
+  left: 125px;
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: "Bricolage Grotesque";
+  font-weight: 400;
   font-size: 1.2rem;
   transform: rotate(13deg);
   z-index: 20;
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
 }
 #locationSvg {
   position: absolute;
@@ -110,6 +157,10 @@
   left: 72px;
   transform: rotate(-5deg);
   z-index: 5;
+  @media (max-width: 420px) {
+    bottom: -39px;
+    left: 65px;
+  }
 }
 #relocateSvg {
   position: absolute;
@@ -117,6 +168,10 @@
   left: 79px;
   transform: rotate(0deg);
   z-index: 5;
+  @media (max-width: 420px) {
+    top: 55px;
+    left: 65px;
+  }
 }
 #remoteSvg {
   position: absolute;
@@ -124,18 +179,38 @@
   left: 76px;
   transform: rotate(10deg);
   z-index: 5;
+  @media (max-width: 420px) {
+    top: -46px;
+    left: 67px;
+  }
 }
 
 #whoIs {
   font-size: 1rem;
   font-family: "Bricolage Grotesque";
   font-weight: 400;
+  @media (max-width: 1024px) {
+    font-size: 0.8rem;
+  }
 }
 
 #aboutme {
   font-size: 4rem;
   font-family: "Bricolage Grotesque";
   font-weight: 500;
+  @media (max-width: 1024px) {
+    font-size: 2rem;
+  }
+}
+#description {
+  font-size: 1.2rem;
+  font-family: "Bricolage Grotesque";
+  font-weight: 200;
+  line-height: 1.1;
+  text-overflow: ellipsis;
+  @media (max-width: 1024px) {
+    font-size: 1rem;
+  }
 }
 
 #BlueLine {
@@ -156,13 +231,6 @@
   }
 }
 
-#description {
-  font-size: 1.2rem;
-  font-family: "Bricolage Grotesque";
-  font-weight: 200;
-  line-height: 1.1;
-  text-overflow: ellipsis;
-}
 #letsTalkContainer {
   align-self: flex-end;
   display: flex;
