@@ -1,18 +1,30 @@
-.navbar {
+#headerMobile {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  position: absolute;
+  justify-content: space-between;
+  height: 90vh;
+  width: 100vw;
+  background-image: url("./../../../../public/assets/img/hero/background.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+  
 }
 
+#headerMobileTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
@@ -27,30 +39,17 @@
     }
   }
 }
-#headerMobileMenu {
-  &:hover {
-    cursor: pointer;
-    svg path {
-      transition: fill 0.1s ease-in-out;
-      color: #f7c518;
-      fill: #f7c518;
-      stroke: #f7c518;
-      background-color: #f7c518;
-    }
-  }
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
 
 .navbar-menu {
   font-family: "Bricolage Grotesque";
   font-weight: bold;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
   position: relative;
-  width: 65%;
+  width: 100%;
   &:hover {
     cursor: pointer;
   }
@@ -81,9 +80,6 @@
       transition: clip-path 0.3s ease-in-out;
       clip-path: inset(0 100% 0 0);
     }
-    @media (max-width: 768px) {
-      display: none;
-    }
   }
 
   .navbar-menu-item:first-child img {
@@ -107,9 +103,6 @@
   &.de-active #dot {
     left: 90%;
     transition: left 0.3s ease-in-out;
-  }
-  @media (max-width: 768px) {
-    display: none;
   }
 }
 
@@ -203,5 +196,27 @@
 @keyframes drawLine {
   to {
     stroke-dashoffset: 0;
+  }
+}
+
+#socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  &:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 45px;
+    svg path {
+      fill: black;
+      stroke: black;
+    }
   }
 }

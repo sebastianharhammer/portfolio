@@ -1,35 +1,27 @@
-import { Component, inject, ElementRef, ViewChild} from '@angular/core';
+import { Component, inject, Input, Output } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import translationEN from '../../../../public/assets/i18n/en.json';
 import translationDE from '../../../../public/assets/i18n/de.json';
 import { LanguageService } from '../../services/language.service/language.service';
-import { HeaderMobileComponent } from '../header-mobile/header-mobile.component';
-
+import { EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  imports: [RouterModule, CommonModule, TranslateModule, HeaderMobileComponent],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss',
+  selector: 'app-header-mobile',
+  imports: [RouterModule, CommonModule, TranslateModule],
+  templateUrl: './header-mobile.component.html',
+  styleUrl: './header-mobile.component.scss',
   standalone: true,
-  providers: [TranslateService],
 })
-export class HeaderComponent {
+export class HeaderMobileComponent {
+  @Input() isMobileMenuOpen: boolean = false;
+  @Output() close = new EventEmitter<void>();
 
-  isMobileMenuOpen = false;
 
-  openMobileMenu() {
-    this.isMobileMenuOpen = true;
-    document.body.style.overflow = 'hidden';
+  closeHeader() {
+    this.close.emit();
   }
-  
-  closeMobileMenu() {
-    this.isMobileMenuOpen = false;
-    document.body.style.overflow = 'auto';
-  }
-  
 
   scrollToSection(sectionId: string) {
     
