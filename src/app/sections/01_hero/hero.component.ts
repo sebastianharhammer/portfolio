@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../../shared/header/header.component';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language.service/language.service';
-
+import { PictureFrameComponent } from '../../shared/picture-frame/picture-frame.component';
 @Component({
   selector: 'app-hero',
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, PictureFrameComponent],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })

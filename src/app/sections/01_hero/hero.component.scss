@@ -38,7 +38,10 @@ main {
   animation: hello 0.8s ease-in-out forwards;
   transition: width 0.5s ease-in-out;
   z-index: 1;
-  
+  @media (max-width: 768px) {
+    padding-left: 10%;
+    width: 200px;
+  }
 }
 @keyframes hello {
   0% {
@@ -67,6 +70,10 @@ main {
   padding: 5px 20px 5px 20px;
   display: block;
   transition: opacity 0.3s ease-in-out;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    padding: 5px 10px 5px 10px;
+  }
 }
 #MyNameIs {
   font-size: 1.2rem;
@@ -85,6 +92,10 @@ main {
   background-position: 100% 0;
   &:hover {
     background-position: 0 0;
+  }
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    padding: 5px 10px 5px 10px;
   }
 }
 #wavingHand {
@@ -110,6 +121,12 @@ main {
 .developer-text {
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: 7.5rem;
+  @media (max-width: 768px) {
+    font-size: 5rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 3rem;
+  }
   font-weight: 400;
   transition: color 0.3s ease-in-out;
   
@@ -149,6 +166,9 @@ main {
   justify-content: flex-end;
   align-items: center;
   padding-top: 50px;
+  @media (max-width: 768px) {
+    padding-right: 10%;
+  }
 }
 #getInTouch {
   font-size: 1.2rem;
@@ -221,8 +241,26 @@ main {
     transform: translateX(75px) rotateZ(0deg);
   }
 
-  
-  
-  
-
+}
+@media (min-width: 768px) {
+  #pictureFrameContainerMobile {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #pictureFrameContainer {
+    display: none;
+  }
+  .get-in-touch { 
+    padding-top: 0px;
+  }
+  .front-container .dev-container {
+    width: 100%;
+  }
+  .front-container {
+    padding-left: 10%;
+  }
+  .dev-container {
+    padding-right: 10%;
+  }
 }
