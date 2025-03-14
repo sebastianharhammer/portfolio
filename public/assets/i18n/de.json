@@ -146,48 +146,50 @@
           "email": "info@beispielfirma.de"
         }
       },
-      "storage_duration": {
-        "title": "Speicherdauer",
-        "content": "Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde..."
-      },
-      "legal_basis": {
-        "title": "Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf dieser Website",
-        "content": "Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO..."
-      },
-      "third_parties": {
-        "title": "Empfänger von personenbezogenen Daten",
-        "content": "Im Rahmen unserer Geschäftstätigkeit arbeiten wir mit verschiedenen externen Stellen zusammen..."
-      },
-      "consent_revocation": {
-        "title": "Widerruf Ihrer Einwilligung zur Datenverarbeitung",
-        "content": "Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich..."
-      },
-      "objection_rights": {
-        "title": "Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)",
-        "content": "WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT..."
-      },
-      "complaint_rights": {
-        "title": "Beschwerderecht bei der zuständigen Aufsichtsbehörde",
-        "content": "Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde zu..."
-      },
-      "data_portability": {
-        "title": "Recht auf Datenübertragbarkeit",
-        "content": "Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen..."
-      },
-      "data_access": {
-        "title": "Auskunft, Berichtigung und Löschung",
-        "content": "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten..."
-      },
       "processing_restriction": {
-        "title": "Recht auf Einschränkung der Verarbeitung",
-        "conditions": [
-          "Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten...",
-          "Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah...",
-          "Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Geltendmachung von Rechtsansprüchen benötigen...",
-          "Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden..."
-        ]
+        "storage_duration": {
+          "title": "Speicherdauer",
+          "content": "Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde..."
+        },
+        "legal_basis": {
+          "title": "Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf dieser Website",
+          "content": "Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO..."
+        },
+        "third_parties": {
+          "title": "Empfänger von personenbezogenen Daten",
+          "content": "Im Rahmen unserer Geschäftstätigkeit arbeiten wir mit verschiedenen externen Stellen zusammen..."
+        },
+        "consent_revocation": {
+          "title": "Widerruf Ihrer Einwilligung zur Datenverarbeitung",
+          "content": "Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich..."
+        },
+        "objection_rights": {
+          "title": "Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)",
+          "content": "WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT..."
+        },
+        "complaint_rights": {
+          "title": "Beschwerderecht bei der zuständigen Aufsichtsbehörde",
+          "content": "Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde zu..."
+        },
+        "data_portability": {
+          "title": "Recht auf Datenübertragbarkeit",
+          "content": "Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen..."
+        },
+        "data_access": {
+          "title": "Auskunft, Berichtigung und Löschung",
+          "content": "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten..."
+        },
+        "processing_restriction": {
+          "title": "Recht auf Einschränkung der Verarbeitung",
+          "conditions": [
+            "Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten...",
+            "Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah...",
+            "Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Geltendmachung von Rechtsansprüchen benötigen...",
+            "Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden..."
+          ]
+        },
+        "source": "https://www.e-recht24.de"
       }
-    },
-    "source": "https://www.e-recht24.de"
+    }
   }
 }
