@@ -163,6 +163,7 @@ a:hover {
   flex-direction: column;
   text-align: left;
   padding: 20px;
+  z-index: 6;
 }
 #nameForm {
   width: 100%;
@@ -356,6 +357,12 @@ textarea::placeholder {
 
 ::ng-deep #circleContainer {
   top: 6% !important;
+  @media (max-width: 1150px) {
+    right: 5% !important;
+  }
+  @media (max-width: 1050px) {
+    top: 3% !important;
+  }
 }
 
 ::ng-deep #circle {
