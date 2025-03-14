@@ -93,6 +93,9 @@ a:hover {
     @media (max-width: 768px) {
       font-size: 3rem;
     }
+    @media (max-width: 330px) {
+      font-size: 2.5rem;
+    }
   }
 }
 #descriptionContainer {
@@ -215,6 +218,7 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  padding: 20px;
 }
 .form-input {
   width: 100%;
@@ -357,17 +361,31 @@ textarea::placeholder {
 
 ::ng-deep #circleContainer {
   top: 6% !important;
-  @media (max-width: 1150px) {
-    right: 5% !important;
-  }
-  @media (max-width: 1050px) {
+   @media (max-width: 1250px) {
+    right: 25% !important;
+    left: 35% !important;
     top: 3% !important;
+  }
+  
+  @media (max-width: 768px) {
+    scale: 0.8;
+    left: 25% !important;
+  }
+  @media (max-width: 450px) {
+    left: 10% !important;
+  }
+  @media (max-width: 330px) {
+    left: 0% !important;
   }
 }
 
 ::ng-deep #circle {
   width: 150px !important;
   height: 150px !important;
+ /*  @media (max-width: 768px) {
+    top: 50% !important;
+    left: 50% !important;
+  } */
 }
 
 ::ng-deep #logo {

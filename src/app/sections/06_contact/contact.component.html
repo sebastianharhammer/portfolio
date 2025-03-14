@@ -1,5 +1,6 @@
 <div id="contactContainer">
     <div id="contactContent">
+        <app-logo></app-logo>
         <div id="leftContainer">
             <div id="contactMeContainer">
                 <h4>{{ 'contact.contactme' | translate }}</h4>
@@ -15,7 +16,6 @@
             </div>
         </div>
         <div id="rightContainer">
-            <app-logo></app-logo>
             <form id="formContainer" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <div id="nameFormContainer" class="formContainer">
                     <h2 class="formTitle">{{ 'contact.contactForm.nameLabel' | translate }}</h2>
