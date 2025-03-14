@@ -54,21 +54,19 @@
                     <div id="checkboxWrapper">
                         <input id="checkbox" type="checkbox" name="checkbox" id="checkbox" (click)="checkCheckBox()">
                     </div>
-                    <label #checkboxLabel id="checkboxLabel" for="checkbox">{{ 'contact.contactForm.privacyFirstPart' | translate }}<a
-                            href="#">{{ 'contact.contactForm.link' | translate }} </a><span>{{
+                    <label #checkboxLabel id="checkboxLabel" for="checkbox">{{ 'contact.contactForm.privacyFirstPart' |
+                        translate }}<a href="#">{{ 'contact.contactForm.link' | translate }} </a><span>{{
                             'contact.contactForm.privacySecondPart' | translate }}</span></label>
                 </div>
-                @if (!checkBoxIsChecked()) { 
+                @if (!checkBoxIsChecked()) {
                 <div id="errorContainer">
                     <p id="errorMessage">{{ 'contact.contactForm.errorMessage' | translate }}</p>
-                </div> }
+                </div>
+                }
                 <div id="sendButtonContainer">
-                    <button id="sendButton" 
-                    (click)="checkForm()"
-                    [disabled]="!checkFormValid()"
-                    matTooltip="Please fill out all required fields"
-                    matTooltipPosition="above">
-                    {{ 'contact.contactForm.send' | translate}}</button>
+                    <button id="sendButton" (click)="checkForm()" [disabled]="!checkBoxIsChecked()"
+                        [ngClass]="{'disabled': !checkBoxIsChecked()}">
+                        {{ 'contact.contactForm.send' | translate}}</button>
                 </div>
             </form>
         </div>

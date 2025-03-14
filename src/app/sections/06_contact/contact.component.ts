@@ -4,9 +4,10 @@ import { LanguageService } from '../../services/language.service/language.servic
 import { LogoComponent } from '../../shared/logo/logo.component';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-contact',
-  imports: [TranslateModule, LogoComponent, FormsModule],
+  imports: [TranslateModule, LogoComponent, FormsModule, CommonModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
   standalone: true
@@ -40,8 +41,9 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest && this.contactData.checkbox) {
       console.log('ngForm.form.valid', ngForm.form.valid);
+      console.log('this.contactData.checkbox', this.contactData.checkbox);
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
@@ -53,7 +55,7 @@ export class ContactComponent {
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest && this.contactData.checkbox) {
 
       ngForm.resetForm();
     }
@@ -97,8 +99,7 @@ export class ContactComponent {
   }
 
   checkCheckBox() {
-    this.contactData.checkbox = true;
-    console.log('contactData', this.contactData);
+    this.contactData.checkbox = !this.contactData.checkbox;
   }
 
 

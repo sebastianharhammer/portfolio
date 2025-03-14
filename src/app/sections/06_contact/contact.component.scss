@@ -63,9 +63,9 @@ a:hover {
   @media (max-width: 768px) {
     width: 100%;
     height: 100%;
-    
+
     padding-left: 2%;
-    padding-right: 2%;  
+    padding-right: 2%;
   }
 }
 #contactMeContainer {
@@ -138,7 +138,7 @@ a:hover {
   11% {
     clip-path: inset(0 0 0 0);
   }
-  
+
   100% {
     clip-path: inset(0 0 0 0);
   }
@@ -205,7 +205,6 @@ a:hover {
     }
   }
 }
-
 
 textarea::placeholder {
   vertical-align: bottom;
@@ -276,7 +275,6 @@ textarea::placeholder {
   color: #ffc107;
   font-size: 1.2rem;
   font-weight: 600;
- 
 }
 #checkboxLabel {
   font-size: 1.2rem;
@@ -285,7 +283,6 @@ textarea::placeholder {
   @media (max-width: 768px) {
     font-size: 1rem;
   }
-
 }
 #errorContainer {
   width: 100%;
@@ -318,6 +315,7 @@ textarea::placeholder {
   align-items: center;
   justify-content: flex-end;
   padding-top: 50px;
+
   button {
     font-size: 1.2rem;
     font-weight: 600;
@@ -330,10 +328,26 @@ textarea::placeholder {
     border-radius: 25px;
     padding: 5px 50px 5px 50px;
     transition: border 0.3s ease-in-out;
+
     &:hover {
       border: 1px solid white;
       background-color: #f87a55;
       cursor: pointer;
+    }
+
+    // Styles when button is disabled
+    &.disabled,
+    &:disabled {
+      background-color: #a1a1a1 !important;
+      border-color: #a1a1a1 !important;
+      cursor: not-allowed !important;
+      &:hover {
+        background-color: #a1a1a1 !important;
+        border-color: #a1a1a1 !important;
+        cursor: not-allowed !important;
+        border-bottom: 7px solid white !important;
+        border-right: 5px solid white !important;
+      }
     }
   }
 }
@@ -342,7 +356,6 @@ textarea::placeholder {
 
 ::ng-deep #circleContainer {
   top: 6% !important;
-
 }
 
 ::ng-deep #circle {
