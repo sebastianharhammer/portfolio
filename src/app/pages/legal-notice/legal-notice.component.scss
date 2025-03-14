@@ -1,0 +1,35 @@
+.legal-notice-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+  position: relative;
+  background-color: #fff;
+}
+
+.back-button {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 4rem;
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+}

@@ -89,5 +89,105 @@
       "privacySecondPart": " and agree to the processing of my data as outlined",
       "send": "Send"
     }
-  }
+  },
+    "privacy_policy": {
+      "introduction": {
+        "title": "Privacy Policy"
+      },
+      "overview": {
+        "title": "Privacy at a Glance",
+        "general_notes": {
+          "title": "General Notes",
+          "content": "The following notes provide a simple overview of what happens to your personal data when you visit this website..."
+        },
+        "data_collection": {
+          "title": "Data Collection on this Website",
+          "responsible_entity": {
+            "title": "Who is responsible for data collection on this website?",
+            "content": "Data processing on this website is carried out by the website operator..."
+          },
+          "methods": {
+            "title": "How do we collect your data?",
+            "content": "Your data is collected, on the one hand, by you providing it to us..."
+          },
+          "usage": {
+            "title": "What do we use your data for?",
+            "content": "Some of the data is collected to ensure the error-free provision of the website..."
+          },
+          "rights": {
+            "title": "What rights do you have regarding your data?",
+            "content": "You have the right to receive information about the origin, recipient, and purpose of your stored personal data at any time free of charge..."
+          }
+        }
+      },
+      "hosting": {
+        "title": "Hosting",
+        "provider": {
+          "name": "All-Inkl",
+          "details": "Provider is ALL-INKL.COM - Neue Medien Münnich..."
+        },
+        "contract": {
+          "title": "Order Processing",
+          "content": "We have concluded an order processing agreement (AVV) for the use of the aforementioned service..."
+        }
+      },
+      "legal_notice": {
+        "title": "General Information and Mandatory Notices",
+        "data_protection": {
+          "title": "Data Protection",
+          "content": "The operators of these pages take the protection of your personal data very seriously..."
+        },
+        "responsible_entity": {
+          "title": "Note on the Responsible Entity",
+          "details": {
+            "company": "Example Company",
+            "address": "Sample Street 10, 90210 Sample City",
+            "phone": "+49 (0) 123 44 55 66",
+            "email": "info@examplecompany.com"
+          }
+        },
+        "storage_duration": {
+          "title": "Storage Duration",
+          "content": "Unless a more specific storage period is specified in this privacy policy..."
+        },
+        "legal_basis": {
+          "title": "General Information on the Legal Basis of Data Processing on this Website",
+          "content": "If you have consented to data processing, we process your personal data based on Article 6(1)(a) GDPR..."
+        },
+        "third_parties": {
+          "title": "Recipients of Personal Data",
+          "content": "As part of our business activities, we work with various external entities..."
+        },
+        "consent_revocation": {
+          "title": "Revocation of Your Consent to Data Processing",
+          "content": "Many data processing operations are only possible with your explicit consent..."
+        },
+        "objection_rights": {
+          "title": "Right to Object to Data Collection in Special Cases and to Direct Advertising (Article 21 GDPR)",
+          "content": "IF DATA PROCESSING IS BASED ON ARTICLE 6(1)(E) OR (F) GDPR..."
+        },
+        "complaint_rights": {
+          "title": "Right to Lodge a Complaint with the Competent Supervisory Authority",
+          "content": "In the event of GDPR violations, data subjects have the right to lodge a complaint with a supervisory authority..."
+        },
+        "data_portability": {
+          "title": "Right to Data Portability",
+          "content": "You have the right to have data that we process automatically based on your consent or in fulfillment of a contract handed over to you or a third party in a common, machine-readable format..."
+        },
+        "data_access": {
+          "title": "Access, Rectification, and Erasure",
+          "content": "Within the framework of applicable legal provisions, you have the right to free information about your stored personal data at any time..."
+        },
+        "processing_restriction": {
+          "title": "Right to Restrict Processing",
+          "conditions": [
+            "If you dispute the accuracy of your stored personal data...",
+            "If the processing of your personal data was unlawful...",
+            "If we no longer need your personal data, but you need it to assert legal claims...",
+            "If you have objected to processing pursuant to Article 21(1) GDPR, a balance must be struck between your and our interests..."
+          ]
+        }
+      },
+      "source": "https://www.e-recht24.de"
+    }
 }

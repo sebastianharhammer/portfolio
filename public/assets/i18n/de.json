@@ -87,5 +87,106 @@
       "privacySecondPart": " gelesen und stimme der Datenschutzerklärung zu.",
       "send": "Senden"
     }
+  },
+
+  "privacy_policy": {
+    "introduction": {
+      "title": "Datenschutzerklärung"
+    },
+    "overview": {
+      "title": "Datenschutz auf einen Blick",
+      "general_notes": {
+        "title": "Allgemeine Hinweise",
+        "content": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen..."
+      },
+      "data_collection": {
+        "title": "Datenerfassung auf dieser Website",
+        "responsible_entity": {
+          "title": "Wer ist verantwortlich für die Datenerfassung auf dieser Website?",
+          "content": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber..."
+        },
+        "methods": {
+          "title": "Wie erfassen wir Ihre Daten?",
+          "content": "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen..."
+        },
+        "usage": {
+          "title": "Wofür nutzen wir Ihre Daten?",
+          "content": "Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten..."
+        },
+        "rights": {
+          "title": "Welche Rechte haben Sie bezüglich Ihrer Daten?",
+          "content": "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten..."
+        }
+      }
+    },
+    "hosting": {
+      "title": "Hosting",
+      "provider": {
+        "name": "All-Inkl",
+        "details": "Anbieter ist die ALL-INKL.COM - Neue Medien Münnich..."
+      },
+      "contract": {
+        "title": "Auftragsverarbeitung",
+        "content": "Wir haben einen Vertrag über Auftragsverarbeitung (AVV) zur Nutzung des oben genannten Dienstes geschlossen..."
+      }
+    },
+    "legal_notice": {
+      "title": "Allgemeine Hinweise und Pflichtinformationen",
+      "data_protection": {
+        "title": "Datenschutz",
+        "content": "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst..."
+      },
+      "responsible_entity": {
+        "title": "Hinweis zur verantwortlichen Stelle",
+        "details": {
+          "company": "Beispielfirma",
+          "address": "Musterweg 10, 90210 Musterstadt",
+          "phone": "+49 (0) 123 44 55 66",
+          "email": "info@beispielfirma.de"
+        }
+      },
+      "storage_duration": {
+        "title": "Speicherdauer",
+        "content": "Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde..."
+      },
+      "legal_basis": {
+        "title": "Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf dieser Website",
+        "content": "Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO..."
+      },
+      "third_parties": {
+        "title": "Empfänger von personenbezogenen Daten",
+        "content": "Im Rahmen unserer Geschäftstätigkeit arbeiten wir mit verschiedenen externen Stellen zusammen..."
+      },
+      "consent_revocation": {
+        "title": "Widerruf Ihrer Einwilligung zur Datenverarbeitung",
+        "content": "Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich..."
+      },
+      "objection_rights": {
+        "title": "Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)",
+        "content": "WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT..."
+      },
+      "complaint_rights": {
+        "title": "Beschwerderecht bei der zuständigen Aufsichtsbehörde",
+        "content": "Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde zu..."
+      },
+      "data_portability": {
+        "title": "Recht auf Datenübertragbarkeit",
+        "content": "Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen..."
+      },
+      "data_access": {
+        "title": "Auskunft, Berichtigung und Löschung",
+        "content": "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten..."
+      },
+      "processing_restriction": {
+        "title": "Recht auf Einschränkung der Verarbeitung",
+        "conditions": [
+          "Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten...",
+          "Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah...",
+          "Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Geltendmachung von Rechtsansprüchen benötigen...",
+          "Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden..."
+        ]
+      }
+    },
+    "source": "https://www.e-recht24.de"
   }
 }
