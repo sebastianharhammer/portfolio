@@ -5,6 +5,7 @@ import { LogoComponent } from '../../shared/logo/logo.component';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-contact',
   imports: [TranslateModule, LogoComponent, FormsModule, CommonModule],
@@ -15,6 +16,7 @@ import { CommonModule } from '@angular/common';
 export class ContactComponent {
   languageService = inject(LanguageService);
   http = inject(HttpClient);
+  router = inject(Router);
 
   contactData = {
     name: '',
@@ -105,6 +107,9 @@ export class ContactComponent {
     } else {
       return false;
     }
+  }
+  openPrivacyPolicy() {
+    this.router.navigate(['/privacy-policy']);
   }
 
 

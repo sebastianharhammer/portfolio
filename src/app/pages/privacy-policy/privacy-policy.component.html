@@ -1,1 +1,46 @@
-<p>privacy-policy works!</p>
+<div class="legal-notice-container">
+    <button class="back-button" (click)="goBack()">
+      <span>← {{ 'projectDetail.close' | translate }}</span>
+    </button>
+    
+    <div class="content">
+      <h1>{{ 'privacy_policy.introduction.title' | translate }}</h1>
+  
+      <!-- Overview Section -->
+      <h2>{{ 'privacy_policy.overview.title' | translate }}</h2>
+      
+      <h3>{{ 'privacy_policy.overview.general_notes.title' | translate }}</h3>
+      <p>{{ 'privacy_policy.overview.general_notes.content' | translate }}</p>
+  
+      <h3>{{ 'privacy_policy.overview.data_collection.title' | translate }}</h3>
+      <h4>{{ 'privacy_policy.overview.data_collection.responsible_entity.title' | translate }}</h4>
+      <p>{{ 'privacy_policy.overview.data_collection.responsible_entity.content' | translate }}</p>
+  
+      <h4>{{ 'privacy_policy.overview.data_collection.methods.title' | translate }}</h4>
+      <p>{{ 'privacy_policy.overview.data_collection.methods.content' | translate }}</p>
+  
+      <!-- Legal Notice Section -->
+      <h2>{{ 'privacy_policy.legal_notice.title' | translate }}</h2>
+  
+      <h3>{{ 'privacy_policy.legal_notice.data_protection.title' | translate }}</h3>
+      <p>{{ 'privacy_policy.legal_notice.data_protection.content' | translate }}</p>
+  
+      <!-- Responsible Entity Details -->
+      <h3>{{ 'privacy_policy.legal_notice.responsible_entity.title' | translate }}</h3>
+      <p>
+        {{ 'privacy_policy.legal_notice.responsible_entity.details.company' | translate }}<br>
+        {{ 'privacy_policy.legal_notice.responsible_entity.details.address' | translate }}<br>
+        {{ 'privacy_policy.legal_notice.responsible_entity.details.phone' | translate }}<br>
+        {{ 'privacy_policy.legal_notice.responsible_entity.details.email' | translate }}
+      </p>
+  
+      <!-- Rights Section -->
+      <h3>{{ 'privacy_policy.legal_notice.processing_restriction.title' | translate }}</h3>
+      <ul>
+        <li *ngFor="let condition of 'privacy_policy.legal_notice.processing_restriction.conditions' | translate">
+          {{ condition }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  

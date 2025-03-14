@@ -85,6 +85,7 @@
       "privacyFirstPart": "Ich habe die ",
       "link": "Datenschutzerklärung",
       "privacySecondPart": " gelesen und stimme der Datenschutzerklärung zu.",
+      "errorMessage": "Bitte stimmen Sie der Datenschutzerklärung zu, bevor Sie die Nachricht senden.",
       "send": "Senden"
     }
   },

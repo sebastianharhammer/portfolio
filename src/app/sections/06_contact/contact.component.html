@@ -54,9 +54,11 @@
                     <div id="checkboxWrapper">
                         <input id="checkbox" type="checkbox" name="checkbox" id="checkbox" (click)="checkCheckBox()">
                     </div>
-                    <label #checkboxLabel id="checkboxLabel" for="checkbox">{{ 'contact.contactForm.privacyFirstPart' |
-                        translate }}<a href="#">{{ 'contact.contactForm.link' | translate }} </a><span>{{
-                            'contact.contactForm.privacySecondPart' | translate }}</span></label>
+                    <label #checkboxLabel id="checkboxLabel" for="checkbox">
+                        {{ 'contact.contactForm.privacyFirstPart' | translate }}
+                        <span id="link" (click)="openPrivacyPolicy()">{{ 'contact.contactForm.link' | translate }} </span>
+                        <span>{{ 'contact.contactForm.privacySecondPart' | translate }}</span>
+                    </label>
                 </div>
                 @if (!checkBoxIsChecked()) {
                 <div id="errorContainer">
