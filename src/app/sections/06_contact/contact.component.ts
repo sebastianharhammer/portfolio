@@ -18,10 +18,15 @@ export class ContactComponent {
   contactData = {
     name: '',
     email: '',
-    message: ''
+    message: '',
+    checkbox: false
   }
 
   mailTest = true;
+  emailCorrect = true;
+  nameCorrect = true;
+  messageCorrect = true;
+
 
   post = {
     endPoint: 'https://deineDomain.de/sendMail.php',
@@ -36,6 +41,7 @@ export class ContactComponent {
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      console.log('ngForm.form.valid', ngForm.form.valid);
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
@@ -52,4 +58,49 @@ export class ContactComponent {
       ngForm.resetForm();
     }
   }
+
+  checkEmail() {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    this.emailCorrect = emailRegex.test(this.contactData.email);
+  }
+
+  checkName() {
+    const nameRegex = /^[a-zA-Z0-9]+$/;
+    this.nameCorrect = nameRegex.test(this.contactData.name);
+  }
+
+  checkMessage() {
+    const messageRegex = /^[a-zA-Z0-9]+$/;
+    this.messageCorrect = messageRegex.test(this.contactData.message);
+  }
+
+  checkForm() {
+    this.checkEmail();
+    this.checkName();
+    this.checkMessage();
+  }
+
+  checkFormValid() {
+    return this.emailCorrect && this.nameCorrect && this.messageCorrect;
+  }
+
+  checkFormInvalid() {
+    return !this.emailCorrect || !this.nameCorrect || !this.messageCorrect;
+  }
+
+  checkFormDisabled() {
+    return this.checkFormValid() || this.checkFormInvalid();
+  }
+
+  checkBoxIsChecked() {
+    return this.contactData.checkbox;
+  }
+
+  checkCheckBox() {
+    this.contactData.checkbox = true;
+    console.log('contactData', this.contactData);
+  }
+
+
+
 }

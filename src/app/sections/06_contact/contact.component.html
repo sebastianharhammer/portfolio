@@ -20,22 +20,22 @@
                 <div id="nameFormContainer" class="formContainer">
                     <h2 class="formTitle">{{ 'contact.contactForm.nameLabel' | translate }}</h2>
                     <div id="nameForm">
-                        <input ngModel #name="ngModel" name="name" [(ngModel)]="contactData.name" class="form-input" type="text"
-                            placeholder="{{ 'contact.contactForm.namePlaceholder' | translate }}" required>
-                            @if (!name.valid && name.touched && !name.disabled) {
-                                <span class="errorMessage">{{ 'contact.contactForm.nameError' | translate }}</span>
-                                }
+                        <input ngModel #name="ngModel" name="name" [(ngModel)]="contactData.name" class="form-input"
+                            type="text" placeholder="{{ 'contact.contactForm.namePlaceholder' | translate }}" required>
+                        @if (!name.valid && name.touched && !name.disabled) {
+                        <span class="errorMessage">{{ 'contact.contactForm.nameError' | translate }}</span>
+                        }
                     </div>
                 </div>
                 <div id="emailFormContainer" class="formContainer">
                     <h2 class="formTitle">{{ 'contact.contactForm.emailLabel' | translate }}</h2>
                     <div id="emailForm">
-                        <input ngModel #email="ngModel" name="email" [(ngModel)]="contactData.email" class="form-input" type="email"
-                            placeholder="{{ 'contact.contactForm.emailPlaceholder' | translate }}"
+                        <input ngModel #email="ngModel" name="email" [(ngModel)]="contactData.email" class="form-input"
+                            type="email" placeholder="{{ 'contact.contactForm.emailPlaceholder' | translate }}"
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
-                            @if (!email.valid && email.touched && !email.disabled) {
-                                <span class="errorMessage">{{ 'contact.contactForm.emailError' | translate }}</span>
-                                }
+                        @if (!email.valid && email.touched && !email.disabled) {
+                        <span class="errorMessage">{{ 'contact.contactForm.emailError' | translate }}</span>
+                        }
                     </div>
                 </div>
                 <div id="messageFormContainer" class="formContainer">
@@ -52,18 +52,23 @@
                 </div>
                 <div id="checkboxContainer">
                     <div id="checkboxWrapper">
-                        <input id="checkbox" type="checkbox" name="checkbox" id="checkbox">
+                        <input id="checkbox" type="checkbox" name="checkbox" id="checkbox" (click)="checkCheckBox()">
                     </div>
-                    <label id="checkboxLabel" for="checkbox">{{ 'contact.contactForm.privacyFirstPart' | translate }}<a
+                    <label #checkboxLabel id="checkboxLabel" for="checkbox">{{ 'contact.contactForm.privacyFirstPart' | translate }}<a
                             href="#">{{ 'contact.contactForm.link' | translate }} </a><span>{{
                             'contact.contactForm.privacySecondPart' | translate }}</span></label>
                 </div>
+                @if (!checkBoxIsChecked()) { 
                 <div id="errorContainer">
                     <p id="errorMessage">{{ 'contact.contactForm.errorMessage' | translate }}</p>
-                </div>
+                </div> }
                 <div id="sendButtonContainer">
-                    
-                    <button id="sendButton">{{ 'contact.contactForm.send' | translate }}</button>
+                    <button id="sendButton" 
+                    (click)="checkForm()"
+                    [disabled]="!checkFormValid()"
+                    matTooltip="Please fill out all required fields"
+                    matTooltipPosition="above">
+                    {{ 'contact.contactForm.send' | translate}}</button>
                 </div>
             </form>
         </div>

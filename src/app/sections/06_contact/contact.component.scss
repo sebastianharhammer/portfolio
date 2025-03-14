@@ -205,15 +205,7 @@ a:hover {
     }
   }
 }
-  .errorMessage {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #df1b1b;
-    padding-left: 25px;
-    @media (max-width: 768px) {
-      font-size: 0.8rem;
-    }
-  }
+
 
 textarea::placeholder {
   vertical-align: bottom;
@@ -301,8 +293,6 @@ textarea::placeholder {
   align-items: center;
   justify-content: flex-start;
   p {
-    font-size: 1rem;
-    font-weight: 600;
     color: #df1b1b;
     padding-left: 25px;
     padding-top: 10px;
@@ -311,6 +301,17 @@ textarea::placeholder {
     }
   }
 }
+
+.errorMessage {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #df1b1b;
+  padding-left: 25px;
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
+}
+
 #sendButtonContainer {
   width: 100%;
   display: flex;
