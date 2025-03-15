@@ -1,9 +1,17 @@
 .legal-notice-container {
   width: 100vw;
   height: 100vh;
-  padding: 2rem;
   position: relative;
   background-color: #fff;
+  background-image: url("./../../../../public/assets/img/hero/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 100px;
+  padding-bottom: 300px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .back-button {
