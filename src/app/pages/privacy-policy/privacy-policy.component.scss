@@ -1,6 +1,7 @@
 .legal-notice-container {
   width: 100vw;
   height: 100vh;
+  min-height: 4000px;
   position: relative;
   background-color: #fff;
   background-image: url("./../../../../public/assets/img/hero/background.png");
@@ -14,28 +15,53 @@
   padding-right: 2%;
   color: white;
   font-family: 'Bricolage Grotesque', sans-serif;
+  @media (max-width: 768px) {
+    min-height: 7000px;
+  }
   h1 {
     padding-bottom: 15px;
+    padding-top: 15px;
     font-size: 4rem;
     border-bottom: 1px solid white;
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
   }
   h2 {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     font-size: 3rem;
-    border-bottom: 1px solid white;
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
   }
   h3 {
-    padding-bottom: 15px;
+    padding-bottom: 7.5px;
+    padding-top: 7.5px;
     font-size: 2rem;
-    border-bottom: 1px solid white;
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
   }
   h4 {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     font-size: 1rem;
+    @media (max-width: 768px) {
+      font-size: 0.8rem;
+    }
   }
   p {
     padding-bottom: 2.5px;
+    padding-top: 2.5px;
     font-size: 0.8rem;
+  }
+  li {
+    padding-bottom: 2.5px;
+    padding-top: 2.5px;
+    font-size: 0.8rem;
+    border-bottom: 1px dotted white;
+    border-top: 1px dotted white;
   }
 }
 
@@ -69,4 +95,8 @@
   h1 {
     margin-bottom: 2rem;
   }
+}
+
+::ng-deep #footerContent {
+  margin-bottom: -400px;
 }

@@ -23,11 +23,13 @@
     <h4>{{ 'privacy_policy.overview.data_collection.rights.title' | translate }}</h4>
     <p>{{ 'privacy_policy.overview.data_collection.rights.content' | translate }}</p>
 
-    <h1>{{ 'privacy_policy.hosting.title' | translate }}</h1>
-    <h4>{{ 'privacy_policy.hosting.provider.title' | translate }}</h4>
-    <p>{{ 'privacy_policy.hosting.provider.name' | translate }}</p>
-    <p>{{ 'privacy_policy.hosting.contract.title' | translate }}</p>
-    <h4>{{ 'privacy_policy.hosting.contract.content' | translate }}</h4>
+    <h2>{{ 'privacy_policy.hosting.title' | translate }}</h2>
+    <p>{{ 'privacy_policy.hosting.content' | translate }}</p>
+    <h4>{{ 'privacy_policy.hosting.provider.name' | translate }}</h4>
+    <p>{{ 'privacy_policy.hosting.provider.details' | translate }}</p>
+    <h4>{{ 'privacy_policy.hosting.contract.title' | translate }}</h4>
+    <p>{{ 'privacy_policy.hosting.contract.content' | translate }}</p>
+
 
     <!-- Legal Notice Section -->
     <h2>{{ 'privacy_policy.legal_notice.title' | translate }}</h2>
@@ -37,19 +39,50 @@
 
     <!-- Responsible Entity Details -->
     <h3>{{ 'privacy_policy.legal_notice.responsible_entity.title' | translate }}</h3>
+    <p>{{ 'privacy_policy.legal_notice.responsible_entity.content' | translate }}</p>
     <p>
       {{ 'privacy_policy.legal_notice.responsible_entity.details.company' | translate }}<br>
       {{ 'privacy_policy.legal_notice.responsible_entity.details.address' | translate }}<br>
       {{ 'privacy_policy.legal_notice.responsible_entity.details.phone' | translate }}<br>
       {{ 'privacy_policy.legal_notice.responsible_entity.details.email' | translate }}
     </p>
+    <p>{{ 'privacy_policy.legal_notice.responsible_entity.additional_content' | translate }}</p>
 
     <!-- Rights Section -->
-    <h3>{{ 'privacy_policy.legal_notice.processing_restriction.title' | translate }}</h3>
+    <h3>{{ 'privacy_policy.legal_notice.processing_restriction.storage_duration.title' | translate }}</h3>
+    <p>{{ 'privacy_policy.legal_notice.processing_restriction.storage_duration.content' | translate }}</p>
+
+    <h3>{{ 'privacy_policy.legal_notice.processing_restriction.legal_basis.title' | translate }}</h3>
+    <p>{{ 'privacy_policy.legal_notice.processing_restriction.legal_basis.content' | translate }}</p>
+
+    <h3>{{ 'privacy_policy.legal_notice.processing_restriction.third_parties.title' | translate }}</h3>
+    <p>{{ 'privacy_policy.legal_notice.processing_restriction.third_parties.content' | translate }}</p>
+
+    <h3>{{ 'privacy_policy.legal_notice.processing_restriction.consent_revocation.title' | translate }}</h3>
+    <p>{{ 'privacy_policy.legal_notice.processing_restriction.consent_revocation.content' | translate }}</p>
+
+    <h3>{{ 'privacy_policy.legal_notice.processing_restriction.objection_rights.title' | translate }}</h3>
+    <p>{{ 'privacy_policy.legal_notice.processing_restriction.objection_rights.content' | translate }}</p>
+
+    <h3>{{ 'privacy_policy.legal_notice.processing_restriction.complaint_rights.title' | translate }}</h3>
+    <p>{{ 'privacy_policy.legal_notice.processing_restriction.complaint_rights.content' | translate }}</p>
+
+    <h3>{{ 'privacy_policy.legal_notice.processing_restriction.data_portability.title' | translate }}</h3>
+    <p>{{ 'privacy_policy.legal_notice.processing_restriction.data_portability.content' | translate }}</p>
+
+    <h3>{{ 'privacy_policy.legal_notice.processing_restriction.data_access.title' | translate }}</h3>
+    <p>{{ 'privacy_policy.legal_notice.processing_restriction.data_access.content' | translate }}</p>
+
+    <h3>{{ 'privacy_policy.legal_notice.processing_restriction.processing_restriction.title' | translate }}</h3>
+    <p>{{ 'privacy_policy.legal_notice.processing_restriction.processing_restriction.content' | translate }}</p>
+
     <ul>
-      <li *ngFor="let condition of 'privacy_policy.legal_notice.processing_restriction.conditions' | translate">
+      <li *ngFor="let condition of 'privacy_policy.legal_notice.processing_restriction.processing_restriction.conditions' | translate">
         {{ condition }}
       </li>
     </ul>
+
+    <p>{{ 'privacy_policy.legal_notice.processing_restriction.processing_restriction.additional_content' | translate }}</p>
+    <p>{{ 'privacy_policy.legal_notice.processing_restriction.source' | translate }}</p>
   </div>
 </div>
