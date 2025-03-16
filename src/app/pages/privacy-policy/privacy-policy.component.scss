@@ -16,7 +16,14 @@
   color: white;
   font-family: 'Bricolage Grotesque', sans-serif;
   @media (max-width: 768px) {
-    min-height: 7000px;
+    min-height: 7200px;
+  }
+  .content {
+    padding-left: 5%; 
+    padding-right: 10%;
+    @media (max-width: 768px) {
+  
+    }
   }
   h1 {
     padding-bottom: 15px;
@@ -97,6 +104,6 @@
   }
 }
 
-::ng-deep #footerContent {
-  margin-bottom: -400px;
+::ng-deep #footerContainer {
+  margin: -350px auto 0 auto !important;
 }

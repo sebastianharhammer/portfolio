@@ -98,99 +98,126 @@
       "title": "Privacy at a Glance",
       "general_notes": {
         "title": "General Notes",
-        "content": "The following notes provide a simple overview of what happens to your personal data when you visit this website..."
+        "content": "This Privacy Policy provides an overview of what happens with your personal data when you visit this website. Personal data is any data that can identify you personally. Detailed information on the subject of data protection can be found in our data protection declaration below this text."
       },
       "data_collection": {
-        "title": "Data Collection on this Website",
+        "title": "Data Collection on This Website",
         "responsible_entity": {
-          "title": "Who is responsible for data collection on this website?",
-          "content": "Data processing on this website is carried out by the website operator..."
+          "title": "Who is responsible for the data collection on this website?",
+          "content": "The data processing on this website is carried out by the website operator. Their contact details can be found in the section „Notice of the responsible party“ in this privacy policy."
         },
         "methods": {
           "title": "How do we collect your data?",
-          "content": "Your data is collected, on the one hand, by you providing it to us..."
+          "content": "Your data is collected in part by you providing it to us. This may include data you enter into a contact form. Other data is collected automatically or after your consent when you visit the website through our IT systems. This includes, among other things, technical data (e.g. internet browser, operating system or page access time). The collection of this data takes place automatically as soon as you enter this website."
         },
         "usage": {
-          "title": "What do we use your data for?",
-          "content": "Some of the data is collected to ensure the error-free provision of the website..."
+          "title": "For what do we use your data?",
+          "content": "A part of the data is collected to ensure the error-free provision of the website. Other data can be used to analyze your user behavior. If contracts are concluded or orders are placed via the website, the data provided will also be processed for contract offers, orders or other order requests."
         },
         "rights": {
           "title": "What rights do you have regarding your data?",
-          "content": "You have the right to receive information about the origin, recipient, and purpose of your stored personal data at any time free of charge..."
+          "content": "You have the right to request information at any time about the origin, recipient and purpose of your stored personal data. You also have the right to request the correction or deletion of this data. If you have given consent to data processing, you can withdraw this consent at any time for the future. In addition, you have the right to request the restriction of the processing of your personal data under certain circumstances. You also have the right to complain to the competent supervisory authority. For further questions on the subject of data protection, you can contact us at any time."
         }
       }
     },
     "hosting": {
-      "title": "Hosting",
+      "title": "2.Hosting",
+      "content": "We host the contents of our website with the following provider:",
       "provider": {
         "name": "All-Inkl",
-        "details": "Provider is ALL-INKL.COM - Neue Medien Münnich..."
+        "details": "The provider is ALL-INKL.COM - Neue Medien Münnich, Inh. René Münnich, Hauptstraße 68, 02742 Friedersdorf (hereinafter All-Inkl). Details can be found in the privacy policy of All-Inkl: https://all-inkl.com/datenschutzinformationen/. The use of All-Inkl is based on Art. 6 Abs. 1 lit. f DSGVO. We have a legitimate interest in a reliable representation of our website. If a corresponding consent has been requested, the processing takes place exclusively on the basis of Art. 6 Abs. 1 lit. a DSGVO and § 25 Abs. 1 TDDDG, provided that the consent includes the storage of cookies or access to information on the user's device (e.g. Device-Fingerprinting) in the sense of the TDDDG. The consent can be revoked at any time."
       },
       "contract": {
         "title": "Order Processing",
-        "content": "We have concluded an order processing agreement (AVV) for the use of the aforementioned service..."
+        "content": "We have concluded an order processing contract (AVV) for the use of the above-mentioned service. This is a data protection-compliant contract that ensures that this only processes the personal data of our website visitors according to our instructions and in accordance with the DSGVO."
       }
     },
     "legal_notice": {
-      "title": "General Information and Mandatory Notices",
+      "title": "3. General Information and Required Information",
       "data_protection": {
         "title": "Data Protection",
-        "content": "The operators of these pages take the protection of your personal data very seriously..."
+        "content": "The operators of these pages take the protection of your personal data very seriously. We process your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy. When you use this website, various personal data will be collected. Personal data is data that can identify you personally. This privacy policy explains which data we collect and what we use it for. It also explains how and for what purpose this is done. We would like to point out that the transfer of data on the internet (e.g. when communicating via email) may have security gaps. A complete protection of the data against access by third parties is not possible."
       },
       "responsible_entity": {
-        "title": "Note on the Responsible Entity",
+        "title": "Notice of the responsible party",
+        "content": "The responsible party for the data processing on this website is:",
         "details": {
-          "company": "Example Company",
-          "address": "Sample Street 10, 90210 Sample City",
+          "company": "Beispielfirma",
+          "address": "Musterweg 10, 90210 Musterstadt",
           "phone": "+49 (0) 123 44 55 66",
-          "email": "info@examplecompany.com"
-        }
+          "email": "info@beispielfirma.de"
+        },
+        "additional_content": "The responsible party is the natural or legal person who alone or jointly with others decides on the purposes and means of the processing of personal data (e.g. names, email addresses, etc.)."
       },
       "processing_restriction": {
         "storage_duration": {
           "title": "Storage Duration",
-          "content": "Unless a more specific storage period is specified in this privacy policy..."
+          "content": "Unless a specific storage duration is named in this privacy policy, your personal data will remain with us until the purpose for the data processing ceases. If you make a legitimate deletion request or withdraw your consent to data processing, your data will be deleted, provided we have no other legally permissible reasons for storing your personal data (e.g. tax or commercial retention periods); in the latter case, deletion will occur after the expiry of these reasons."
         },
-        
         "legal_basis": {
-          "title": "General Information on the Legal Basis of Data Processing on this Website",
-          "content": "If you have consented to data processing, we process your personal data based on Article 6(1)(a) GDPR..."
+          "title": "General information on the legal basis of data processing on this website",
+          "content": "If you have consented to the data processing, we process your personal data on the basis of Art. 6 Abs. 1 lit. a DSGVO or Art. 9 Abs. 2 lit. a DSGVO, if special data categories are processed according to Art. 9 Abs. 1 DSGVO. In the case of an explicit consent to the transfer of personal data to third countries, the data processing also takes place on the basis of Art. 49 Abs. 1 lit. a DSGVO. If you have consented to the storage of cookies or access to information on your device (e.g. via Device-Fingerprinting), the data processing also takes place on the basis of § 25 Abs. 1 TDDDG. The consent can be revoked at any time. If your data are required for the performance of a contract or for the implementation of pre-contractual measures, we process your data on the basis of Art. 6 Abs. 1 lit. b DSGVO. Furthermore, we process your data if this is necessary for the fulfilment of a legal obligation on the basis of Art. 6 Abs. 1 lit. c DSGVO. The data processing can also take place on the basis of our legitimate interest according to Art. 6 Abs. 1 lit. f DSGVO. The relevant legal bases are explained in the following paragraphs of this privacy policy."
         },
         "third_parties": {
-          "title": "Recipients of Personal Data",
-          "content": "As part of our business activities, we work with various external entities..."
+          "title": "Recipients of personal data",
+          "content": "In the course of our business activities, we work with various external parties. In some cases, it is also necessary to transfer personal data to these external parties. We only pass on personal data to external parties if this is necessary for the performance of a contract, if we are legally obliged to do so (e.g. passing on data to tax authorities), if we have a legitimate interest in passing on the data according to Art. 6 Abs. 1 lit. f DSGVO or if another legal basis allows the data transfer. When using subcontractors, we only pass on personal data to our customers on the basis of a valid contract for the processing of data. In the case of joint processing, a joint processing contract is concluded."
         },
         "consent_revocation": {
-          "title": "Revocation of Your Consent to Data Processing",
-          "content": "Many data processing operations are only possible with your explicit consent..."
+          "title": "Revocation of your consent to data processing",
+          "content": "Many data processing activities are only possible with your explicit consent. You can revoke a previously granted consent at any time. The legality of the data processing carried out up to the revocation remains unaffected by the revocation."
         },
         "objection_rights": {
-          "title": "Right to Object to Data Collection in Special Cases and to Direct Advertising (Article 21 GDPR)",
-          "content": "IF DATA PROCESSING IS BASED ON ARTICLE 6(1)(E) OR (F) GDPR..."
+          "title": "Right of objection against data collection in special cases and against direct advertising (Art. 21 DSGVO)",
+          "content": "IF THE DATA PROCESSING IS BASED ON ART. 6 ABS. 1 LIT. E OR F DSGVO, YOU HAVE THE RIGHT, FOR REASONS ARISING FROM YOUR PARTICULAR SITUATION, TO OPPOSE THE PROCESSING OF YOUR PERSONAL DATA; THIS ALSO APPLIES TO SUPPORTED PROFILING. THE RELEVANT LEGAL BASIS, ON WHICH A PROCESSING IS BASED, CAN BE FOUND IN THIS PRIVACY POLICY. IF YOU OBJECT, WE WILL NOT PROCESS YOUR PERSONAL DATA ANY LONGER, EXCEPT WE CAN PROVE BINDING REASONS FOR THE PROCESSING THAT OUTWEIGH YOUR INTERESTS, REIGHTS AND FREEDOMS OR THE PROCESSING SERVES THE ASSERTION, EXERCISE OR DEFENCE OF CLAIMS (OBJECTION AFTER ART. 21 ABS. 1 DSGVO). IF YOUR PERSONAL DATA IS PROCESSED TO CONDUCT DIRECT ADVERTISING, YOU HAVE THE RIGHT, AT ANY TIME, TO OBJECT TO THE PROCESSING OF YOUR PERSONAL DATA FOR THE PURPOSE OF SUCH ADVERTISING; THIS ALSO APPLIES TO PROFILING, PROVIDED IT IS CONNECTED WITH SUCH DIRECT ADVERTISING. IF YOU OBJECT, YOUR PERSONAL DATA WILL NOT BE USED FOR SUCH ADVERTISING (OBJECTION AFTER ART. 21 ABS. 2 DSGVO)."
         },
         "complaint_rights": {
-          "title": "Right to Lodge a Complaint with the Competent Supervisory Authority",
-          "content": "In the event of GDPR violations, data subjects have the right to lodge a complaint with a supervisory authority..."
+          "title": "Right of complaint to the competent supervisory authority",
+          "content": "In the event of a violation of the GDPR, the data subject has a right of complaint to a supervisory authority, in particular in the Member State of their habitual residence, place of work or place of the alleged violation. The right of complaint exists不受其他行政或法律救济的影响。"
         },
         "data_portability": {
-          "title": "Right to Data Portability",
-          "content": "You have the right to have data that we process automatically based on your consent or in fulfillment of a contract handed over to you or a third party in a common, machine-readable format..."
+          "title": "Right to data portability",
+          "content": "You have the right to request data, which we process based on your consent or in fulfilment of a contract, to be provided to you or a third party in a commonly used, machine-readable format. If you request the direct transfer of data to another responsible party, this will only take place if technically feasible."
         },
         "data_access": {
-          "title": "Access, Rectification, and Erasure",
-          "content": "Within the framework of applicable legal provisions, you have the right to free information about your stored personal data at any time..."
+          "title": "Right of access, correction and deletion",
+          "content": "You have the right to request information at any time about the origin, recipient and purpose of your stored personal data. You also have the right to request the correction or deletion of this data. Here you can also contact us for further questions on the subject of personal data."
         },
         "processing_restriction": {
-          "title": "Right to Restrict Processing",
+          "title": "Right to restriction of processing",
+          "content": "You have the right to request the restriction of the processing of your personal data. Here you can also contact us for further questions on the subject of personal data." ,
           "conditions": [
-            "If you dispute the accuracy of your stored personal data...",
-            "If the processing of your personal data was unlawful...",
-            "If we no longer need your personal data, but you need it to assert legal claims...",
-            "If you have objected to processing pursuant to Article 21(1) GDPR, a balance must be struck between your and our interests..."
-          ]
+            "If you dispute the accuracy of the personal data we have stored, we generally need time to verify this. For the duration of this verification, you have the right to request the restriction of the processing of your personal data.",
+            "If the processing of your personal data is unlawful, you can instead request the restriction of the data processing instead of deletion.",
+            "If we no longer need your personal data, but you need it for the assertion, exercise or defence of claims, you have the right to request the restriction of the processing of your personal data instead of deletion.",
+            "If you have lodged an objection pursuant to Art. 21 Abs. 1 DSGVO, a balancing of interests must be made between your and our interests. As long as it is not yet clear whose interests outweigh, you have the right to request the restriction of the processing of your personal data."
+          ],
+          "additional_content": "If you have restricted the processing of your personal data, these data – except for storage – may only be processed with your consent or for the assertion, exercise or defence of claims or for the protection of the rights of a natural or legal person or for reasons of a significant public interest of the European Union or a Member State."
         },
         "source": "https://www.e-recht24.de"
       }
     }
+  },
+  "imprint": {
+    "title": "Imprint",
+    "Information_according_to_§5_DDG": {
+      "Name": "Sebastian Harhammer",
+      "Address": {
+        "Street": "Fort-Skelly-Straße 30",
+        "Postal_Code": "93053",
+        "City": "Regensburg"
+      },
+      "Represented_by": "Sebastian Harhammer"
+    },
+    "Contact": {
+      "Phone": "+49 1755234886",
+      "Email": "sebastian.harhammer@gmail.com"
+    },
+    "Disclaimer": {
+      "Liability_for_Content": "As a service provider, we are responsible for our own content on these pages according to § 7 Abs.1 TMG (German Telemedia Act) and general laws. According to §§ 8 to 10 TMG, we are not obliged to monitor transmitted or stored external information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information according to general laws remain unaffected. However, liability in this respect is only possible from the time of knowledge of a concrete infringement. If we become aware of any such infringements, we will remove the content in question immediately.",
+      "Liability_for_Links": "Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the sites is always responsible for the contents of the linked sites. The linked pages were checked for possible legal violations at the time of linking. Illegal contents were not recognizable at the time of linking. However, a permanent control of the contents of the linked pages is not reasonable without concrete evidence of a violation of the law. If we become aware of any infringements, we will remove such links immediately."
+    },
+    "Copyright": "The content and works created by the site operators on these pages are subject to German copyright law. The duplication, processing, distribution and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use. Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is identified as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. If we become aware of any infringements, we will remove such content immediately.",
+    "Source": "Imprint from WebsiteWissen.com based on a template from Kanzlei Hasselbach"
   }
 }
+

@@ -111,6 +111,10 @@ export class ContactComponent {
   openPrivacyPolicy() {
     this.router.navigate(['/privacy-policy']);
   }
+  openLegalNotice() {
+    console.log('openLegalNotice');
+    this.router.navigate(['/legal-notice']);
+  }
 
 
 
