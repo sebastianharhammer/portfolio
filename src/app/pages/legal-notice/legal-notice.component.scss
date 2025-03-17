@@ -1,6 +1,5 @@
 .imprint-container {
   width: 100vw;
-  height: 100vh;
   position: relative;
   background-color: #fff;
   background-image: url("./../../../../public/assets/img/hero/background.png");
@@ -9,76 +8,84 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding-top: 100px;
-  padding-bottom: 300px;
-  min-height: 2000px;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-bottom: 100px;
   color: white;
   font-family: 'Bricolage Grotesque', sans-serif;
   position: relative;
-  padding-bottom: 30%;
+
    h1 {
     margin-bottom: 2rem;
     font-size: 4rem;
-    padding-left: 2%;
+    color: #C19C18;
+
    }
    #contactInformation {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding-left: 2%;
-    padding-right: 2%;
+
     padding-bottom: 2rem;
     margin: 0 auto;
     max-width: 1440px;
+    
    }
    p {
     font-size: 1.2rem;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     @media (max-width: 768px) {
       font-size: 1rem;
     }
    }
-   #disclaimer {
-    max-width: 1440px;
-    margin: 0 auto;
-   }
    #copyright {
-    max-width: 1440px;
-    margin: 0 auto;
+    padding-bottom: 2%;
    }
-
-
 }
 
-.back-button {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-  padding: 0.5rem 1rem;
+#imprintContent {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 90%; 
+}
+
+#backButtonContainer {
+  position: fixed;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid white;
+  border-radius: 20px;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  background-color: #C19C18;
+  padding: 10px;
+  z-index: 20;
+  &:hover {
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    cursor: pointer;
+  }
+}
+
+#backButton {
   border: none;
   background-color: transparent;
-  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-size: 1rem;
+  cursor: pointer;
+  span {
+    font-size: 1.2rem;
+    font-family: 'Bricolage Grotesque', sans-serif;
+  }
   
   &:hover {
     opacity: 0.8;
   }
 }
 
-.content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding-top: 4rem;
-
-  h1 {
-    margin-bottom: 2rem;
-  }
-}
 ::ng-deep #footerContainer {
   display: none !important;
 }

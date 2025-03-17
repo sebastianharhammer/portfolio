@@ -58,10 +58,10 @@
     "liveDemo": "Live Demo",
     "nextprojecttitle": "Next Project",
     "durationtitle": "Duration"
-  },
+  },  
   "thoughts": {
     "inTheirWords": "In Their Words",
-    "title": "Thoughts",
+    "title": "Colleague's thoughts",
     "card01": {
       "thought": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
     },
@@ -198,6 +198,7 @@
     }
   },
   "imprint": {
+    "back": "GO BACK",
     "title": "Imprint",
     "Information_according_to_§5_DDG": {
       "Name": "Sebastian Harhammer",

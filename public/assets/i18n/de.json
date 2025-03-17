@@ -60,7 +60,7 @@
   },
   "thoughts": {
     "inTheirWords": "In Ihren Worten",
-    "title": "Meinungen",
+    "title": "Meinungen von Kollegen",
     "card01": {
       "thought": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
     },
@@ -198,6 +198,7 @@
     }
   },
   "imprint": {
+    "back": "GEH ZURÜCK",
     "title": "Impressum",
     "Information_according_to_§5_DDG": {
       "Name": "Sebastian Harhammer",
