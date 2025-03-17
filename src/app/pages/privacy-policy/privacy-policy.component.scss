@@ -1,7 +1,5 @@
 .legal-notice-container {
   width: 100vw;
-  height: 100vh;
-  min-height: 4000px;
   position: relative;
   background-color: #fff;
   background-image: url("./../../../../public/assets/img/hero/background.png");
@@ -10,18 +8,19 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding-top: 100px;
-  padding-bottom: 50%;
   padding-left: 2%;
   padding-right: 2%;
   color: white;
   font-family: 'Bricolage Grotesque', sans-serif;
-  @media (max-width: 768px) {
-    min-height: 7200px;
-  }
+  position: relative;
+  padding-bottom: 30%;
+  
   .content {
-    padding-left: 5%; 
-    padding-right: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
     @media (max-width: 768px) {
+      padding-left: 5%; 
+      padding-right: 10%;
   
     }
   }
@@ -29,6 +28,7 @@
     padding-bottom: 15px;
     padding-top: 15px;
     font-size: 4rem;
+    color: #C19C18;
     border-bottom: 1px solid white;
     @media (max-width: 768px) {
       font-size: 1.5rem;
@@ -36,6 +36,7 @@
   }
   h2 {
     padding-bottom: 10px;
+    color: #F87A55;
     padding-top: 10px;
     font-size: 3rem;
     @media (max-width: 768px) {
@@ -71,19 +72,36 @@
     border-top: 1px dotted white;
   }
 }
-
+.back-button-container {
+  position: fixed;
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid white;
+  border-radius: 20px;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  background-color: #C19C18;
+  padding: 10px;
+  z-index: 20;
+  &:hover {
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    cursor: pointer;
+  }
+}
 .back-button {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-  padding: 0.5rem 1rem;
   border: none;
   background-color: transparent;
-  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-size: 1rem;
+  cursor: pointer;
+  span {
+    font-size: 1.2rem;
+    font-family: 'Bricolage Grotesque', sans-serif;
+  }
   
   &:hover {
     opacity: 0.8;
@@ -91,7 +109,7 @@
 }
 
 .content {
-  max-width: 800px;
+  max-width: 1440px;
   margin: 0 auto;
   padding-top: 4rem;
   display: flex;
@@ -103,7 +121,12 @@
     margin-bottom: 2rem;
   }
 }
-
+::ng-deep #footerContainer {
+  display: none !important;
+}
+::ng-deep .navbar-menu-item {
+  display: none !important;
+}
 ::ng-deep #footerContainer {
   margin: -350px auto 0 auto !important;
 }

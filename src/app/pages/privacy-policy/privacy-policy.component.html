@@ -1,14 +1,16 @@
 <div class="legal-notice-container">
-<!--   <button class="back-button" (click)="goBack()">
-    <span>← {{ 'projectDetail.close' | translate }}</span>
-  </button> -->
-  
+
   <div class="content">
+    <div class="back-button-container">
+      <button class="back-button" (click)="goBack()">
+        <span>← {{ 'projectDetail.close' | translate }}</span>
+      </button>
+    </div>
     <h1>{{ 'privacy_policy.introduction.title' | translate }}</h1>
 
     <!-- Overview Section -->
     <h2>{{ 'privacy_policy.overview.title' | translate }}</h2>
-    
+
     <h3>{{ 'privacy_policy.overview.general_notes.title' | translate }}</h3>
     <p>{{ 'privacy_policy.overview.general_notes.content' | translate }}</p>
 
@@ -77,12 +79,14 @@
     <p>{{ 'privacy_policy.legal_notice.processing_restriction.processing_restriction.content' | translate }}</p>
 
     <ul>
-      <li *ngFor="let condition of 'privacy_policy.legal_notice.processing_restriction.processing_restriction.conditions' | translate">
+      <li
+        *ngFor="let condition of 'privacy_policy.legal_notice.processing_restriction.processing_restriction.conditions' | translate">
         {{ condition }}
       </li>
     </ul>
 
-    <p>{{ 'privacy_policy.legal_notice.processing_restriction.processing_restriction.additional_content' | translate }}</p>
+    <p>{{ 'privacy_policy.legal_notice.processing_restriction.processing_restriction.additional_content' | translate }}
+    </p>
     <p>{{ 'privacy_policy.legal_notice.processing_restriction.source' | translate }}</p>
   </div>
 </div>
