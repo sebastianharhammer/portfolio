@@ -1,43 +1,45 @@
 <div id="skillSetContent">
-    <div id="topContainer">
-        <div id="headlineContainer">
-            <div id="myStackTitle">
-                <h5>{{ 'skillset.mystack' | translate }}</h5>
+    <div id="skillSetContainer">
+        <div id="topContainer">
+            <div id="headlineContainer">
+                <div id="myStackTitle">
+                    <h5>{{ 'skillset.mystack' | translate }}</h5>
+                </div>
+                <div id="skillSetTitle">
+                    <h1>{{ 'skillset.title' | translate }}</h1>
+                    <img src="assets/img/skills/skillFrame.svg" id="skillFrame">
+                </div>
             </div>
-            <div id="skillSetTitle">
-                <h1>{{ 'skillset.title' | translate }}</h1>
-                <img src="assets/img/skills/skillFrame.svg" id="skillFrame">
-            </div>
-        </div>
-        <div id="descriptionContainer">
+            <div id="descriptionContainer">
                 <img id="descriptionImage" src="assets/img/skills/frame.png" alt="description_image">
                 <span id="descriptionText">
                     {{ 'skillset.description' | translate }}
                 </span>
-        </div>
+            </div>
 
-    </div>
-    <div id="bottomContainer">
-        <div id="skillContainer">
-            <div id="iconContainer">
-                <ng-container *ngFor="let icon of icons">
-                    <div class="iconWrapper">
-                        <img class="iconImage" [src]="icon.src" [alt]="icon.alt">
-                        <span class="iconTitle">{{ icon.title }}</span>
+        </div>
+        <div id="bottomContainer">
+            <div id="skillContainer">
+                <div id="iconContainer">
+                    <ng-container *ngFor="let icon of icons">
+                        <div class="iconWrapper">
+                            <img class="iconImage" [src]="icon.src" [alt]="icon.alt">
+                            <span class="iconTitle">{{ icon.title }}</span>
+                        </div>
+                    </ng-container>
+                </div>
+                <ng-container>
+                    <div id="PeelOffContainer">
+                        <img (click)="peelOff()" id="peelOffImage" [src]="currentImage.src" [alt]="currentImage.alt"
+                            alt="peelOff_image">
+                        <div id="peelOffTextContainer">
+                            <img id="topPart" [src]="currentImage.topPart" [alt]="currentImage.topPart">
+                            <img id="bottomPart" [src]="currentImage.bottomPart" [alt]="currentImage.bottomPart">
+                        </div>
                     </div>
                 </ng-container>
-            </div>
-            <ng-container>
-                <div id="PeelOffContainer">
-                    <img (click)="peelOff()" id="peelOffImage" [src]="currentImage.src" [alt]="currentImage.alt"
-                        alt="peelOff_image">
-                    <div id="peelOffTextContainer">
-                        <img id="topPart" [src]="currentImage.topPart" [alt]="currentImage.topPart">
-                        <img id="bottomPart" [src]="currentImage.bottomPart" [alt]="currentImage.bottomPart">
-                    </div>
-                </div>
-            </ng-container>
 
+            </div>
         </div>
     </div>
 </div>

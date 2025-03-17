@@ -13,15 +13,23 @@
     margin: 0 auto;
 }
 
+#skillSetContainer {
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
 #topContainer {
     width: 100%;
-    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
     justify-content: flex-start;
-    position: absolute;
-    top: 10%;
     @media (max-width: 768px) {
         flex-direction: column;
         position: relative;
@@ -31,10 +39,6 @@
 
 #bottomContainer {
     width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    position: absolute;
-    top: 35%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -97,8 +101,11 @@
     position: absolute;
     z-index: 1;
     animation: appear 5s infinite;
+    @media (max-width: 1050px) {
+        width: 150%;
+    }
     @media (max-width: 768px) {
-        height: 150%;
+        width: 100%;
     }
 }
 
@@ -167,6 +174,7 @@
     @media (max-width: 768px) {
         gap: 5px;
         padding: 15px;
+        width: 95%;
     }
 }
 
@@ -221,6 +229,9 @@
     align-items: center;
     padding-left: 0;
     position: relative;
+    @media (max-width: 1100px) {
+        padding-top: 10%;
+    }
 }
 
 #peelOffImage {
