@@ -66,8 +66,9 @@
                 </div>
                 }
                 <div id="sendButtonContainer">
-                    <button id="sendButton" (click)="onSubmit(contactForm)" [disabled]="!enableButton()"
-                        [ngClass]="{'disabled': !enableButton()}">
+                    <button id="sendButton" [disabled]="!enableButton()"
+                        [ngClass]="{'disabled': !enableButton()}"
+                        type="submit">
                         {{ 'contact.contactForm.send' | translate}}</button>
                 </div>
             </form>

@@ -31,7 +31,7 @@ export class ContactComponent {
   messageCorrect = true;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://sebastian-harhammer.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -41,66 +41,49 @@ export class ContactComponent {
     },
   };
 
+  private readonly emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
   onSubmit(ngForm: NgForm) {
-    if (
-      ngForm.submitted &&
-      ngForm.form.valid &&
-      !this.mailTest
-    ) {
-      console.log('ngForm.form.valid', ngForm.form.valid);
-      console.log('this.contactData.checkbox', this.contactData.checkbox);
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            //HIER KOMMT DIE RESPONSE OVERLAY FUNKTION
+            console.log('response', response);
             ngForm.resetForm();
+            // Add user feedback here (e.g., success message)
           },
           error: (error) => {
             console.error(error);
+            // Add user feedback here (e.g., error message)
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (
-      ngForm.submitted &&
-      ngForm.form.valid &&
-      this.mailTest
-    ) {
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
     }
   }
 
   checkName() {
-    if (this.contactData.name.length > 2) {
-      return true;
-    } else {
-      return false;
-    }
+    return this.contactData?.name?.length > 2 || false;
   }
 
   checkEmail() {
-    if (this.contactData.email.length > 5 && this.contactData.email.includes('@') && this.contactData.email.includes('.')) {
-      return true;
-    } else {
-      return false;
-    }
+    return this.contactData?.email ? this.emailRegex.test(this.contactData.email) : false;
   }
 
   checkMessage() {
-    if (this.contactData.message.length > 5) {
-      return true;
-    } else {
-      return false;
-    }
+    return this.contactData?.message?.length > 5 || false;
   }
+
   checkCheckBox() {
     this.contactData.checkbox = !this.contactData.checkbox;
-    if (this.contactData.checkbox) {
-    }
   }
+
   checkBoxIsChecked() {
     return this.contactData.checkbox;
   }
+
   enableButton() {
     if (this.checkName() && this.checkEmail() && this.checkMessage() && this.checkBoxIsChecked()) {
       return true;
@@ -108,83 +91,13 @@ export class ContactComponent {
       return false;
     }
   }
+
   openPrivacyPolicy() {
     this.router.navigate(['/privacy-policy']);
   }
+
   openLegalNotice() {
     console.log('openLegalNotice');
     this.router.navigate(['/legal-notice']);
   }
-
-
-
-
-
-/*   checkName() {
-    const nameRegex = /^[a-zA-Z0-9]+$/;
-    if (this.contactData.name.length > 2) {
-      this.nameCorrect = nameRegex.test(this.contactData.name);
-    } else {
-      this.nameCorrect = false;
-    }
-  }
-  checkEmail() {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (this.contactData.email.length > 5) {
-      this.emailCorrect = emailRegex.test(this.contactData.email);
-    } else {
-      this.emailCorrect = false;
-    }
-  }
-
-  checkMessage() {
-    const messageRegex = /^[a-zA-Z0-9]+$/;
-    if (this.contactData.message.length > 5) {
-      this.messageCorrect = messageRegex.test(this.contactData.message);
-    } else {
-      this.messageCorrect = false;
-    }
-  }
-
-  checkForm() {
-    this.checkEmail();
-    this.checkName();
-    this.checkMessage();
-  }
-
-  checkFormValid() {
-    return this.emailCorrect && this.nameCorrect && this.messageCorrect;
-  }
-
-  checkFormInvalid() {
-    return !this.emailCorrect || !this.nameCorrect || !this.messageCorrect;
-  }
-
-  checkFormDisabled() {
-    return this.checkFormValid() || this.checkFormInvalid();
-  }
-
-  checkBoxIsChecked() {
-    return this.contactData.checkbox;
-  }
-
-  checkCheckBox() {
-    this.checkIfAllValid();
-    this.contactData.checkbox = !this.contactData.checkbox;
-  }
-  checkIfAllValid() {
-    console.log('this.nameCorrect function', this.checkName());
-    console.log('this.nameCorrect', this.nameCorrect);
-    console.log('this.messageCorrect', this.messageCorrect);
-    console.log('this.checkBoxIsChecked()', this.checkBoxIsChecked());
-    console.log('');
-
-
-
-
-
-
-
-     return this.emailCorrect && this.nameCorrect && this.messageCorrect && this.checkBoxIsChecked();
-  } */
 }
