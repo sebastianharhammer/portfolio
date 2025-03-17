@@ -1,4 +1,4 @@
-.legal-notice-container {
+.imprint-container {
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -10,8 +10,46 @@
   background-attachment: fixed;
   padding-top: 100px;
   padding-bottom: 300px;
+  min-height: 2000px;
   padding-left: 2%;
   padding-right: 2%;
+  color: white;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  position: relative;
+  padding-bottom: 30%;
+   h1 {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    padding-left: 2%;
+   }
+   #contactInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    max-width: 1440px;
+   }
+   p {
+    font-size: 1.2rem;
+    padding: 1rem;
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
+   }
+   #disclaimer {
+    max-width: 1440px;
+    margin: 0 auto;
+   }
+   #copyright {
+    max-width: 1440px;
+    margin: 0 auto;
+   }
+
+
 }
 
 .back-button {
@@ -40,4 +78,13 @@
   h1 {
     margin-bottom: 2rem;
   }
+}
+::ng-deep #footerContainer {
+  display: none !important;
+}
+::ng-deep .navbar-menu-item {
+  display: none !important;
+}
+::ng-deep #footerContainer {
+  margin: -350px auto 0 auto !important;
 }
