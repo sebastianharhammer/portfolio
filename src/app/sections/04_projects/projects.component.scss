@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 125vh;
+  height: 100vh;
   font-family: "Bricolage Grotesque";
   @media (max-width: 768px) {
     flex-direction: column;
@@ -20,7 +20,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding-bottom: 10%;
+  padding-top: 10%;
   @media (max-width: 768px) {
     width: 100%;
     padding-left: 2%;
@@ -36,7 +38,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding-bottom: 10%;
+  padding-top: 10%;
   @media (max-width: 768px) {
     width: 100%;
     padding-left: 2%;
@@ -48,7 +52,6 @@
 
 #headlineContainer {
   width: 100%;
-  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;

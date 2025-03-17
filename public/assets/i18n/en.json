@@ -40,12 +40,12 @@
     },
     "join": {
       "title": "Join",
-      "description": "Join is a business webapp that allows you to create, plan and manage tasks according to the Scrum principle.",
+      "description": "Join is a kanban board webapp that allows you to create, plan and manage tasks according to the Scrum principle.",
       "duration": "5 Weeks"
     },
     "pokedex": {
       "title": "Pokedex",
-      "description": "Pokedex is a webapp that provides information about all Pokémon using the PokeAPI and visualizes it.",
+      "description": "Using the PokeAPI, this webapp provides information about all Pokémon and visualizes it including a search function and a detailed view of each Pokémon.",
       "duration": "3 Weeks"
     }
   },
