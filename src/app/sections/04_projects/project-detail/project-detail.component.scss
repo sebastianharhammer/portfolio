@@ -57,6 +57,7 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 1rem;
+  position: relative;
   @media (max-width: 1250px) {
     flex-direction: column;
   }
@@ -67,6 +68,7 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  position: relative;
   gap: 10px;
   margin-bottom: 20px;
   width: 40%;
@@ -79,9 +81,19 @@
     padding-bottom: 2% !important;
   }
   @media (max-width: 930px) {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 20px;
   }
+}
+#projectDetailBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+  filter: blur(20px);
+  
 }
 
 .project-description-headline-container {

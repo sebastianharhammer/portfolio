@@ -1,7 +1,63 @@
+#pictureFrameContainer {
+    position: relative;
+    &:hover {
+        #meImage {
+            rotate: 0deg;
+            filter: grayscale(0%);
+            transition: all 0.3s ease;
+            left: 6%;
+            @media (max-width: 768px) {
+                left: 6.5%;
+            }
+        }
+        #frontendImage {
+            rotate: 0deg;
+            transition: all 0.3s ease;
+        }
+        #meText {
+            rotate: 0deg;
+            transition: all 0.1s ease;
+            left: 30%;
+        }
+    }
+}
 #frontendImage {
-    width: 200px;
-    height: 225px;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    min-width: 200px;
+    min-height: 225px;
     padding-left: 50px;
     padding-bottom: 75px;
     rotate: 10deg;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  #meImage {
+    width: 175px;
+    height: 200px;
+    padding-left: 50px;
+    padding-bottom: 75px;
+    rotate: 10deg;
+    position: absolute;
+    top: 4.8%;
+    left: 7.5%;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+    @media (max-width: 768px) {
+        width: 205px;
+        height: 225px;
+        left: 8.5%;
+    }
+  }
+  #meText {
+    position: absolute;
+    bottom: 35%;
+    left: 28%;
+    font-size: 0.8rem;
+    rotate: 10deg;
+    color: #000;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    transition: all 0.1s ease;
   }

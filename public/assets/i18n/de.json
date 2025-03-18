@@ -9,7 +9,8 @@
   "hero": {
     "helloWorld": "Hallo Welt!",
     "whoIs": "Ich bin Sebastian Harhammer",
-    "getInTouch": "Kontaktiere mich"
+    "getInTouch": "Kontaktiere mich",
+    "me": "Hi mein Name ist Basti :)"
   },
   "aboutme": {
     "location": "Ansässig in Regensburg",
