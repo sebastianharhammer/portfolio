@@ -86,9 +86,7 @@ main {
   text-overflow: clip;
   transition: opacity 0.3s ease-in-out, background-position 0.5s ease,
     width 0.5s ease-in-out;
-  background: linear-gradient(to right, transparent 50%, blue 50%);
-  background-size: 200% 100%;
-  background-position: 100% 0;
+
   &:hover {
     background-position: 0 0;
   }
@@ -190,6 +188,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   align-self: flex-start;
+  padding-left: 2%;
   @media (max-width: 768px) {
     display: none;
   }
@@ -224,7 +223,10 @@ main {
     opacity: 0;
   }
   #MyNameIs {
-    transition: opacity 0.8s ease-in-out;
+    background: linear-gradient(to right, transparent 50%, blue 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+
     opacity: 1;
     width: 275px;
     @media (max-width: 480px) {

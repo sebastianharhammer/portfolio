@@ -6,9 +6,10 @@ import { SkillSetComponent } from '../../sections/03_skill-set/skill-set.compone
 import { ProjectsComponent } from '../../sections/04_projects/projects.component';
 import { ThoughtsComponent } from '../../sections/05_thoughts/thoughts.component';
 import { ContactComponent } from '../../sections/06_contact/contact.component';
-
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-home',
+  standalone: true,
   imports: [
     RouterModule,
     HeroComponent,
@@ -21,4 +22,6 @@ import { ContactComponent } from '../../sections/06_contact/contact.component';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  constructor(private translate: TranslateService) {}
+}

@@ -4,6 +4,7 @@ import { HeaderComponent } from '../../../shared/header/header.component';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { LogoComponent } from '../../../shared/logo/logo.component';
+import { RouterModule, Router } from '@angular/router';
 
 interface ProjectDetails {
   technologies: string[];

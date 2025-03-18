@@ -11,7 +11,7 @@ import { FooterComponent } from "./shared/footer/footer.component";
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'PORTFOLIO';
+  title = 'Sebastian Harhammer - Portfolio';
 
 
 /*   @ViewChild('about-me') aboutMe!: ElementRef;

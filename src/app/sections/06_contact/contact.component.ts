@@ -112,6 +112,10 @@ export class ContactComponent {
 
   openPrivacyPolicy() {
     this.router.navigate(['/privacy-policy']);
+    localStorage.setItem('scrollPosition', window.scrollY.toString());
+     this.router.navigate(['/privacy-policy']).then(() => {
+       window.scrollTo(0, 0);
+     });
   }
 
   openLegalNotice() {
