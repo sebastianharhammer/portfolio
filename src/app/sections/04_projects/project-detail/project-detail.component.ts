@@ -29,21 +29,21 @@ export class ProjectDetailComponent {
   projectDetails: Record<string, ProjectDetails> = {
     ellpolloloco: {
       technologies: ['JavaScript', 'HTML', 'CSS'],
-      images: ['assets/img/projects/polloloco.jpg'],
+      images: ['assets/img/projects/polloloco.webp'],
       github: 'https://github.com/sebastianharhammer/El_POLLO_LOCO',
       live: 'https://sebastianharhammer.github.io/El_POLLO_LOCO/',
       nextProject: 'join',
     },
     join: {
       technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
-      images: ['assets/img/projects/join.jpg'],
+      images: ['assets/img/projects/join.webp'],
       github: 'https://github.com/sebastianharhammer/joinProjekt',
       live: 'https://sebastianharhammer.github.io/joinProjekt/',
       nextProject: 'pokedex',
     },
     pokedex: {
       technologies: ['HTML', 'CSS', 'JavaScript', 'RestAPI'],
-      images: ['assets/img/projects/pokedex.jpg'],
+      images: ['assets/img/projects/pokedex.webp'],
       github: 'https://github.com/sebastianharhammer/pokedex',
       live: 'https://sebastianharhammer.github.io/pokedex/',
       nextProject: 'ellpolloloco',
@@ -58,4 +58,5 @@ export class ProjectDetailComponent {
       this.projectsComponent.openProjectDetail(nextProject);
     }
   }
+ 
 }

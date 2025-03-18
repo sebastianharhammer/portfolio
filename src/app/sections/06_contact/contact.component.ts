@@ -35,31 +35,49 @@ export class ContactComponent {
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
-        'Content-Type': 'text/plain',
-        responseType: 'text',
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
       },
     },
   };
 
   private readonly emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+  showSuccessMessage = false;
+  showErrorMessage = false;
+
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    console.log('onSubmit wird ausgeführt');
+    console.log('mailTest', this.mailTest);
+    console.log('ngForm.submitted', ngForm.submitted);
+    console.log('ngForm.form.valid', ngForm.form.valid);
+    if (ngForm.submitted && ngForm.form.valid) {
+      console.log('Form is valid', ngForm.form.valid, this.contactData);
       this.http
-        .post(this.post.endPoint, this.post.body(this.contactData))
+        .post(this.post.endPoint, this.post.body(this.contactData), this.post.options)
         .subscribe({
+        
           next: (response) => {
             console.log('response', response);
             ngForm.resetForm();
-            // Add user feedback here (e.g., success message)
+            this.showSuccessMessage = true;
+            this.showErrorMessage = false;
+            setTimeout(() => {
+              this.showSuccessMessage = false;
+            }, 5000);
           },
           error: (error) => {
             console.error(error);
-            // Add user feedback here (e.g., error message)
+            this.showSuccessMessage = false;
+            this.showErrorMessage = true;
+            setTimeout(() => {
+              this.showErrorMessage = false;
+            }, 5000);
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+    } else if (ngForm.submitted && ngForm.form.valid) {
+      console.log('Form is not valid', ngForm.form.valid, this.contactData);
       ngForm.resetForm();
     }
   }

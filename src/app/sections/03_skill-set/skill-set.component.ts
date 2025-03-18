@@ -49,19 +49,19 @@ export class SkillSetComponent {
 
     this.peelOffImages = [
       {
-        src: 'assets/img/skills/sticker_full.png',
+        src: 'assets/img/skills/sticker_full.webp',
         alt: 'sticker',
         topPart: 'assets/img/skills/sticker_arrow.svg',
         bottomPart: this.bottomPartText0,
       },
       {
-        src: 'assets/img/skills/sticker_first_peel.png',
+        src: 'assets/img/skills/sticker_first_peel.webp',
         alt: 'sticker_first_peel',
         topPart: '',
         bottomPart: '',
       },
       {
-        src: 'assets/img/skills/sticker_peel_off.png',
+        src: 'assets/img/skills/sticker_peel_off.webp',
         alt: 'sticker_peel_off',
         topPart: this.topPartText2,
         bottomPart: 'assets/img/skills/sticker_icons_open.svg',

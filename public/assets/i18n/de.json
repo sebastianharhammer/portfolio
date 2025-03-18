@@ -78,15 +78,20 @@
     "contactForm": {
       "nameLabel": "Wie ist ihr Name",
       "namePlaceholder": "Ihr Name",
+      "nameError": "Bitte geben Sie einen gültigen Namen ein.",
       "emailLabel": "Wie ist ihre Email",
       "emailPlaceholder": "Ihre Email",
+      "emailError": "Bitte geben Sie eine gültige Email-Adresse ein.",
       "messageLabel": "Nachricht",
       "messagePlaceholder": "Ihre Nachricht",
+      "messageError": "Bitte geben Sie eine Nachricht ein.",
       "privacyFirstPart": "Ich habe die ",
       "link": "Datenschutzerklärung",
       "privacySecondPart": " gelesen und stimme der Datenschutzerklärung zu.",
       "errorMessage": "Bitte stimmen Sie der Datenschutzerklärung zu, bevor Sie die Nachricht senden.",
-      "send": "Senden"
+      "send": "Senden",
+      "successMessage": "Nachricht erfolgreich gesendet!",
+      "submitError": "Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut."
     }
   },
 

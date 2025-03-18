@@ -79,15 +79,20 @@
     "contactForm": {
       "nameLabel": "What is your name?",
       "namePlaceholder": "Your name",
+      "nameError": "Please enter a valid name.",
       "emailLabel": "What is your email?",
       "emailPlaceholder": "Your email",
+      "emailError": "Please enter a valid email.",
       "messageLabel": "Message",
       "messagePlaceholder": "Your message",
+      "messageError": "Please enter a message.",
       "privacyFirstPart": "I have read and agree to the ",
       "link": "Privacy Policy",
       "privacySecondPart": " and agree to the processing of my data as outlined",
       "errorMessage": "Please agree to the privacy policy before sending the message.",
-      "send": "Send"
+      "send": "Send",
+      "successMessage": "Message sent successfully!",
+      "submitError": "Error sending message. Please try again."
     }
   },
   "privacy_policy": {

@@ -11,7 +11,7 @@ a:hover {
   height: 55vh;
   min-height: 1000px;
   position: relative;
-  background-image: url("./../../../../public/assets/img/contact/backgroundRotate.png") !important;
+  background-image: url("./../../../../public/assets/img/contact/backgroundRotate.webp") !important;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -233,6 +233,8 @@ textarea::placeholder {
   color: #fff;
   background-color: transparent;
   border-right: none;
+  border-top: none;
+  border-left: none;
   @media (max-width: 768px) {
     font-size: 1rem;
   }
@@ -368,10 +370,10 @@ textarea::placeholder {
 //LOGO
 
 ::ng-deep #circleContainer {
-  top: 6% !important;
+  top: 5% !important;
    @media (max-width: 1250px) {
     right: 25% !important;
-    left: 35% !important;
+    left: 30% !important;
     top: 3% !important;
   }
   
@@ -408,4 +410,32 @@ textarea::placeholder {
   right: -9.5% !important;
   height: 200px !important;
   width: 200px !important;
+}
+
+#feedbackContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  
+  .feedback-message {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    
+    &.success {
+      background-color: rgba(76, 175, 80, 0.1);
+      color: #4CAF50;
+      border: 1px solid #4CAF50;
+    }
+    
+    &.error {
+      background-color: rgba(244, 67, 54, 0.1);
+      color: #f44336;
+      border: 1px solid #f44336;
+    }
+  }
 }

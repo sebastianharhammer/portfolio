@@ -21,7 +21,8 @@
                     <h2 class="formTitle">{{ 'contact.contactForm.nameLabel' | translate }}</h2>
                     <div id="nameForm">
                         <input ngModel #name="ngModel" name="name" [(ngModel)]="contactData.name" class="form-input"
-                            type="text" placeholder="{{ 'contact.contactForm.namePlaceholder' | translate }}" required>
+                            type="text" placeholder="{{ 'contact.contactForm.namePlaceholder' | translate }}" required
+                            autocomplete="off">
                         @if (!name.valid && name.touched && !name.disabled) {
                         <span class="errorMessage">{{ 'contact.contactForm.nameError' | translate }}</span>
                         }
@@ -32,7 +33,7 @@
                     <div id="emailForm">
                         <input ngModel #email="ngModel" name="email" [(ngModel)]="contactData.email" class="form-input"
                             type="email" placeholder="{{ 'contact.contactForm.emailPlaceholder' | translate }}"
-                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
+                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required autocomplete="off">
                         @if (!email.valid && email.touched && !email.disabled) {
                         <span class="errorMessage">{{ 'contact.contactForm.emailError' | translate }}</span>
                         }
@@ -43,8 +44,8 @@
                     <div id="messageForm">
                         <textarea #message="ngModel" ngModel name="message" [(ngModel)]="contactData.message"
                             class="form-input" minlength="4"
-                            placeholder="{{ 'contact.contactForm.messagePlaceholder' | translate }}"
-                            required></textarea>
+                            placeholder="{{ 'contact.contactForm.messagePlaceholder' | translate }}" required
+                            autocomplete="off"></textarea>
                         @if (!message.valid && message.touched && !message.disabled) {
                         <span class="errorMessage">{{ 'contact.contactForm.messageError' | translate }}</span>
                         }
@@ -56,7 +57,8 @@
                     </div>
                     <label #checkboxLabel id="checkboxLabel" for="checkbox">
                         {{ 'contact.contactForm.privacyFirstPart' | translate }}
-                        <span id="link" (click)="openPrivacyPolicy()">{{ 'contact.contactForm.link' | translate }} </span>
+                        <span id="link" (click)="openPrivacyPolicy()">{{ 'contact.contactForm.link' | translate }}
+                        </span>
                         <span>{{ 'contact.contactForm.privacySecondPart' | translate }}</span>
                     </label>
                 </div>
@@ -65,9 +67,20 @@
                     <p id="errorMessage">{{ 'contact.contactForm.errorMessage' | translate }}</p>
                 </div>
                 }
+                <div id="feedbackContainer">
+                    @if (showSuccessMessage) {
+                    <div class="feedback-message success">
+                        {{ 'contact.contactForm.successMessage' | translate }}
+                    </div>
+                    }
+                    @if (showErrorMessage) {
+                    <div class="feedback-message error">
+                        {{ 'contact.contactForm.submitError' | translate }}
+                    </div>
+                    }
+                </div>
                 <div id="sendButtonContainer">
-                    <button id="sendButton" [disabled]="!enableButton()"
-                        [ngClass]="{'disabled': !enableButton()}"
+                    <button id="sendButton" [disabled]="!enableButton()" [ngClass]="{'disabled': !enableButton()}"
                         type="submit">
                         {{ 'contact.contactForm.send' | translate}}</button>
                 </div>
