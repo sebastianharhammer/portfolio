@@ -26,7 +26,7 @@
     </div>
     <div class="navbar-language" [class.en-active]="activeLanguage === 'en'"
         [class.de-active]="activeLanguage === 'de'">
-        <div class="navbar-language-item">
+        <div class="navbar-language-item" [class.en-active]="activeLanguage === 'en'">
             <span id="en">EN</span>
             <img class="language-toggle" id="en-toggle" [class.active]="activeLanguage === 'en'"
                 (click)="useLanguage('en')" src="assets/img/header/english_toggle.svg" alt="english_toggle">
@@ -35,7 +35,7 @@
             <img id="dot" src="assets/img/header/dot.svg" alt="dot">
             <img id="selector_line" src="assets/img/header/vector.svg" alt="selector_line">
         </div>
-        <div class="navbar-language-item">
+        <div class="navbar-language-item" [class.de-active]="activeLanguage === 'de'">
             <span id="de">DE</span>
             <img class="language-toggle" id="de-toggle" [class.active]="activeLanguage === 'de'"
                 (click)="useLanguage('de')" src="assets/img/header/german_toggle.svg" alt="german_toggle">

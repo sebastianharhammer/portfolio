@@ -11,6 +11,22 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.9);
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0;
+    
+  }
 }
 
 .navbar-brand {
@@ -138,11 +154,22 @@
     font-weight: bold;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    transition: background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
     cursor: pointer;
     &:hover {
       cursor: pointer;
     }
+  }
+
+  // Add these new styles for active language
+  .en-active #en,
+  &.en-active #en {
+    color: #f7c518; // or any color you prefer
+  }
+
+  .de-active #de,
+  &.de-active #de {
+    color: #f7c518; // or any color you prefer
   }
 
   &:hover img {

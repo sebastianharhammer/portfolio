@@ -55,6 +55,7 @@ export class HeaderComponent {
     this.translate.use(language);
     this.activeLanguage = language as 'en' | 'de';
     this.languageService.activeLanguage = this.activeLanguage;
+    localStorage.setItem('language', language);
   }
   onMouseEnter() {
     console.log('mouse enter');
@@ -62,4 +63,5 @@ export class HeaderComponent {
   onMouseLeave() {
     console.log('mouse leave');
   }
+  
 }

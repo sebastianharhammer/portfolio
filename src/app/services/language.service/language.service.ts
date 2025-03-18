@@ -13,6 +13,9 @@ export class LanguageService {
   activeLanguage$ = this.languageSubject.asObservable();
   
   get activeLanguage(): 'en' | 'de' {
+    if (localStorage.getItem('language')) {
+      return localStorage.getItem('language') as 'en' | 'de';
+    }
     return this.languageSubject.value;
   }
   
