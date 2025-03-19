@@ -43,6 +43,12 @@
     
     font-size: 1.5rem;
     font-weight: 500;
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+    }
+    @media (max-width: 480px) {
+        font-size: 1rem;
+    }
 }
 
 #colleaguesThoughtsContainer {
@@ -58,6 +64,12 @@
 #colleaguesThoughtsTitle {
     font-size: 4rem;
     font-weight: 500;
+    @media (max-width: 768px) {
+        font-size: 3rem;
+    }
+    @media (max-width: 480px) {
+        font-size: 2rem;
+    }
 }
 
 #thoughtsContainer {
@@ -155,10 +167,13 @@
 
 #commentary01 {
     top: 20%;
-    right: 10%;
-    left: 10%;
+    right: 15%;
+    left: 0%;
     transform: rotate(-5deg);
     z-index: 5;
+    @media (max-width: 768px) {
+        left: 10%;
+    }
 }
 #commentaryAuthor01 {
     top: 75%;

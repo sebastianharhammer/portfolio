@@ -48,10 +48,7 @@
   min-height: 200px;
   max-height: 300px;
   position: relative;
-  @media (max-width: 420px) {
-    width: 300px;
-    height: 150px;
-  }
+  
   img {
     position: absolute;
     width: 100%;

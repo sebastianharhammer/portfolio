@@ -116,7 +116,7 @@
   width: 100%;
   span {
     position: absolute;
-    top: 0;
+    top: 20%;
     right: 5%;
     text-decoration: none;
     color: white;
@@ -127,7 +127,7 @@
   img {
     opacity: 0;
     position: absolute;
-    top: 0;
+    top: 10%;
     right: 5%;
     width: 100px;
     transition: clip-path 0.3s ease-in-out;
