@@ -109,6 +109,9 @@ main {
   justify-content: space-between;
   align-self: flex-start;
   align-items: center;
+  @media (max-width: 820px) {
+    width: 90%;
+  }
 }
 #frontEndTextContainer {
   display: flex;
@@ -125,6 +128,9 @@ main {
   font-size: 7.5rem;
   &:hover {
     color: #f7c518;
+  }
+  @media (max-width: 968px) {
+    font-size: 6rem;
   }
   @media (max-width: 768px) {
     font-size: 5rem;
@@ -283,7 +289,9 @@ main {
   }
   .front-container {
     padding-left: 10%;
+    
     height: 100px;
+   
   }
   .dev-container {
     padding-right: 10%;

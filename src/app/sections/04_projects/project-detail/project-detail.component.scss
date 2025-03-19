@@ -223,10 +223,10 @@
   a {
     padding: 0.5rem 1rem;
     color: white;
+    text-decoration: none;
     @media (max-height: 500px) {
         color: rgb(105, 105, 105)
     }
-    text-decoration: none;
   }
 }
 .git-links {

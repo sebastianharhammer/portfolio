@@ -16,8 +16,9 @@
         }
         #meText {
             rotate: 0deg;
-            transition: all 0.1s ease;
-            left: 30%;
+            transition: all 0.3s ease;
+            left: 40%;
+            bottom: 31%;
         }
     }
 }
@@ -53,11 +54,11 @@
   }
   #meText {
     position: absolute;
-    bottom: 35%;
-    left: 28%;
-    font-size: 0.8rem;
+    bottom: 30%;
+    left: 35%;
+    font-size: 0.9rem;
     rotate: 10deg;
     color: #000;
-    font-family: 'Bricolage Grotesque', sans-serif;
-    transition: all 0.1s ease;
+    font-family: 'Kalam', cursive;
+    transition: all 0.3s ease;
   }
