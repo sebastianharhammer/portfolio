@@ -24,7 +24,7 @@ export class HeaderMobileComponent {
   }
 
   scrollToSection(sectionId: string) {
-    
+    this.closeHeader();
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
