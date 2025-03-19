@@ -7,13 +7,13 @@
   background: black;
   z-index: 1000;
   overflow-y: auto;
-  background-image: url("../../../../../public/assets/img/projects/project-detail-background.png");
+  background-image: url("../../../../../public/assets/img/projects/project-detail-background.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   font-family: "Bricolage Grotesque", sans-serif;
   @media (max-width: 1250px) {
-    background-image: url("../../../../../public/assets/img/projects/project-detail-background-mobile.png") !important;
+    background-image: url("../../../../../public/assets/img/projects/project-detail-background-mobile.webp") !important;
     background-position: top !important;
   }
 }
