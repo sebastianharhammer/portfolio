@@ -173,7 +173,7 @@ main {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-top: 50px;
+  min-height: 100px;
   @media (max-width: 768px) {
     padding-right: 10%;
   }
@@ -279,10 +279,7 @@ main {
   #pictureFrameContainer {
     display: none;
   }
-  .get-in-touch {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
+  
   .front-container .dev-container {
     width: 100%;
     height: 100px;
