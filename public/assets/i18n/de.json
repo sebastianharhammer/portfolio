@@ -18,13 +18,13 @@
     "remote": "Offen für Remote-Arbeit",
     "smalltitle": "WER IST SEBASTIAN HARHAMMER",
     "title": "Über mich",
-    "description": "Hallo, ich bin Basti. Ich bin ein leidenschaftlicher Entwickler, der sich ständig weiterbildet und neue Technologien erlernt, um immer auf dem neuesten Stand zu bleiben. Ich bin immer auf der Suche nach neuen Herausforderungen und neuen Projekten, die ich mit meinem Team umsetzen kann.",
+    "description": "Hi, ich bin Basti. Ich wechsle in die Full-Stack-Entwicklung und bringe einen Hintergrund in Elektronik und Projektmanagement mit. Ich bin stets motiviert, zu lernen und mich als Entwickler weiterzuentwickeln.",
     "letsTalk": "Lass uns reden"
   },
   "skillset": {
     "mystack": "Mein Stack",
-    "title": "Fähigkeiten",
-    "description": "Ich bin ein Softwareentwickler mit einem starken Interesse an der Entwicklung von effizienten und benutzerfreundlichen Anwendungen. Ich bin ein leidenschaftlicher Entwickler, der sich ständig weiterbildet und neue Technologien erlernt, um immer auf dem neuesten Stand zu bleiben.",
+    "title": "Skills",
+    "description": "Die ständige Weiterentwicklung meiner Fähigkeiten und die Erlernung neuer Technologien ist für mich sehr wichtig. Ich bin immer auf der Suche nach neuen Herausforderungen und neuen Projekten, die ich mit meinem Team umsetzen kann.",
     "peel": "Aufziehen",
     "peelOff": "Außerdem interessiere ich mich für:"
   },
@@ -32,21 +32,24 @@
     "myCraft": "Mein Arbeit",
     "title": "Projekte",
     "overlay": "Projektdetails",
-    "description": "Ich bin ein Softwareentwickler mit einem starken Interesse an der Entwicklung von effizienten und benutzerfreundlichen Anwendungen. Ich bin ein leidenschaftlicher Entwickler, der sich ständig weiterbildet und neue Technologien erlernt, um immer auf dem neuesten Stand zu bleiben.",
+    "description": "Bei meinen Projekten setze ich Wert auf eine ästhetische und benutzerfreundliche Anwendung. Sowie eine effiziente und saubere Code-Struktur.",
 
     "ellpolloloco": {
       "title": "El Pollo Loco",
-      "description": "El Pollo Loco ist ein Spiel, dass über den Browser spielbar ist. Es wurde hauptsächlich mit Javascript Klassen und der Canvas API erstellt.",
+      "description": "El Pollo Loco ist ein Spiel über den Mexikaner Pepe dessen Ziel es ist, ein wildgewordenes mutiertes Super Huhn zu besiegen.",
+      "implementation": "Bei diesem Projekt habe ich mich hauptsächlich mit der Canvas API beschäftigt. Die komplette Logik des Spiels wurde mit Javascript Klassen umgesetzt.",
       "duration": "3 Wochen"
     },
     "join": {
       "title": "Join",
       "description": "Join ist eine Kanban WebApp nach dem Scrum Prinzip, die es möglich macht, Task zu erstellen, zu planen und zu verwalten.",
+      "implementation": "Das Backend hierbei übernimmt Firebase. Das Frontend wurde im Team mit Javascript, HTML und CSS umgesetzt.",
       "duration": "5 Wochen"
     },
     "pokedex": {
       "title": "Pokedex",
       "description": "Mithilfe der PokeAPI stellt diese WebApp Informationen zu allen Pokémon bereit und visualisiert diese, einschließlich einer Suchfunktion und einem detaillierten Anzeigefenster für jedes Pokémon.",
+      "implementation": "Bei diesem Projekt habe ich mich hauptsächlich mit der PokeAPI beschäftigt. DEMO TEXT DEMO TEXT DEMO TEXT",
       "duration": "3 Wochen"
     }
   },
@@ -63,19 +66,25 @@
     "inTheirWords": "In Ihren Worten",
     "title": "Meinungen von Kollegen",
     "card01": {
-      "thought": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+      "thought": "Sebastian ist ein sehr talentierter Entwickler mit einem innovativen Denken. Er ist ein wertvoller Beitrag für jede Team.",
+      "author": "Dominik Löffler",
+      "link": "https://www.linkedin.com/in/daniel-l%C3%B6ffler-179359261/"
     },
     "card02": {
-      "thought": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+      "thought": "Er ist immer bereit, den Schritt zu gehen und seine Dedikation für das Projekt ist beeindruckend.",
+      "author": "Enez Hadzic",
+      "link": "https://www.linkedin.com/in/enes-hadzic-546658307/"
     },
     "card03": {
-      "thought": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+      "thought": "Ein großartiger Teamplayer und immer bereit, zu helfen. Sebastian ist ein wertvoller Beitrag für jede Team.",
+      "author": "John Doe",
+      "link": "https://www.linkedin.com/in/john-doe/"
     }
   },
   "contact": {
     "contactme": "Kontaktiere mich",
     "ready": "Bereit für eine Zusammenarbeit?",
-    "description": "Ich bin ein Softwareentwickler mit einem starken Interesse an der Entwicklung von effizienten und benutzerfreundlichen Anwendungen. Ich bin ein leidenschaftlicher Entwickler, der sich ständig weiterbildet und neue Technologien erlernt, um immer auf dem neuesten Stand zu bleiben.",
+    "description": "Ich bin stets offen für neue Herausforderungen und neue Projekte. Wenn Sie Interesse an einer Zusammenarbeit, oder Fragen zu meinen Projekten haben, können Sie mir gerne eine Nachricht senden.",
     "contactForm": {
       "nameLabel": "Wie ist ihr Name",
       "namePlaceholder": "Ihr Name",
@@ -83,7 +92,7 @@
       "emailLabel": "Wie ist ihre Email",
       "emailPlaceholder": "Ihre Email",
       "emailError": "Bitte geben Sie eine gültige Email-Adresse ein.",
-      "messageLabel": "Nachricht",
+      "messageLabel": "Was möchten Sie mir sagen?",
       "messagePlaceholder": "Ihre Nachricht",
       "messageError": "Bitte geben Sie eine Nachricht ein.",
       "privacyFirstPart": "Ich habe die ",

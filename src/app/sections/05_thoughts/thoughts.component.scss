@@ -16,6 +16,7 @@
     justify-content: flex-end;
     width: 100%;
     padding-right: 2%;
+    padding-top: 5%;
     @media (max-width: 768px) {
         padding-right: 2%;
 
@@ -92,10 +93,12 @@
         }
         a {
             rotate: 180deg;
+            z-index: 10;
         }
         span {
             rotate: 360deg;
             transition: all 0.3s ease-in-out;
+            z-index: 10;
         }
     }
     @media (max-width: 768px) {
@@ -145,6 +148,9 @@
     position: absolute;
     font-size: 1rem;
     font-weight: 500;
+    @media (max-width: 768px) {
+        font-size: 0.7rem;
+    }
 }
 
 #commentary01 {
@@ -178,6 +184,9 @@
     position: absolute;
     font-size: 1rem;
     font-weight: 500;
+    @media (max-width: 768px) {
+        font-size: 0.8rem;
+    }
 }
 #commentaryAuthor02 {
     top: 75%;
@@ -191,14 +200,14 @@
 
 #commentary03 {
     top: 20%;
-    left: 20%;
+    left: 15%;
     right: 10%;
     transform: rotate(5deg);
     z-index: 5;
 }
 #commentaryAuthor03 {
     top: 75%;
-    left: 20%;
+    left: 14%;
     right: 10%;
     transform: rotate(5deg);
 }

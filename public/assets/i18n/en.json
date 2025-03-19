@@ -18,13 +18,13 @@
     "remote": "Open to remote work",
     "smalltitle": "WHO'S SEBASTIAN HARHAMMER",
     "title": "About me",
-    "description": "Hello, I am Basti. I am a passionate developer who is constantly learning new technologies to stay up to date. I am always looking for new challenges and new projects that I can implement with my team.",
+    "description": "Hi, I'm Basti. I'm transitioning into full-stack development, bringing a background in electronics and project management. I'm always eager to learn and grow as a developer.",
     "letsTalk": "Let's talk"
   },
   "skillset": {
     "mystack": "My Stack",
     "title": "Skills",
-    "description": "I am a passionate developer who is constantly learning new technologies to stay up to date. I am always looking for new challenges and new projects that I can implement with my team.",
+    "description": "The constant development of my skills and the acquisition of new technologies is very important to me. I am always looking for new challenges and new projects that I can implement with my team.",
     "peel": "Pull",
     "peelOff": "Also interested in:"
   },
@@ -32,21 +32,24 @@
     "myCraft": "My Craft",
     "title": "Projects",
     "overlay": "Project details",
-    "description": "I am a passionate developer who is constantly learning new technologies to stay up to date. I am always looking for new challenges and new projects that I can implement with my team.",
+    "description": "When I work on projects, I focus on creating an aesthetically pleasing and user-friendly application. As well as a clean and efficient code structure.",
 
     "ellpolloloco": {
       "title": "El Pollo Loco",
-      "description": "El Pollo Loco is a game that can be played through the browser. It was mainly created with Javascript classes and the Canvas API.",
+      "description": "El Pollo Loco is a game about the Mexican Pepe, whose goal is to defeat a mutated super chicken.",
+      "implementation": "For this project, I mainly focused on the Canvas API. The complete game logic was implemented using Javascript classes.",
       "duration": "3 Weeks"
     },
     "join": {
       "title": "Join",
       "description": "Join is a kanban board webapp that allows you to create, plan and manage tasks according to the Scrum principle.",
+      "implementation": "The backend is handled by Firebase. The frontend was implemented in the team with Javascript, HTML and CSS.",
       "duration": "5 Weeks"
     },
     "pokedex": {
       "title": "Pokedex",
       "description": "Using the PokeAPI, this webapp provides information about all Pokémon and visualizes it including a search function and a detailed view of each Pokémon.",
+      "implementation": "For this project, I mainly focused on the PokeAPI. The search function was implemented using the PokeAPI's search endpoint.",
       "duration": "3 Weeks"
     }
   },
@@ -64,19 +67,25 @@
     "inTheirWords": "In Their Words",
     "title": "Colleague's thoughts",
     "card01": {
-      "thought": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+      "author": "Dominik Löffler",
+      "thought": "His technical expertise and innovative mindset make him an asset to any team.",
+      "link": "https://www.linkedin.com/in/daniel-l%C3%B6ffler-179359261/"
     },
     "card02": {
-      "thought": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+      "author": "Enez Hadzic",
+      "thought": "He is always ready to take the step and his dedication to the project is impressive.",
+      "link": "https://www.linkedin.com/in/enes-hadzic-546658307/"
     },
     "card03": {
-      "thought": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+      "author": "Tobias Beckstein",
+      "thought": "He is great team player and always willing to help out. Sebastian is a valuable contribution to any team.",
+      "link": "https://www.linkedin.com/in/tobias-beckstein/"
     }
   },
   "contact": {
     "contactme": "Contact me",
     "ready": "Ready for a collaboration?",
-    "description": "I am a passionate developer who is constantly learning new technologies to stay up to date. I am always looking for new challenges and new projects that I can implement with my team.",
+    "description": "I am always open to new challenges and new projects. If you are interested in a collaboration or have a question about my work, you can contact me.",
     "contactForm": {
       "nameLabel": "What is your name?",
       "namePlaceholder": "Your name",
@@ -84,7 +93,7 @@
       "emailLabel": "What is your email?",
       "emailPlaceholder": "Your email",
       "emailError": "Please enter a valid email.",
-      "messageLabel": "Message",
+      "messageLabel": "What do you want to tell me?",
       "messagePlaceholder": "Your message",
       "messageError": "Please enter a message.",
       "privacyFirstPart": "I have read and agree to the ",
