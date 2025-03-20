@@ -119,7 +119,10 @@ export class ContactComponent {
   }
 
   openLegalNotice() {
-    console.log('openLegalNotice');
     this.router.navigate(['/legal-notice']);
+    localStorage.setItem('scrollPosition', window.scrollY.toString());
+     this.router.navigate(['/privacy-policy']).then(() => {
+       window.scrollTo(0, 0);
+     });
   }
 }

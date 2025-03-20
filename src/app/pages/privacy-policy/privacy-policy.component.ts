@@ -4,6 +4,7 @@ import { LanguageService } from '../../services/language.service/language.servic
 import { CommonModule } from '@angular/common';
 import { Location } from '@angular/common';
 import { RouterModule, Router } from '@angular/router';
+
 @Component({
   selector: 'app-privacy-policy',
   imports: [TranslateModule, CommonModule, RouterModule],

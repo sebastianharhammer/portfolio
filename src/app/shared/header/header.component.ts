@@ -26,25 +26,36 @@ export class HeaderComponent {
 
   openMobileMenu() {
     this.isMobileMenuOpen = true;
-    document.body.style.overflow = 'hidden';
   }
   
   closeMobileMenu() {
     this.isMobileMenuOpen = false;
-    document.body.style.overflow = 'auto';
   }
   
 
   scrollToSection(sectionId: string) {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } else {
-      console.log("element not found");
-    }
+  
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+  
+      if (element) {
+        // Scroll smoothly if the element exists
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        // Navigate to home page and then scroll
+        this.router.navigate(['/']).then(() => {
+          setTimeout(() => {
+            const newElement = document.getElementById(sectionId);
+            if (newElement) {
+              newElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }, 300); // Give time for DOM to update
+        });
+      }
+    }, 250);
   }
 
-  goBack(sectionId: string): void {
+  goBack(): void {
     this.router.navigate(['/']).then(() => {
       const savedPosition = localStorage.getItem('scrollPosition');
       if (savedPosition) {
@@ -52,7 +63,6 @@ export class HeaderComponent {
         localStorage.removeItem('scrollPosition');
       }
     });
-    this.scrollToSection(sectionId);
   }
   
   activeLanguage: 'en' | 'de' = 'en';

@@ -1,23 +1,32 @@
 .legal-notice-container {
-  width: 100vw;
   position: relative;
   background-color: #fff;
-  background-image: url("./../../../../public/assets/img/hero/background.png");
+  background-image: url("./../../../../public/assets/img/hero/background.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding-top: 100px;
-  padding-left: 2%;
-  padding-right: 2%;
   color: white;
   font-family: 'Bricolage Grotesque', sans-serif;
   position: relative;
   padding-bottom: 30%;
   
+  z-index: 1;
+  
   .content {
     padding-left: 2%;
     padding-right: 2%;
+    max-width: 1440px;
+    margin: 120px auto 250px auto; 
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+      h1 {
+      margin-bottom: 2rem;
+    }
     @media (max-width: 768px) {
       padding-left: 5%; 
       padding-right: 10%;
@@ -107,26 +116,11 @@
     opacity: 0.8;
   }
 }
-
-.content {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-top: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-
-  h1 {
-    margin-bottom: 2rem;
-  }
-}
-::ng-deep #footerContainer {
+/* ::ng-deep #footerContainer {
   display: none !important;
-}
-::ng-deep .navbar-menu-item {
-  display: none !important;
-}
+} */
+
 ::ng-deep #footerContainer {
   margin: -350px auto 0 auto !important;
+  z-index: 100;
 }

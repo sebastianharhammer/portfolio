@@ -1,4 +1,5 @@
 import { Component, inject, Input, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -17,7 +18,16 @@ import { EventEmitter } from '@angular/core';
 export class HeaderMobileComponent {
   @Input() isMobileMenuOpen: boolean = false;
   @Output() close = new EventEmitter<void>();
+  
+  router = inject(Router);
 
+  openMobileMenu() {
+    this.isMobileMenuOpen = true;
+  }
+  
+  closeMobileMenu() {
+    this.isMobileMenuOpen = false;
+  }
 
   closeHeader() {
     this.close.emit();
@@ -25,18 +35,47 @@ export class HeaderMobileComponent {
 
   scrollToSection(sectionId: string) {
     this.closeHeader();
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } else {
-      console.log("element not found");
-    }
+  
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      const headerHeight = document.querySelector('.navbar-menu')?.clientHeight || 80; // Default header height
+  
+      if (element) {
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY; // Get element position relative to the page
+        const offsetPosition = elementPosition - headerHeight - 10; // Adjust for header size & add extra spacing
+  
+        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+      } else {
+        // Navigate to home page, then scroll
+        this.router.navigate(['/']).then(() => {
+          setTimeout(() => {
+            const newElement = document.getElementById(sectionId);
+            if (newElement) {
+              const newElementPosition = newElement.getBoundingClientRect().top + window.scrollY;
+              const newOffsetPosition = newElementPosition - headerHeight - 10;
+              window.scrollTo({ top: newOffsetPosition, behavior: 'smooth' });
+            }
+          }, 300);
+        });
+      }
+    }, 100);
+  }
+
+  goBack(): void {
+    this.router.navigate(['/']).then(() => {
+      const savedPosition = localStorage.getItem('scrollPosition');
+      if (savedPosition) {
+        window.scrollTo(0, parseInt(savedPosition, 10));
+        localStorage.removeItem('scrollPosition');
+      }
+    });
+  
   }
   
   activeLanguage: 'en' | 'de' = 'en';
   languageService = inject(LanguageService);
 
-  constructor(private translate: TranslateService) {
+    constructor(private translate: TranslateService) {
     translate.setTranslation('en', translationEN);
     translate.setTranslation('de', translationDE);
     translate.setDefaultLang('en');

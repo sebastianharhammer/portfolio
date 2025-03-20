@@ -5,7 +5,7 @@
   justify-content: space-between;
   height: 90vh;
   width: 100vw;
-  background-image: url("./../../../../public/assets/img/hero/background.png");
+  background-image: url("./../../../../public/assets/img/header/background.webp");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,8 +14,16 @@
   left: 0;
   right: 0;
   z-index: 100;
-  transition: transform 0.3s ease-in-out;
-  
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    height: 0;
+  }
+  to {
+    height: 90vh;
+  }
 }
 
 #headerMobileTop {
@@ -53,9 +61,11 @@
   gap: 1rem;
   position: relative;
   width: 100%;
+  animation: navbarMenu 0.25s ease-in-out;
   &:hover {
     cursor: pointer;
   }
+  
 
   .navbar-menu-item {
     position: relative;
@@ -94,7 +104,20 @@
   }
 }
 
+@keyframes navbarMenu {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .navbar-language {
+  animation: navbarMenu 0.25s ease-in-out;
   display: flex;
 
   // Move the dot positioning logic to use a class on the parent
@@ -206,6 +229,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: navbarMenu 0.25s ease-in-out;
 }
 .social-media-item {
   display: flex;
