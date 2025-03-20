@@ -1,4 +1,4 @@
-<nav class="navbar">
+<nav class="navbar" #header>
     <div class="navbar-brand">
         <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 1200 1200" version="1.1">
             <path
@@ -25,20 +25,20 @@
         </div>
     </div>
     <div class="navbar-language" [class.en-active]="activeLanguage === 'en'"
-        [class.de-active]="activeLanguage === 'de'">
-        <div class="navbar-language-item" [class.en-active]="activeLanguage === 'en'">
+        [class.de-active]="activeLanguage === 'de'" >
+        <div (click)="useLanguage('en')" class="navbar-language-item" [class.en-active]="activeLanguage === 'en'">
             <span id="en">EN</span>
             <img class="language-toggle" id="en-toggle" [class.active]="activeLanguage === 'en'"
-                (click)="useLanguage('en')" src="assets/img/header/english_toggle.svg" alt="english_toggle">
+                 src="assets/img/header/english_toggle.svg" alt="english_toggle">
         </div>
         <div class="navbar-language-divider">
             <img id="dot" src="assets/img/header/dot.svg" alt="dot">
             <img id="selector_line" src="assets/img/header/vector.svg" alt="selector_line">
         </div>
-        <div class="navbar-language-item" [class.de-active]="activeLanguage === 'de'">
+        <div class="navbar-language-item" [class.de-active]="activeLanguage === 'de'" (click)="useLanguage('de')">
             <span id="de">DE</span>
             <img class="language-toggle" id="de-toggle" [class.active]="activeLanguage === 'de'"
-                (click)="useLanguage('de')" src="assets/img/header/german_toggle.svg" alt="german_toggle">
+                 src="assets/img/header/german_toggle.svg" alt="german_toggle">
         </div>
     </div>
     <div id="headerMobileMenu" (click)="openMobileMenu()">

@@ -62,7 +62,7 @@
                         <span>{{ 'contact.contactForm.privacySecondPart' | translate }}</span>
                     </label>
                 </div>
-                @if (!checkBoxIsChecked()) {
+                @if (!checkBoxIsChecked() && name.valid && email.valid && message.valid) {
                 <div id="errorContainer">
                     <p id="errorMessage">{{ 'contact.contactForm.errorMessage' | translate }}</p>
                 </div>
