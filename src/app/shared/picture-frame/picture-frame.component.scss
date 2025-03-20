@@ -56,4 +56,31 @@
     color: #000;
     font-family: 'Kalam', cursive;
     transition: all 0.3s ease;
+    animation: meText 3s ease-in-out infinite;
+  }
+  @keyframes meText {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    25% {
+        transform: translateY(-5px) scale(1.1);
+        opacity: 0.8;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    50% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    75% {
+        transform: translateY(5px) scale(0.9);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
   }

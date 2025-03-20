@@ -53,7 +53,7 @@
                 </div>
                 <div id="checkboxContainer">
                     <div id="checkboxWrapper">
-                        <input id="checkbox" type="checkbox" name="checkbox" id="checkbox" (click)="checkCheckBox()">
+                        <input ngModel #checkbox="ngModel" [(ngModel)]="contactData.checkbox" id="checkbox" type="checkbox" name="checkbox" id="checkbox" (click)="checkCheckBox()">
                     </div>
                     <label #checkboxLabel id="checkboxLabel" for="checkbox">
                         {{ 'contact.contactForm.privacyFirstPart' | translate }}

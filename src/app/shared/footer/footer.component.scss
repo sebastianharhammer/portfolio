@@ -79,6 +79,9 @@
   position: relative;
   padding: 5px;
   width: 100px;
+  &:hover {
+    cursor: pointer;
+  }
   span {
     position: absolute;
     top: 0;
@@ -115,6 +118,9 @@
   position: relative;
   padding: 5px;
   width: 100%;
+  &:hover {
+    cursor: pointer;
+  }
   span {
     position: absolute;
     top: 20%;

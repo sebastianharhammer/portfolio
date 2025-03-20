@@ -39,27 +39,10 @@ main {
   width: 300px;
   padding: 5px;
   position: relative;
-  animation: hello 0.5s ease-in-out forwards;
   transition: width 0.5s ease-in-out;
   z-index: 1;
 }
-@keyframes hello {
-  0% {
-    transform: rotate(-180deg) translateX(0);
-  }
-  70% {
-    transform: rotate(0deg) translateX(0);
-  }
-  80% {
-    transform: rotate(-10deg) translateX(-5px);
-  }
-  90% {
-    transform: rotate(5deg) translateX(5px);
-  }
-  100% {
-    transform: rotate(0deg) translateX(0);
-  }
-}
+
 #helloWorld {
   font-size: 1.2rem;
   font-weight: 600;
@@ -70,8 +53,20 @@ main {
   padding: 5px 20px 5px 20px;
   display: block;
   transition: opacity 0.3s ease-in-out;
+  animation: helloWorld 5s ease-in-out infinite;
   @media (max-width: 768px) {
     font-size: 1rem;
+  }
+}
+@keyframes helloWorld {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  50% {
+    box-shadow: 0 0 10px 10px white;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
   }
 }
 #MyNameIs {
@@ -90,6 +85,8 @@ main {
 
   &:hover {
     background-position: 0 0;
+    rotate: 3deg;
+    cursor: pointer;
   }
   @media (max-width: 768px) {
     font-size: 1rem;
@@ -211,6 +208,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   padding: 10px;
+  animation: socialMedia 5s ease-in-out infinite;
   &:hover {
     cursor: pointer;
     border: 2px solid white;
@@ -222,6 +220,25 @@ main {
     }
   }
 }
+@keyframes socialMedia {
+  0% {
+    transform: rotate(0deg);
+    scale: 1;
+  }
+  33% {
+    transform: rotate(90deg);
+    scale: 1.1;
+  }
+  66% {
+    transform: rotate(-90deg);
+    scale: 1;
+  }
+  100% {
+    transform: rotate(0deg);
+    scale: 1.1;
+  }
+}
+
 #pictureFrameContainerMobile {
   width: 100%;
   display: flex;
@@ -251,7 +268,7 @@ main {
   }
   #wavingHand {
     opacity: 1;
-    animation: wave 1s forwards;
+    animation: wave 3s forwards;
   }
 }
 
@@ -262,7 +279,7 @@ main {
   50% {
     transform: translateX(75px) rotateZ(0deg);
   }
-  80% {
+  90% {
     transform: translateX(80px) rotateZ(15deg);
   }
 

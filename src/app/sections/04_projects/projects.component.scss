@@ -69,6 +69,7 @@
 #myCraftTitle {
   font-size: 1.5rem;
   font-weight: 500;
+  animation: myCraftTitle 3s ease-in-out infinite; 
 }
 
 #projectsTitleContainer {
@@ -82,6 +83,18 @@
 #projectsTitle {
   font-size: 4rem;
   font-weight: 500;
+}
+@keyframes myCraftTitle {
+  0% {
+    color: black;
+  }
+  50% {
+    color: #f87a55;
+    text-shadow: 0 0 5px #f87a55;
+  }
+  100% {
+    color: black;
+  }
 }
 
 #projectsLine {
@@ -174,6 +187,7 @@
     font-size: 1.5rem;
     font-weight: 500;
     padding: 1rem;
+    animation: projectTitle 3s ease-in-out infinite;
   }
   p {
     font-size: 1rem;
@@ -181,6 +195,19 @@
     padding: 1rem;
   }
 }
+@keyframes projectTitle {
+  0% {
+    color: black;
+  }
+  50% {
+    color: #f87a55;
+    text-shadow: 0 0 2px #f87a55;
+  }
+  100% {
+    color: black;
+  }
+}
+
 .project-container {
   transition: all 0.3s ease;
 }
