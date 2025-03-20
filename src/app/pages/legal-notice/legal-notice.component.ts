@@ -13,7 +13,9 @@ import { RouterModule, Router } from '@angular/router';
 })
 export class LegalNoticeComponent {
   languageService = inject(LanguageService);
-  constructor(private location: Location, private router: Router) {}
+  constructor(private location: Location, private router: Router) {
+    localStorage.setItem('imprintIsOpen', 'true');
+  }
 
   goBack(): void {
     this.router.navigate(['/']).then(() => {

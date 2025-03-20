@@ -6,7 +6,7 @@ import translationEN from '../../../../public/assets/i18n/en.json';
 import translationDE from '../../../../public/assets/i18n/de.json';
 import { LanguageService } from '../../services/language.service/language.service';
 import { HeaderMobileComponent } from '../header-mobile/header-mobile.component';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -18,6 +18,10 @@ import { HeaderMobileComponent } from '../header-mobile/header-mobile.component'
 })
 export class HeaderComponent {
 
+  router = inject(Router);
+
+  imprintIsOpen = false;
+  privatePolicyIsOpen = false;
   isMobileMenuOpen = false;
 
   openMobileMenu() {
@@ -32,13 +36,23 @@ export class HeaderComponent {
   
 
   scrollToSection(sectionId: string) {
-    
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
       console.log("element not found");
     }
+  }
+
+  goBack(sectionId: string): void {
+    this.router.navigate(['/']).then(() => {
+      const savedPosition = localStorage.getItem('scrollPosition');
+      if (savedPosition) {
+        window.scrollTo(0, parseInt(savedPosition, 10));
+        localStorage.removeItem('scrollPosition');
+      }
+    });
+    this.scrollToSection(sectionId);
   }
   
   activeLanguage: 'en' | 'de' = 'en';
@@ -49,6 +63,10 @@ export class HeaderComponent {
     translate.setTranslation('de', translationDE);
     translate.setDefaultLang('en');
     translate.use(this.activeLanguage);
+    this.imprintIsOpen = localStorage.getItem('imprintIsOpen') === 'true';
+    console.log(this.imprintIsOpen)
+    this.privatePolicyIsOpen = localStorage.getItem('privatePolicyIsOpen') === 'true';
+    console.log(this.privatePolicyIsOpen)
   }
 
   useLanguage(language: string) {

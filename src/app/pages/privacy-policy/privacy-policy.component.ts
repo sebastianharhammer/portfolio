@@ -12,7 +12,9 @@ import { RouterModule, Router } from '@angular/router';
 })
 export class PrivacyPolicyComponent {
   languageService = inject(LanguageService);
-  constructor(private location: Location, private router: Router) {}
+  constructor(private location: Location, private router: Router) {
+    localStorage.setItem('privatePolicyIsOpen', 'true');
+  }
 
   goBack(): void {
     this.router.navigate(['/']).then(() => {
