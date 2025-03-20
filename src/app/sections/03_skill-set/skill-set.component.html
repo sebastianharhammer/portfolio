@@ -30,7 +30,7 @@
                 </div>
                 <ng-container>
                     <div id="PeelOffContainer">
-                        <img (click)="peelOff()" id="peelOffImage" [src]="currentImage.src" [alt]="currentImage.alt"
+                        <img (click)="peelOff()" (dragstart)="peelOff()" id="peelOffImage" [src]="currentImage.src" [alt]="currentImage.alt"
                             alt="peelOff_image">
                         <div id="peelOffTextContainer">
                             <img id="topPart" [src]="currentImage.topPart" [alt]="currentImage.topPart">

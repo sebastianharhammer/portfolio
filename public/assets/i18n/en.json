@@ -95,7 +95,7 @@
       "emailError": "Please enter a valid email.",
       "messageLabel": "What do you want to tell me?",
       "messagePlaceholder": "Your message",
-      "messageError": "Please enter a message.",
+      "messageError": "Please enter a message of min 4 characters.",
       "privacyFirstPart": "I have read and agree to the ",
       "link": "Privacy Policy",
       "privacySecondPart": " and agree to the processing of my data as outlined",

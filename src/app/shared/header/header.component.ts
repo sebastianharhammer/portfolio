@@ -39,10 +39,8 @@ export class HeaderComponent {
       const element = document.getElementById(sectionId);
   
       if (element) {
-        // Scroll smoothly if the element exists
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       } else {
-        // Navigate to home page and then scroll
         this.router.navigate(['/']).then(() => {
           setTimeout(() => {
             const newElement = document.getElementById(sectionId);

@@ -94,7 +94,7 @@
       "emailError": "Bitte geben Sie eine gültige Email-Adresse ein.",
       "messageLabel": "Was möchten Sie mir sagen?",
       "messagePlaceholder": "Ihre Nachricht",
-      "messageError": "Bitte geben Sie eine Nachricht ein.",
+      "messageError": "Bitte geben Sie eine Nachricht von min 4 Zeichen ein.",
       "privacyFirstPart": "Ich habe die ",
       "link": "Datenschutzerklärung",
       "privacySecondPart": " gelesen und stimme der Datenschutzerklärung zu.",

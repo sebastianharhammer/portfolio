@@ -23,7 +23,7 @@ export class FooterComponent {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
-      console.log("element not found");
+      this.goHome();
     }
   }
 

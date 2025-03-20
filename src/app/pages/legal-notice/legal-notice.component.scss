@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 350px;
   min-height: 100vh;
   color: white;
   font-family: 'Bricolage Grotesque', sans-serif;
@@ -87,9 +87,9 @@
   }
 }
 
-::ng-deep #footerContainer {
+/* ::ng-deep #footerContainer {
   display: none !important;
-}
+} */
 /* ::ng-deep .navbar-menu-item {
   display: none !important;
 } */
