@@ -91,7 +91,7 @@ export class ContactComponent {
   }
 
   checkMessage() {
-    return this.contactData?.message?.length > 5 || false;
+    return this.contactData?.message?.length > 3 || false;
   }
 
   checkCheckBox() {

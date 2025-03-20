@@ -101,7 +101,7 @@
     height: 100%;
     position: absolute;
     z-index: 1;
-    animation: appear 5s infinite;
+    animation: appear 3s infinite;
     @media (max-width: 1050px) {
         width: 150%;
     }
@@ -204,7 +204,7 @@
     max-width: 75px;
     max-height: 75px;
     filter: grayscale(100%);
-    transition: filter 0.5s ease-in-out;
+    transition: filter 0.3s ease-in-out;
     &:hover {
         filter: grayscale(0%);
         transition: width 0.3s ease-in-out, height 0.5s ease-in-out;

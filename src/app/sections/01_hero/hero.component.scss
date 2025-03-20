@@ -39,7 +39,7 @@ main {
   width: 300px;
   padding: 5px;
   position: relative;
-  animation: hello 0.8s ease-in-out forwards;
+  animation: hello 0.5s ease-in-out forwards;
   transition: width 0.5s ease-in-out;
   z-index: 1;
 }
