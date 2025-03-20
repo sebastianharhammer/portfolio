@@ -275,12 +275,12 @@ textarea::placeholder {
   transform-origin: top right;
   content: "\2714";
   position: absolute;
-  bottom: 0%;
-  right: 40%;
+  bottom: 15%;
+  right: 23%;
   z-index: 10;
   clip-path: polygon(-45% 16%, 80% -42%, 154% 149%, 25% 100%);
   color: #ffc107;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 #checkboxLabel {
@@ -378,14 +378,19 @@ textarea::placeholder {
   }
   
   @media (max-width: 768px) {
-    scale: 0.8;
+    scale: 1;
     left: 25% !important;
+    right: 25% !important;
+
   }
   @media (max-width: 450px) {
-    left: 10% !important;
+    left: 5% !important;
+    right: 10% !important;
+    scale: 0.9;
   }
   @media (max-width: 330px) {
     left: 0% !important;
+
   }
 }
 
