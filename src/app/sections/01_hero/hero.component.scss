@@ -59,7 +59,7 @@ main {
   padding: 5px 20px 5px 20px;
   display: block;
   transition: opacity 0.3s ease-in-out;
-  animation: helloWorld 5s ease-in-out infinite;
+  animation: helloWorld 20s ease-in-out infinite;
   @media (max-width: 768px) {
     font-size: 1rem;
   }
@@ -231,7 +231,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   padding: 10px;
-  animation: socialMedia 5s ease-in-out infinite;
+  animation: socialMedia 10s ease-in-out infinite;
   &:hover {
     cursor: pointer;
     border: 2px solid white;
@@ -249,11 +249,11 @@ main {
     scale: 1;
   }
   33% {
-    transform: rotate(45deg);
+    transform: rotate(5deg);
     scale: 1.1;
   }
   66% {
-    transform: rotate(-45deg);
+    transform: rotate(-5deg);
     scale: 1.1;
   }
   100% {

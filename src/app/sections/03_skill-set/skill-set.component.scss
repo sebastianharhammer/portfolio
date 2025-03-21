@@ -76,7 +76,7 @@
     height: 50%;
     display: flex;
     justify-content: flex-end;
-    animation: myStackTitle 3s ease-in-out infinite;
+    animation: myStackTitle 10s ease-in-out infinite;
     @media (max-width: 768px) {
         width: 100%;
         height: 100%;
@@ -125,13 +125,13 @@
 
 @keyframes appear {
     0% {
-        opacity: 0;
+        clip-path: inset(0 100% 100% 0);
     }
     60% {
-        opacity: 1;
+        clip-path: inset(0 0 50% 0);
     }
     100% {
-        opacity: 0;
+        clip-path: inset(0 0 0 0);
     }
 }
 
@@ -255,7 +255,6 @@
     @media (max-width: 768px) {
         font-size: 0.8rem;
     }
-    animation: iconTitle 5s ease-in-out infinite;
 }
 @keyframes iconTitle {
     0% {

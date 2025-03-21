@@ -1,6 +1,7 @@
-<div id="skillSetContent">
+<div id="skillSetContent" data-aos="fade-up">
     <div id="skillSetContainer">
-        <div id="topContainer">
+        <div id="topContainer" data-aos="fade-down-right"
+        data-aos-duration="2000">
             <div id="headlineContainer">
                 <div id="myStackTitle">
                     <h5>{{ 'skillset.mystack' | translate }}</h5>
@@ -18,7 +19,8 @@
             </div>
 
         </div>
-        <div id="bottomContainer">
+        <div id="bottomContainer" data-aos="fade-down-left"
+        data-aos-duration="1000">
             <div id="skillContainer">
                 <div id="iconContainer">
                     <ng-container *ngFor="let icon of icons">
