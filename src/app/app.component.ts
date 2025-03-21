@@ -14,12 +14,5 @@ export class AppComponent {
   title = 'Sebastian Harhammer - Portfolio';
 
 
-/*   @ViewChild('about-me') aboutMe!: ElementRef;
-  @ViewChild('skill-set') skillSet!: ElementRef;
-  @ViewChild('projects') projects!: ElementRef;
-  @ViewChild('contact') contact!: ElementRef;
 
-  scrollToSection(section: ElementRef) {
-    section.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  } */
 }

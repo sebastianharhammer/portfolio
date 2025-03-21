@@ -303,7 +303,12 @@
 
 #card01Overlay {
     transform: rotate(-5deg);
-    top: 30%;
+    top: 10%;
+    right: 10%;
+    @media (max-width: 768px) {
+        top: 30%;
+        right: 0;
+    }
 }
 .commentaryLink {
     position: absolute;

@@ -6,19 +6,17 @@ import { TranslateModule } from '@ngx-translate/core';
   selector: 'app-about-me',
   imports: [TranslateModule],
   templateUrl: './about-me.component.html',
-  styleUrl: './about-me.component.scss'
+  styleUrl: './about-me.component.scss',
 })
 export class AboutMeComponent {
   languageService = inject(LanguageService);
 
   scrollToSection(sectionId: string) {
-    
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
-      console.log("element not found");
+      console.log('element not found');
     }
   }
-
 }

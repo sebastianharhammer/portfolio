@@ -23,6 +23,7 @@ export class PrivacyPolicyComponent {
       if (savedPosition) {
         window.scrollTo(0, parseInt(savedPosition, 10));
         localStorage.removeItem('scrollPosition');
+        localStorage.removeItem('privatePolicyIsOpen');
       }
     });
   }
