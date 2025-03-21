@@ -31,7 +31,6 @@ export class HeaderMobileComponent {
   }
 
   closeHeader() {
-    console.log(this.close.emit);
     this.close.emit();
   }
 
@@ -43,11 +42,8 @@ export class HeaderMobileComponent {
       if (element) {
         const elementPosition = element.getBoundingClientRect().top + window.scrollY; 
         const offsetPosition = elementPosition - headerHeight - 10; 
-        console.log('elementPosition:', elementPosition);
-        console.log('offsetPosition:', offsetPosition);
         window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
       } else if (localStorage.getItem('imprintIsOpen') === 'true' || localStorage.getItem('privacyPolicyIsOpen') === 'true') {
-        console.log('else if');
         this.router.navigate(['/']).then(() => {
           setTimeout(() => {
             this.scrollToSection(sectionId);

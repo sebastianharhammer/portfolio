@@ -4,16 +4,16 @@ import { HeaderComponent } from '../../shared/header/header.component';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language.service/language.service';
 import { PictureFrameComponent } from '../../shared/picture-frame/picture-frame.component';
+import { LazyBackgroundDirective } from '../../directives/lazy-background.directive';
 @Component({
   selector: 'app-hero',
-  imports: [CommonModule, TranslateModule, PictureFrameComponent],
+  imports: [CommonModule, TranslateModule, PictureFrameComponent, LazyBackgroundDirective],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })
 export class HeroComponent {
 
   scrollToSection(sectionId: string) {
-  console.log(sectionId);
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });

@@ -53,7 +53,6 @@ export class ContactComponent {
         .subscribe({
         
           next: (response) => {
-            console.log('response', response);
             ngForm.resetForm();
             this.showSuccessMessage = true;
             this.showErrorMessage = false;
