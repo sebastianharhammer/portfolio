@@ -1,8 +1,7 @@
 <div id="contactContainer">
     <div id="contactContent" >
         <app-logo></app-logo>
-        <div id="leftContainer" data-aos="flip-up"
-        data-aos-duration="1000">
+        <div id="leftContainer" >
             <div id="contactMeContainer">
                 <h4>{{ 'contact.contactme' | translate }}</h4>
             </div>
@@ -16,8 +15,7 @@
                 <img id="arrow" src="assets/img/contact/arrow.svg" alt="arrow">
             </div>
         </div>
-        <div id="rightContainer" data-aos="fade-left"
-        data-aos-duration="1000">
+        <div id="rightContainer">
             <form id="formContainer" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <div id="nameFormContainer" class="formContainer">
                     <h2 class="formTitle">{{ 'contact.contactForm.nameLabel' | translate }}</h2>

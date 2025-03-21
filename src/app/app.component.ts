@@ -13,7 +13,12 @@ import AOS from 'aos';
 })
 export class AppComponent implements OnInit{
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({
+      offset: 120,
+      duration: 1000,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
   }
   title = 'Sebastian Harhammer - Portfolio';
 
