@@ -7,20 +7,20 @@
         </svg>
     </div>
     <div class="navbar-menu">
-        <div class="navbar-menu-item" (click)="scrollToSection('about-me')">
-            <a id="aboutme" href="#">{{ 'header.aboutme' | translate }}</a>
+        <div class="navbar-menu-item" (click)="$event.preventDefault(); scrollToSection('about-me')">
+            <a id="aboutme" (click)="$event.preventDefault()">{{ 'header.aboutme' | translate }}</a>
             <img src="assets/img/header/about_me_line.svg" alt="about_me_line">
         </div>
-        <div class="navbar-menu-item" (click)="scrollToSection('skill-set')">
-            <a id="skills" href="#">{{ 'header.skills' | translate }}</a>
+        <div class="navbar-menu-item" (click)="$event.preventDefault(); scrollToSection('skill-set')">
+            <a id="skills" (click)="$event.preventDefault()">{{ 'header.skills' | translate }}</a>
             <img src="assets/img/header/skill_line.svg" alt="skills_line">
         </div>
-        <div class="navbar-menu-item" (click)="scrollToSection('project-section')">
-            <a id="projects" href="#">{{ 'header.projects' | translate }}</a>
+        <div class="navbar-menu-item" (click)="$event.preventDefault(); scrollToSection('project-section')">
+            <a id="projects" (click)="$event.preventDefault()">{{ 'header.projects' | translate }}</a>
             <img src="assets/img/header/projects_line.svg" alt="projects_line">
         </div>
-        <div class="navbar-menu-item" (click)="scrollToSection('contact-section')">
-            <a id="contact" href="#">{{ 'header.contact' | translate }}</a>
+        <div class="navbar-menu-item" (click)="$event.preventDefault(); scrollToSection('contact-section')">
+            <a id="contact" (click)="$event.preventDefault()">{{ 'header.contact' | translate }}</a>
             <img src="assets/img/header/contact_line.svg" alt="contact_line">
         </div>
     </div>

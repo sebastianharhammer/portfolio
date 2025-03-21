@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
   imports: [RouterModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
-  standalone: true
+  standalone: true,
 })
 export class FooterComponent {
   router = inject(Router);
@@ -18,7 +18,6 @@ export class FooterComponent {
     this.router.navigate(['/home']);
   }
   scrollToSection(sectionId: string) {
-    
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -26,5 +25,4 @@ export class FooterComponent {
       this.goHome();
     }
   }
-
 }

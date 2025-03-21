@@ -13,16 +13,25 @@ import { PictureFrameComponent } from '../../shared/picture-frame/picture-frame.
 export class HeroComponent {
 
   scrollToSection(sectionId: string) {
-    console.log(sectionId);
+  console.log(sectionId);
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
       console.log('element not found');
-    }
+    } 
   }
 
   languageService = inject(LanguageService);
   frontend = ['r', 'o', 'n', 't', 'e', 'n', 'd'];
   developer = ['D', 'E', 'V', 'E', 'L', 'O', 'P', 'E', 'R'];
+
+  ngOnInit() {
+    const img = new Image();
+    img.src = './assets/img/hero/background.png';
+    
+    img.onload = () => {
+      document.querySelector('.hero')?.classList.add('png-loaded');
+    };
+  }
 }

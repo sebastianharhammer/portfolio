@@ -18,7 +18,8 @@ import { EventEmitter } from '@angular/core';
 export class HeaderMobileComponent {
   @Input() isMobileMenuOpen: boolean = false;
   @Output() close = new EventEmitter<void>();
-  
+
+
   router = inject(Router);
 
   openMobileMenu() {
@@ -30,36 +31,33 @@ export class HeaderMobileComponent {
   }
 
   closeHeader() {
+    console.log(this.close.emit);
     this.close.emit();
   }
 
   scrollToSection(sectionId: string) {
     this.closeHeader();
-  
     setTimeout(() => {
       const element = document.getElementById(sectionId);
-      const headerHeight = document.querySelector('.navbar-menu')?.clientHeight || 80; // Default header height
-  
+      const headerHeight = document.querySelector('.navbar-menu')?.clientHeight || 80; 
       if (element) {
-        const elementPosition = element.getBoundingClientRect().top + window.scrollY; // Get element position relative to the page
-        const offsetPosition = elementPosition - headerHeight - 10; // Adjust for header size & add extra spacing
-  
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY; 
+        const offsetPosition = elementPosition - headerHeight - 10; 
+        console.log('elementPosition:', elementPosition);
+        console.log('offsetPosition:', offsetPosition);
         window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-      } else {
-        // Navigate to home page, then scroll
+      } else if (localStorage.getItem('imprintIsOpen') === 'true' || localStorage.getItem('privacyPolicyIsOpen') === 'true') {
+        console.log('else if');
         this.router.navigate(['/']).then(() => {
           setTimeout(() => {
-            const newElement = document.getElementById(sectionId);
-            if (newElement) {
-              const newElementPosition = newElement.getBoundingClientRect().top + window.scrollY;
-              const newOffsetPosition = newElementPosition - headerHeight - 10;
-              window.scrollTo({ top: newOffsetPosition, behavior: 'smooth' });
-            }
+            this.scrollToSection(sectionId);
           }, 300);
         });
       }
     }, 100);
-  }
+   
+    } 
+
 
   goBack(): void {
     this.router.navigate(['/']).then(() => {

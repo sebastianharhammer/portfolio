@@ -33,9 +33,8 @@ export class HeaderComponent {
   }
   
 
-  scrollToSection(sectionId: string) {
-  
-    setTimeout(() => {
+   scrollToSection(sectionId: string) {
+     setTimeout(() => {
       const element = document.getElementById(sectionId);
   
       if (element) {
@@ -47,11 +46,12 @@ export class HeaderComponent {
             if (newElement) {
               newElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
-          }, 300); // Give time for DOM to update
+          }, 300); 
         });
       }
     }, 250);
-  }
+ 
+    }
 
   goBack(): void {
     this.router.navigate(['/']).then(() => {
@@ -71,10 +71,6 @@ export class HeaderComponent {
     translate.setTranslation('de', translationDE);
     translate.setDefaultLang('en');
     translate.use(this.activeLanguage);
-    this.imprintIsOpen = localStorage.getItem('imprintIsOpen') === 'true';
-    console.log(this.imprintIsOpen)
-    this.privatePolicyIsOpen = localStorage.getItem('privatePolicyIsOpen') === 'true';
-    console.log(this.privatePolicyIsOpen)
   }
 
   useLanguage(language: string) {
