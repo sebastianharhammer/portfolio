@@ -11,6 +11,7 @@
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 #skillSetContainer {
@@ -221,11 +222,11 @@
         min-height: 100px;
         min-width: 100px;
     }
-    @media (max-width: 768px) {
-        max-height: 100px;
-        max-width: 100px;
-        min-height: 100px;
-        min-width: 100px;
+    @media (max-width: 389px) {
+        max-height: 85px;
+        max-width: 85px;
+        min-height: 85px;
+        min-width: 85px;
     }
 
 }
