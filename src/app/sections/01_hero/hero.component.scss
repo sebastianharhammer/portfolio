@@ -45,7 +45,6 @@ main {
   width: 300px;
   padding: 5px;
   position: relative;
-  transition: width 0.5s ease-in-out;
   z-index: 1;
 }
 
@@ -103,14 +102,9 @@ main {
   width: 200px;
   opacity: 0;
   text-overflow: clip;
-  transition: opacity 0.3s ease-in-out, background-position 0.5s ease,
-    width 0.5s ease-in-out;
+  
 
-  &:hover {
-    background-position: 0 0;
-    rotate: 3deg;
-    cursor: pointer;
-  }
+ 
   @media (max-width: 768px) {
     font-size: 1rem;
   }
@@ -120,7 +114,6 @@ main {
   width: 35px;
   top: -50%;
   left: 50%;
-  transition: opacity 0.3s ease-in-out;
   opacity: 0;
 }
 .front-container {
@@ -279,9 +272,11 @@ main {
     opacity: 0;
   }
   #MyNameIs {
-    background: linear-gradient(to right, transparent 50%, blue 50%);
+    background: linear-gradient(to right, blue 50%, transparent 50%);
     background-size: 200% 100%;
-    background-position: 100% 0;
+    background-position: -100% 0;
+    rotate: 3deg;
+    transition: background-position 1s ease-in-out, rotate 0.5s ease-in-out;
 
     opacity: 1;
     width: 275px;
