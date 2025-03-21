@@ -6,9 +6,10 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { LazyBackgroundDirective } from '../../directives/lazy-background.directive';
 @Component({
   selector: 'app-contact',
-  imports: [TranslateModule, LogoComponent, FormsModule, CommonModule],
+  imports: [TranslateModule, LogoComponent, FormsModule, CommonModule, LazyBackgroundDirective],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
   standalone: true,

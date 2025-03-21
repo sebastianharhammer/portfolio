@@ -12,16 +12,7 @@
   }
 }
 
-.bg-image {
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: background-image 0.5s ease-in-out; 
 
-  &.loading {
-    filter: blur(10px);
-  }
-}
 main {
   max-width: 750px;
   display: flex;

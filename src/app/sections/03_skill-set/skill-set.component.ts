@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { LanguageService } from '../../services/language.service/language.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { LazyBackgroundDirective } from '../../directives/lazy-background.directive';
 interface PeelOffImage {
   src: string;
   alt: string;
@@ -12,7 +13,7 @@ interface PeelOffImage {
 
 @Component({
   selector: 'app-skill-set',
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, LazyBackgroundDirective],
   templateUrl: './skill-set.component.html',
   styleUrl: './skill-set.component.scss',
 })
