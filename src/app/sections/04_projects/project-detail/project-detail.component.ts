@@ -56,6 +56,7 @@ export class ProjectDetailComponent {
 
   closeDetail() {
     this.close.emit();
+    localStorage.removeItem('projectDetailIsOpen');
   }
   openNextProject(nextProject: string | undefined) {
     if (nextProject) {

@@ -19,13 +19,12 @@ export class HeaderMobileComponent {
   @Input() isMobileMenuOpen: boolean = false;
   @Output() close = new EventEmitter<void>();
 
-
   router = inject(Router);
 
   openMobileMenu() {
     this.isMobileMenuOpen = true;
   }
-  
+
   closeMobileMenu() {
     this.isMobileMenuOpen = false;
   }
@@ -36,14 +35,24 @@ export class HeaderMobileComponent {
 
   scrollToSection(sectionId: string) {
     this.closeHeader();
+    if (!localStorage.getItem('projectDetailIsOpen')) {
+      localStorage.removeItem('projectDetailIsOpen');
+    }
     setTimeout(() => {
       const element = document.getElementById(sectionId);
-      const headerHeight = document.querySelector('.navbar-menu')?.clientHeight || 80; 
+      const headerHeight =
+        document.querySelector('.navbar-menu')?.clientHeight || 80;
       if (element) {
-        const elementPosition = element.getBoundingClientRect().top + window.scrollY; 
-        const offsetPosition = elementPosition - headerHeight - 10; 
+        console.log(element, 'element1');
+        const elementPosition =
+          element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - headerHeight - 10;
         window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-      } else if (localStorage.getItem('imprintIsOpen') === 'true' || localStorage.getItem('privacyPolicyIsOpen') === 'true') {
+      } else if (
+        localStorage.getItem('imprintIsOpen') === 'true' ||
+        localStorage.getItem('privacyPolicyIsOpen') === 'true'
+      ) {
+        console.log(element);
         this.router.navigate(['/']).then(() => {
           setTimeout(() => {
             this.scrollToSection(sectionId);
@@ -51,9 +60,7 @@ export class HeaderMobileComponent {
         });
       }
     }, 100);
-   
-    } 
-
+  }
 
   goBack(): void {
     this.router.navigate(['/']).then(() => {
@@ -63,13 +70,12 @@ export class HeaderMobileComponent {
         localStorage.removeItem('scrollPosition');
       }
     });
-  
   }
-  
+
   activeLanguage: 'en' | 'de' = 'en';
   languageService = inject(LanguageService);
 
-    constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService) {
     translate.setTranslation('en', translationEN);
     translate.setTranslation('de', translationDE);
     translate.setDefaultLang('en');
@@ -80,11 +86,5 @@ export class HeaderMobileComponent {
     this.translate.use(language);
     this.activeLanguage = language as 'en' | 'de';
     this.languageService.activeLanguage = this.activeLanguage;
-  }
-  onMouseEnter() {
-    console.log('mouse enter');
-  }
-  onMouseLeave() {
-    console.log('mouse leave');
   }
 }

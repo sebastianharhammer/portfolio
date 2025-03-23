@@ -18,6 +18,7 @@ export class ProjectsComponent {
 
  openProjectDetail(project: string) {
   this.isProjectDetailVisible = true;
+  localStorage.setItem('projectDetailIsOpen', 'true');
   this.selectedProject = project;
   document.body.style.overflow = 'hidden';
  }

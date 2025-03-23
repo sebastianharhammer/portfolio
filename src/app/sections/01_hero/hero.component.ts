@@ -18,7 +18,7 @@ export class HeroComponent {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
-      console.log('element not found');
+      console.error('element not found');
     } 
   }
 

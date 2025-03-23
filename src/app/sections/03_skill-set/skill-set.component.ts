@@ -137,17 +137,14 @@ export class SkillSetComponent {
 
   constructor() {
     this.languageService.languageToggle.subscribe((language) => {
-      console.log(language);
     });
   }
 
   ngOnInit() {
     this.initalizePeelOffLanguage();
-    console.log(this.bottomPartText0);
   }
 
   initalizePeelOffLanguage() {
-    console.log(this.languageService.activeLanguage);
     if (this.languageService.activeLanguage === 'en') {
       this.bottomPartText0 = 'assets/img/skills/sticker_text_open_en.svg';
       this.topPartText2 = 'assets/img/skills/sticker_text_closed_en.svg';

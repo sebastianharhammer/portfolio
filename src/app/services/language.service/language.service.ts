@@ -34,17 +34,5 @@ export class LanguageService {
     currentLanguageDE = false; */
 
 
-/*   useLanguage(language: string) {
-    console.log('wird ausgeführt');
-    this.translate.use(language);
-    this.activeLanguage = language as 'en' | 'de';
-    if (language === 'en') {
-      this.currentLanguageEN = true;
-      this.currentLanguageDE = false;
-      console.log('if en', this.currentLanguageEN, this.currentLanguageDE);
-    } else {
-      this.currentLanguageEN = false;
-      this.currentLanguageDE = true;
-      console.log('if de', this.currentLanguageEN, this.currentLanguageDE);
-  }} */
+
 }

@@ -69,7 +69,6 @@ export class ContactComponent {
               this.showErrorMessage = false;
             }, 5000);
           },
-          complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid) {
       ngForm.resetForm();

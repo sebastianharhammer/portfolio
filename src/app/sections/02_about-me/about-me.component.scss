@@ -31,15 +31,12 @@
 }
 @keyframes rip {
   0% {
-    scale: 1;
     filter: brightness(1);
   }
   50% {
-    scale: 0.95;
     filter: brightness(0.8);
   }
   100% {
-    scale: 1;
     filter: brightness(1);
   }
 }
