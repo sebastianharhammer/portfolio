@@ -20,7 +20,6 @@ interface ProjectDetails {
   imports: [HeaderComponent, CommonModule, TranslateModule, LogoComponent],
   templateUrl: './project-detail.component.html',
   styleUrl: './project-detail.component.scss',
-  standalone: true,
 })
 export class ProjectDetailComponent {
   @Input() project!: string;

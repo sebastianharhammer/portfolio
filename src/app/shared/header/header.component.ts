@@ -24,8 +24,12 @@ import { ProjectDetailComponent } from '../../sections/04_projects/project-detai
   providers: [TranslateService],
 })
 export class HeaderComponent {
-  @Input() project!: string;
   @Output() close = new EventEmitter<void>();
+  
+  closeDetail() {
+    this.close.emit();
+    localStorage.removeItem('projectDetailIsOpen');
+  }
   isProjectDetailOpen = localStorage.getItem('projectDetailIsOpen');
 
   router = inject(Router);
@@ -44,11 +48,10 @@ export class HeaderComponent {
   
   scrollToSection(sectionId: string) {
     if (this.isProjectDetailOpen) {
-      localStorage.removeItem('projectDetailIsOpen');
-      
-      console.log('close project detail');
-    }
+      this.closeDetail();
+      }
     setTimeout(() => {
+      
       const element = document.getElementById(sectionId);
       console.log('element', element);
 

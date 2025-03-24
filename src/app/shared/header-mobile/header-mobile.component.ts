@@ -18,8 +18,14 @@ import { EventEmitter } from '@angular/core';
 export class HeaderMobileComponent {
   @Input() isMobileMenuOpen: boolean = false;
   @Output() close = new EventEmitter<void>();
-
   router = inject(Router);
+
+  closeDetail() {
+    this.close.emit();
+    localStorage.removeItem('projectDetailIsOpen');
+  }
+  isProjectDetailOpen = localStorage.getItem('projectDetailIsOpen');
+
 
   openMobileMenu() {
     this.isMobileMenuOpen = true;
@@ -35,15 +41,18 @@ export class HeaderMobileComponent {
 
   scrollToSection(sectionId: string) {
     this.closeHeader();
-    if (!localStorage.getItem('projectDetailIsOpen')) {
-      localStorage.removeItem('projectDetailIsOpen');
-    }
+    console.log('header closed');
+    setTimeout(() => {
+    if (this.isProjectDetailOpen) {
+      this.closeDetail();
+      console.log('project detail closed');
+      }
+    }, 100);
     setTimeout(() => {
       const element = document.getElementById(sectionId);
       const headerHeight =
         document.querySelector('.navbar-menu')?.clientHeight || 80;
       if (element) {
-        console.log(element, 'element1');
         const elementPosition =
           element.getBoundingClientRect().top + window.scrollY;
         const offsetPosition = elementPosition - headerHeight - 10;

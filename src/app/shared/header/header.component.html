@@ -52,7 +52,7 @@
     <ng-container *ngIf="isMobileMenuOpen">
         <app-header-mobile 
             [isMobileMenuOpen]="isMobileMenuOpen"
-            (close)="closeMobileMenu()">
+            (close)="closeMobileMenu(); closeDetail()">
         </app-header-mobile>
     </ng-container>
 </nav>
