@@ -1,13 +1,20 @@
-import { Component, inject, ElementRef, ViewChild} from '@angular/core';
-import { RouterModule } from '@angular/router';
+import {
+  Component,
+  inject,
+  ElementRef,
+  ViewChild,
+  EventEmitter,
+  Input,
+  Output,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import translationEN from '../../../../public/assets/i18n/en.json';
 import translationDE from '../../../../public/assets/i18n/de.json';
 import { LanguageService } from '../../services/language.service/language.service';
 import { HeaderMobileComponent } from '../header-mobile/header-mobile.component';
-import { Router } from '@angular/router';
-
+import { RouterModule, Router } from '@angular/router';
+import { ProjectDetailComponent } from '../../sections/04_projects/project-detail/project-detail.component';
 @Component({
   selector: 'app-header',
   imports: [RouterModule, CommonModule, TranslateModule, HeaderMobileComponent],
@@ -17,6 +24,9 @@ import { Router } from '@angular/router';
   providers: [TranslateService],
 })
 export class HeaderComponent {
+  @Input() project!: string;
+  @Output() close = new EventEmitter<void>();
+  isProjectDetailOpen = localStorage.getItem('projectDetailIsOpen');
 
   router = inject(Router);
 
@@ -27,16 +37,21 @@ export class HeaderComponent {
   openMobileMenu() {
     this.isMobileMenuOpen = true;
   }
-  
+
   closeMobileMenu() {
     this.isMobileMenuOpen = false;
   }
   
-
-   scrollToSection(sectionId: string) {
-     setTimeout(() => {
+  scrollToSection(sectionId: string) {
+    if (this.isProjectDetailOpen) {
+      localStorage.removeItem('projectDetailIsOpen');
+      
+      console.log('close project detail');
+    }
+    setTimeout(() => {
       const element = document.getElementById(sectionId);
-  
+      console.log('element', element);
+
       if (element) {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       } else {
@@ -44,14 +59,16 @@ export class HeaderComponent {
           setTimeout(() => {
             const newElement = document.getElementById(sectionId);
             if (newElement) {
-              newElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              newElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+              });
             }
-          }, 300); 
+          }, 300);
         });
       }
     }, 250);
- 
-    }
+  }
 
   goBack(): void {
     this.router.navigate(['/']).then(() => {
@@ -62,7 +79,12 @@ export class HeaderComponent {
       }
     });
   }
-  
+  goBackToProjectDetail(sectionId: string): void {
+    this.router.navigate(['/']).then(() => {
+      localStorage.removeItem('projectDetailIsOpen');
+      this.scrollToSection(sectionId);
+    });
+  }
   activeLanguage: 'en' | 'de' = 'en';
   languageService = inject(LanguageService);
 
@@ -85,5 +107,4 @@ export class HeaderComponent {
   onMouseLeave() {
     console.log('mouse leave');
   }
-  
 }
