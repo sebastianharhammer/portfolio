@@ -167,6 +167,9 @@
     left: 0;
     transform: rotate(0);
     animation: card2 3s ease-in-out infinite;
+    @media (max-width: 768px) {
+        left: -5px;
+    }
 }
 @keyframes card2 {
     0% {
