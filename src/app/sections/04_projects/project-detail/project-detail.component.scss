@@ -285,18 +285,30 @@
 } */
 ::ng-deep #aboutme {
   color: black;
+  @media (max-width: 768px) {
+    color: white;
+  }
 }
 ::ng-deep #skills {
   color: black;
+  @media (max-width: 768px) {
+    color: white;
+  }
 }
 ::ng-deep #projects {
   @media (max-width: 1250px) {
     color: black;
   }
+  @media (max-width: 768px) {
+    color: white;
+  }
 }
 ::ng-deep #contact {
   @media (max-width: 1250px) {
     color: black;
+  }
+  @media (max-width: 768px) {
+    color: white;
   }
 }
 
