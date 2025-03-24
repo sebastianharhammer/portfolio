@@ -41,11 +41,9 @@ export class HeaderMobileComponent {
 
   scrollToSection(sectionId: string) {
     this.closeHeader();
-    console.log('header closed');
     setTimeout(() => {
     if (this.isProjectDetailOpen) {
       this.closeDetail();
-      console.log('project detail closed');
       }
     }, 100);
     setTimeout(() => {
@@ -61,7 +59,6 @@ export class HeaderMobileComponent {
         localStorage.getItem('imprintIsOpen') === 'true' ||
         localStorage.getItem('privacyPolicyIsOpen') === 'true'
       ) {
-        console.log(element);
         this.router.navigate(['/']).then(() => {
           setTimeout(() => {
             this.scrollToSection(sectionId);

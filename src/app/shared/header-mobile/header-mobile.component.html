@@ -36,7 +36,7 @@
             <div class="navbar-language-item">
                 <span id="en">EN</span>
                 <img class="language-toggle" id="en-toggle" [class.active]="activeLanguage === 'en'"
-                    (click)="useLanguage('en')" src="assets/img/header/english_toggle.svg" alt="english_toggle">
+                    (click)="$event.preventDefault(); useLanguage('en')" src="assets/img/header/english_toggle.svg" alt="english_toggle">
             </div>
             <div class="navbar-language-divider">
                 <img id="dot" src="assets/img/header/dot.svg" alt="dot">
@@ -45,7 +45,7 @@
             <div class="navbar-language-item">
                 <span id="de">DE</span>
                 <img class="language-toggle" id="de-toggle" [class.active]="activeLanguage === 'de'"
-                    (click)="useLanguage('de')" src="assets/img/header/german_toggle.svg" alt="german_toggle">
+                (click)="$event.preventDefault(); useLanguage('de')" src="assets/img/header/german_toggle.svg" alt="german_toggle">
             </div>
         </div>
     </div>

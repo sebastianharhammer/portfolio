@@ -53,7 +53,6 @@ export class HeaderComponent {
     setTimeout(() => {
       
       const element = document.getElementById(sectionId);
-      console.log('element', element);
 
       if (element) {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -104,10 +103,5 @@ export class HeaderComponent {
     this.languageService.activeLanguage = this.activeLanguage;
     localStorage.setItem('language', language);
   }
-  onMouseEnter() {
-    console.log('mouse enter');
-  }
-  onMouseLeave() {
-    console.log('mouse leave');
-  }
+
 }
