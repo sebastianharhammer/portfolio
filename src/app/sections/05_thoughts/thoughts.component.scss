@@ -147,16 +147,16 @@
 }
 @keyframes card1 {
     0% {
-        filter: brightness(1);
+        filter: saturate(1);
     }
     25% {
-        filter: brightness(1.5);
+        filter: saturate(3);
     }
     50% {
-        filter: brightness(1);
+        filter: saturate(1);
     }
     100% {
-        filter: brightness(1);
+        filter: saturate(1);
     }
 }
 
@@ -173,16 +173,16 @@
 }
 @keyframes card2 {
     0% {
-        filter: brightness(1);
+        filter: saturate(1);
     }
     50% {
-        filter: brightness(1.5);
+        filter: saturate(3);
     }
     75% {
-        filter: brightness(1);
+        filter: saturate(1);
     }
     100% {
-        filter: brightness(1);
+        filter: saturate(1);
     }
 }
 
@@ -199,13 +199,13 @@
 }
 @keyframes card3 {
     0% {
-        filter: brightness(1);
+        filter: saturate(1);
     }
     75% {
-        filter: brightness(1.5);
+        filter:saturate(3);
     }
     100% {
-        filter: brightness(1);
+        filter: saturate(1);
     }
 }
 

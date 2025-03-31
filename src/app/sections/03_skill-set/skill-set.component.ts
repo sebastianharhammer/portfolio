@@ -79,11 +79,16 @@ export class SkillSetComponent {
   };
 
   icons = [
-    { src: 'assets/img/skills/html.svg', alt: 'HTML', title: 'HTML' },
-    { src: 'assets/img/skills/css.svg', alt: 'CSS', title: 'CSS' },
     { src: 'assets/img/skills/js.svg', alt: 'JavaScript', title: 'JavaScript' },
     { src: 'assets/img/skills/ts.svg', alt: 'TypeScript', title: 'TypeScript' },
     { src: 'assets/img/skills/angular.svg', alt: 'Angular', title: 'Angular' },
+    { src: 'assets/img/skills/html.svg', alt: 'HTML', title: 'HTML' },
+    { src: 'assets/img/skills/css.svg', alt: 'CSS', title: 'CSS/SCSS' },
+    { src: 'assets/img/skills/linux.svg', alt: 'Linux', title: 'Linux' },
+    { src: 'assets/img/skills/raspberry_pi - Kopie - Kopie.svg', alt: 'Raspberry Pi', title: 'Raspberry Pi' },
+    { src: 'assets/img/skills/shellScripting.svg', alt: 'Shell Scripting', title: 'Shell Scripting' },
+    { src: 'assets/img/skills/grafana.png', alt: 'Grafana', title: 'Grafana' },
+    { src: 'assets/img/skills/Prometheus.svg', alt: 'Prometheus', title: 'Prometheus' },
     { src: 'assets/img/skills/restApi.svg', alt: 'restApi', title: 'Rest API' },
     { src: 'assets/img/skills/git.svg', alt: 'git', title: 'Git' },
     {
