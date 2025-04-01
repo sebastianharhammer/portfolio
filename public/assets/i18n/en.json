@@ -51,6 +51,10 @@
       "description": "Using the PokeAPI, this webapp provides information about all Pokémon and visualizes it including a search function and a detailed view of each Pokémon.",
       "implementation": "For this project, I mainly focused on the PokeAPI. The search function was implemented using the PokeAPI's search endpoint.",
       "duration": "3 Weeks"
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "This is my portfolio website. Made with Angular and alot of love."
     }
   },
   "projectDetail": {

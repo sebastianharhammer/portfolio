@@ -51,6 +51,10 @@
       "description": "Mithilfe der PokeAPI stellt diese WebApp Informationen zu allen Pokémon bereit und visualisiert diese, einschließlich einer Suchfunktion und einem detaillierten Anzeigefenster für jedes Pokémon.",
       "implementation": "Bei diesem Projekt habe ich mich hauptsächlich mit der PokeAPI beschäftigt. DEMO TEXT DEMO TEXT DEMO TEXT",
       "duration": "3 Wochen"
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Dies ist meine Portfolio-Website. Gestaltet mit Angular und viel Liebe."
     }
   },
   "projectDetail": {
