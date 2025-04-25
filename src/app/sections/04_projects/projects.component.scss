@@ -170,19 +170,9 @@
   width: 100%;
   perspective: 1000px;
   transform-style: preserve-3d;
-  animation: turn 10s ease-in-out infinite;
+  
 }
-@keyframes turn {
-  0% {
-    transform: rotateY(0deg);
-  }
-  50% {
-    transform: rotateY(180deg);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
-}
+
 #portfolioProject {
   display: flex;
   align-items: center;
@@ -196,6 +186,18 @@
   align-items: center;
   object-fit: fill;
   border-radius: 25px 25px 0 0;
+  animation: turn 10s ease-in-out infinite;
+}
+@keyframes turn {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 .portfolio-overlay-text {
   position: absolute;
