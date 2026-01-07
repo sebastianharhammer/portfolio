@@ -1,5 +1,8 @@
 name: Trigger Dependabot
 
+permissions:
+  contents: write
+
 on:
   workflow_dispatch:
 
