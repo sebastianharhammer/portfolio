@@ -17,7 +17,7 @@
         </div>
         <div class="navbar-menu-item" (click)="$event.preventDefault(); scrollToSection('project-section')">
             <a id="projects" (click)="$event.preventDefault()">{{ 'header.projects' | translate }}</a>
-            <img src="assets/img/header/projects_line.svg" alt="projects_line">
+            <img src="assets/img/header/projects_line.svg" id="navbarMenuItemProject"  alt="projects_line">
         </div>
         <div class="navbar-menu-item" (click)="$event.preventDefault(); scrollToSection('contact-section')">
             <a id="contact" (click)="$event.preventDefault()">{{ 'header.contact' | translate }}</a>

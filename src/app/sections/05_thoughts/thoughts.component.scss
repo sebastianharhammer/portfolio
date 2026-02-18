@@ -241,6 +241,7 @@
 #commentaryLink01 {
     top: 70%;
     left: 60%;
+    filter: invert(1);
     transform: rotate(-5deg);
     @media (max-width: 768px) {
         top: 90%;
