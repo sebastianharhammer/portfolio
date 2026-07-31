@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { LanguageService } from '../../services/language.service/language.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -13,7 +13,7 @@ interface PeelOffImage {
 
 @Component({
   selector: 'app-skill-set',
-  imports: [CommonModule, TranslateModule, LazyBackgroundDirective],
+  imports: [TranslateModule, LazyBackgroundDirective],
   templateUrl: './skill-set.component.html',
   styleUrl: './skill-set.component.scss',
 })

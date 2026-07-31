@@ -7,7 +7,7 @@ import {
   Input,
   Output,
 } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import translationEN from '../../../../public/assets/i18n/en.json';
 import translationDE from '../../../../public/assets/i18n/de.json';
@@ -17,7 +17,7 @@ import { RouterModule, Router } from '@angular/router';
 import { ProjectDetailComponent } from '../../sections/04_projects/project-detail/project-detail.component';
 @Component({
   selector: 'app-header',
-  imports: [RouterModule, CommonModule, TranslateModule, HeaderMobileComponent],
+  imports: [RouterModule, TranslateModule, HeaderMobileComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   standalone: true,

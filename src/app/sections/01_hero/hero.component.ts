@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { HeaderComponent } from '../../shared/header/header.component';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language.service/language.service';
@@ -7,7 +7,7 @@ import { PictureFrameComponent } from '../../shared/picture-frame/picture-frame.
 import { LazyBackgroundDirective } from '../../directives/lazy-background.directive';
 @Component({
   selector: 'app-hero',
-  imports: [CommonModule, TranslateModule, PictureFrameComponent, LazyBackgroundDirective],
+  imports: [TranslateModule, PictureFrameComponent, LazyBackgroundDirective],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })

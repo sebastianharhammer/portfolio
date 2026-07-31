@@ -1,12 +1,12 @@
 import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { LanguageService } from '../../services/language.service/language.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 @Component({
   selector: 'app-projects',
-  imports: [TranslateModule, ProjectDetailComponent, CommonModule],
+  imports: [TranslateModule, ProjectDetailComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

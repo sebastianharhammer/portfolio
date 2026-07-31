@@ -1,7 +1,7 @@
 import { ProjectsComponent } from '../projects.component';
 import { Component, Input, Output, EventEmitter, inject } from '@angular/core';
 import { HeaderComponent } from '../../../shared/header/header.component';
-import { CommonModule } from '@angular/common';
+
 import { TranslateModule } from '@ngx-translate/core';
 import { LogoComponent } from '../../../shared/logo/logo.component';
 import { RouterModule, Router } from '@angular/router';
@@ -17,7 +17,7 @@ interface ProjectDetails {
 
 @Component({
   selector: 'app-project-detail',
-  imports: [HeaderComponent, CommonModule, TranslateModule, LogoComponent],
+  imports: [HeaderComponent, TranslateModule, LogoComponent],
   templateUrl: './project-detail.component.html',
   styleUrl: './project-detail.component.scss',
 })

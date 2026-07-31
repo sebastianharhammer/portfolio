@@ -79,10 +79,12 @@
     <p>{{ 'privacy_policy.legal_notice.processing_restriction.processing_restriction.content' | translate }}</p>
 
     <ul>
-      <li
-        *ngFor="let condition of 'privacy_policy.legal_notice.processing_restriction.processing_restriction.conditions' | translate">
-        {{ condition }}
-      </li>
+      @for (condition of 'privacy_policy.legal_notice.processing_restriction.processing_restriction.conditions' | translate; track condition) {
+        <li
+          >
+          {{ condition }}
+        </li>
+      }
     </ul>
 
     <p>{{ 'privacy_policy.legal_notice.processing_restriction.processing_restriction.additional_content' | translate }}

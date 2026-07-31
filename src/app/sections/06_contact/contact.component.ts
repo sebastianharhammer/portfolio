@@ -42,7 +42,8 @@ export class ContactComponent {
     },
   };
 
-  private readonly emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  /* private readonly emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; */
+  private readonly emailRegex = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
 
   showSuccessMessage = false;
   showErrorMessage = false;

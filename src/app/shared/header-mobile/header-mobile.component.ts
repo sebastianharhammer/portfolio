@@ -1,7 +1,7 @@
 import { Component, inject, Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
+
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import translationEN from '../../../../public/assets/i18n/en.json';
 import translationDE from '../../../../public/assets/i18n/de.json';
@@ -10,7 +10,7 @@ import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header-mobile',
-  imports: [RouterModule, CommonModule, TranslateModule],
+  imports: [RouterModule, TranslateModule],
   templateUrl: './header-mobile.component.html',
   styleUrl: './header-mobile.component.scss',
   standalone: true,
