@@ -24,8 +24,8 @@
     "aos": "^2.3.4",
     "ng": "^0.0.0",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
-    "zone.js": "^0.15.1"
+    "tslib": "^2.9.1",
+    "zone.js": "^0.16.3"
   },
   "devDependencies": {
     "@angular/build": "^21.1.5",
@@ -39,7 +39,7 @@
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.1.0",
+    "karma-jasmine-html-reporter": "~2.3.0",
     "typescript": "~5.9.3"
   }
 }
